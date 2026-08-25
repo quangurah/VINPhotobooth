@@ -1,0 +1,559 @@
+import { useState } from "react";
+import { useNavigate } from "react-router";
+import svgPaths from "./svg-7h20ahin04";
+import imgBg from "./8604cee6ccad55a8feb7204cb2bd711b678c393d.png";
+import imgGetItOnGooglePlayBadgeWebColorVietnamese1 from "./3ac909401012fd5310e51918c106ba79f3444bb5.png";
+import imgSocialIcon from "./e3306c8635541fed0f99b5892dbacb4ffb3c2d3d.png";
+import imgImage5 from "./d6c3f320cb8d9fc41bb2a31b1a330fc20fcbfe3d.png";
+import imgFrame31 from "./4e98e8ab2b018af76bbbdd2524c947e7e844ecd4.png";
+import imgButtonTiepNoiDiSan from "./a574968dba19bef4dfbb30b807972e4eabe89cd2.png";
+import imgButtonTiepNoiDiSan1 from "./21a609fb1dcd1b8a87ee3ea1c0ce952c68aa6fd2.png";
+import Header from "../../app/components/layout/Header";
+
+function Bg() {
+  return (
+    <div className="h-[960px] pointer-events-auto sticky top-0 w-[1440px]" data-name="BG">
+      <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
+        <img alt="" className="absolute max-w-none object-bottom opacity-20 size-full" src={imgBg} />
+        <div className="absolute bg-[#814529] inset-0 mix-blend-color" />
+        <div className="absolute bg-gradient-to-b from-[#ed1c24] from-[6.742%] inset-0 to-[114.06%] to-[rgba(255,184,28,0.4)] via-[#ff671f] via-[48.017%]" />
+      </div>
+    </div>
+  );
+}
+
+function Page() {
+  return (
+    <div className="absolute block inset-0 size-full" data-name="Page-2">
+      <img src="/logo-msb-white.svg" className="absolute block inset-0 size-full object-contain" alt="Logo MSB" />
+    </div>
+  );
+}
+
+function Frame() {
+  return (
+    <div className="absolute inset-[0_0_0.28%_0]" data-name="Frame">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 97 22.9361">
+        <path d={svgPaths.p39119a40} fill="var(--fill-0, black)" />
+        <path d={svgPaths.p2b53f630} fill="var(--fill-0, black)" />
+        <path d={svgPaths.pab5400} fill="var(--fill-0, black)" />
+      </svg>
+    </div>
+  );
+}
+
+function Frame8() {
+  return (
+    <div className="content-stretch flex gap-[24px] h-[32px] items-center relative shrink-0 w-[423.333px]">
+      <div className="content-stretch flex gap-[24px] h-[32px] items-center justify-center min-w-[96px] py-[6px] relative rounded-[8px] shrink-0" data-name="Button">
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[20px] not-italic relative shrink-0 text-[#091e42] text-[14px] text-center whitespace-nowrap">Sơ đồ website</p>
+      </div>
+    </div>
+  );
+}
+
+function Frame6() {
+  return (
+    <div className="col-1 content-stretch flex flex-col gap-[12px] items-start justify-self-start relative row-1 self-start shrink-0 w-[423.333px]">
+      <div className="h-[23px] overflow-clip relative shrink-0 w-[97px]" data-name="Logo MSB">
+        <div className="-translate-x-1/2 absolute aspect-[150/36] bottom-0 left-1/2 overflow-clip top-0" data-name="_logo black_Msb">
+          <Frame />
+        </div>
+      </div>
+      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[24px] min-w-full not-italic relative shrink-0 text-[#091e42] text-[18px] w-[min-content]">Ngân hàng TMCP Hàng Hải Việt Nam</p>
+      <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[20px] min-w-full not-italic relative shrink-0 text-[#091e42] text-[14px] w-[min-content]">Số 54A Nguyễn Chí Thanh, Phường Láng, Thành phố Hà Nội, Việt Nam</p>
+      <Frame8 />
+    </div>
+  );
+}
+
+function Group22() {
+  return (
+    <div className="absolute inset-[8.33%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
+        <path d={svgPaths.p1aab0240} fill="var(--fill-0, #2573C8)" />
+      </svg>
+    </div>
+  );
+}
+
+function Group23() {
+  return (
+    <div className="absolute inset-[8.33%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
+        <path d={svgPaths.p2737aa00} fill="var(--fill-0, #2E90FA)" />
+      </svg>
+    </div>
+  );
+}
+
+function Group24() {
+  return (
+    <div className="absolute inset-[20.83%_8.33%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 14">
+        <path d={svgPaths.p28df2a00} fill="var(--fill-0, #F04438)" />
+      </svg>
+    </div>
+  );
+}
+
+function Frame3() {
+  return (
+    <div className="content-stretch flex gap-[12px] items-center relative shrink-0">
+      <div className="overflow-clip relative shrink-0 size-[24px]" data-name="Social icon">
+        <Group22 />
+      </div>
+      <div className="overflow-clip relative shrink-0 size-[24px]" data-name="Social icon">
+        <Group23 />
+      </div>
+      <div className="overflow-clip relative shrink-0 size-[24px]" data-name="Social icon">
+        <Group24 />
+      </div>
+      <div className="relative shrink-0 size-[24px]" data-name="Social icon">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgSocialIcon} />
+      </div>
+      <div className="relative rounded-[4px] shrink-0 size-[24px]" data-name="image 5">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[4px] size-full" src={imgImage5} />
+      </div>
+    </div>
+  );
+}
+
+function Frame4() {
+  return (
+    <div className="col-3 content-stretch flex flex-col gap-[12px] items-end justify-self-stretch relative row-1 self-start shrink-0">
+      <p className="[word-break:break-word] font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[24px] not-italic relative shrink-0 text-[#091e42] text-[16px] whitespace-nowrap">MSB Digital Bank</p>
+      <Frame9 />
+      <Frame3 />
+    </div>
+  );
+}
+
+function Frame9() {
+  return (
+    <div className="content-stretch flex gap-[12px] items-start relative shrink-0">
+      <a className="block cursor-pointer h-[41.853px] relative shrink-0 w-[141.252px]" href="https://play.google.com/store/apps/details?id=vn.com.msb.smartBanking" target="_blank" data-name="GetItOnGooglePlay_Badge_Web_color_Vietnamese 1">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgGetItOnGooglePlayBadgeWebColorVietnamese1} />
+      </a>
+      <div className="h-[42.786px] overflow-clip relative shrink-0 w-[128px]">
+        <img src="/logo-msb-white.svg" className="absolute block inset-0 size-full object-contain" alt="App Store" />
+      </div>
+    </div>
+  );
+}
+
+function Frame7() {
+  return (
+    <div className="gap-x-[24px] gap-y-[12px] grid grid-cols-[repeat(3,minmax(0,1fr))] grid-rows-[repeat(1,minmax(0,1fr))] h-[157px] relative shrink-0 w-full">
+      <Frame6 />
+      <Frame4 />
+    </div>
+  );
+}
+
+function Frame2() {
+  return (
+    <div className="max-w-[1366px] relative rounded-tl-[12px] rounded-tr-[12px] shrink-0 w-full">
+      <div className="flex flex-col items-center max-w-[inherit] overflow-clip rounded-[inherit] size-full">
+        <div className="content-stretch flex flex-col items-center max-w-[inherit] pb-[12px] pt-[24px] px-[24px] relative size-full">
+          <Frame7 />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame5() {
+  return (
+    <div className="relative shrink-0 w-full">
+      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgFrame31} />
+      <div className="flex flex-row items-center size-full">
+        <div className="content-stretch flex items-center px-[24px] py-[8px] relative size-full">
+          <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[16px] not-italic relative shrink-0 text-[12px] text-white whitespace-nowrap">Bản quyền © 2026 thuộc về Ngân hàng TMCP Hàng Hải Việt Nam MSB</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function CardGoiY({
+  title,
+  iconSvg,
+  isSelected,
+  onClick
+}: {
+  title: string;
+  iconSvg: React.ReactNode;
+  isSelected: boolean;
+  onClick: () => void;
+}) {
+  return (
+    <div 
+      onClick={onClick}
+      className={`backdrop-blur-[12px] border border-[rgba(255,255,255,0.4)] content-stretch flex flex-col gap-[24px] items-center min-h-[264px] pb-[24px] pt-[40px] px-[20px] relative rounded-[20px] shadow-[0px_12px_20px_0px_rgba(207,110,59,0.5)] hover:shadow-xl shrink-0 w-[220px] cursor-pointer hover:scale-105 active:scale-98 transition-all duration-300 ${
+        isSelected 
+          ? 'bg-gradient-to-b from-[#F5401E] to-[#F6603B]' 
+          : 'bg-[rgba(248,160,109,0.3)] hover:from-[#F5401E] hover:to-[#F6603B]'
+      }`}
+    >
+      <div className="relative shrink-0 size-[80px]">
+        {iconSvg}
+      </div>
+      <div className="content-stretch flex items-start justify-center relative shrink-0 w-full">
+        <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[28px] min-w-px not-italic relative text-[20px] text-center text-white">
+          {title}
+        </p>
+      </div>
+      <div className="absolute content-stretch flex items-center justify-center left-[10px] rounded-[10px] size-[24px] top-[10px]">
+        <div className="relative rounded-[10px] shrink-0 size-[20px]">
+          <div className={`absolute inset-0 border-2 border-solid border-white rounded-[10px] ${isSelected ? 'bg-white' : ''}`} />
+          {isSelected && (
+            <div className="absolute inset-[4px] bg-[#F5401E] rounded-[6px]" />
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function HeartIcon() {
+  return (
+    <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 80 80">
+      <path d={svgPaths.p2adff700} fill="var(--fill-0, white)" />
+    </svg>
+  );
+}
+
+function Frame20({
+  selectedIndex,
+  setSelectedIndex
+}: {
+  selectedIndex: number | null;
+  setSelectedIndex: (i: number | null) => void;
+}) {
+  const listGoiY = [
+    "Một tài sản tích góp sau nhiều năm",
+    "Một dự án tâm huyết lâu ngày",
+    "Một biểu tượng mang tính cá nhân (ngoại hình, trang phục, kiểu tóc,...)",
+    "Một kiến thức muốn truyền lại (kinh nghiệm kinh doanh, tư duy…)"
+  ];
+  
+  return (
+    <div className="content-stretch flex flex-wrap md:flex-nowrap gap-[16px] md:gap-[24px] items-stretch justify-center relative shrink-0 pointer-events-auto w-full px-[16px] md:px-0">
+      {listGoiY.map((title, index) => (
+        <CardGoiY
+          key={index}
+          title={title}
+          iconSvg={<HeartIcon />}
+          isSelected={selectedIndex === index}
+          onClick={() => setSelectedIndex(index)}
+        />
+      ))}
+    </div>
+  );
+}
+
+function InputMoTDiSn({
+  inputText,
+  setInputText
+}: {
+  inputText: string;
+  setInputText: (t: string) => void;
+}) {
+  return (
+    <div className="backdrop-blur-[12px] bg-[rgba(248,160,109,0.3)] h-[200px] relative rounded-[20px] shadow-[0px_12px_20px_0px_rgba(207,110,59,0.5)] shrink-0 w-full max-w-[646px] pointer-events-auto" data-name="INPUT_Mô tả di sản">
+      <div className="content-stretch flex flex-col gap-[10px] items-start p-[20px] relative size-full">
+        <div className="content-stretch flex flex-[1_0_0] gap-[12px] items-center justify-center min-h-px relative w-full">
+          <div className="bg-white flex-[1_0_0] h-full min-w-px relative rounded-[12px] overflow-hidden p-[16px] pointer-events-auto">
+            <textarea
+              className="w-full h-full bg-white outline-none resize-none text-[16px] font-['Inter:Regular',sans-serif] text-[#091E42] placeholder-[#ccc]"
+              placeholder="Ví dụ: Quyển sách đang viết dở, bài nhạc đang viết tặng người yêu, căn chung cư tự decor, mái tóc đen dày, tình bạn 10 năm, lời dặn của cha..."
+              value={inputText}
+              onChange={(e) => setInputText(e.target.value)}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame17() {
+  return (
+    <div className="content-stretch flex flex-col gap-[12px] items-center relative shrink-0 w-full max-w-[410px]">
+      <p className="[word-break:break-word] font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[24px] text-white uppercase whitespace-nowrap">Tạp chí di sản</p>
+      <div className="h-[48px] overflow-clip relative shrink-0 w-[328px]" data-name="TƯƠNG LAI">
+        <div className="absolute inset-[2.75%_18.91%_-0.01%_0]" data-name="Group">
+          <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 265.974 46.6829">
+            <path d={svgPaths.p19708d00} fill="var(--fill-0, white)" />
+            <path d={svgPaths.p14bbff80} fill="var(--fill-0, white)" />
+            <path d={svgPaths.p1f47dc70} fill="var(--fill-0, white)" />
+            <path d={svgPaths.p3cbcb300} fill="var(--fill-0, white)" />
+            <path d={svgPaths.p35a21600} fill="var(--fill-0, white)" />
+            <path d={svgPaths.p2b2a4600} fill="var(--fill-0, white)" />
+          </svg>
+        </div>
+        <div className="absolute inset-[0_0_0.7%_82.16%]" data-name="Group">
+          <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 58.5079 47.6604">
+            <path d={svgPaths.p3704ab00} fill="var(--fill-0, #FFB81C)" />
+            <path d={svgPaths.p1e03cf00} fill="var(--fill-0, #FFB81C)" />
+            <path d={svgPaths.p11593580} fill="var(--fill-0, #FFB81C)" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame24() {
+  return (
+    <div className="content-stretch flex flex-col gap-[10px] items-center relative shrink-0 w-full px-[16px] md:px-0">
+      <div className="backdrop-blur-[6px] bg-[rgba(255,103,31,0.2)] content-stretch flex flex-col items-start px-[17px] py-[5px] relative rounded-[9999px] shrink-0" data-name="Overlay+Border+OverlayBlur">
+        <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.2)] border-solid inset-0 pointer-events-none rounded-[9999px]" />
+        <div className="[word-break:break-word] flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-[rgba(255,255,255,0.6)] tracking-[0.7px] whitespace-nowrap">
+          <p className="leading-[20px]">1/3</p>
+        </div>
+      </div>
+      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[32px] not-italic relative shrink-0 text-[20px] md:text-[24px] text-center text-white w-full whitespace-pre-wrap">Theo bạn, di sản là gì?</p>
+    </div>
+  );
+}
+
+function Frame23() {
+  return (
+    <div className="content-stretch flex flex-col gap-[10px] items-center relative shrink-0 w-full">
+      <Frame24 />
+    </div>
+  );
+}
+
+function Frame26({
+  isNextActive,
+  onPrev,
+  onNext
+}: {
+  isNextActive: boolean;
+  onPrev: () => void;
+  onNext: () => void;
+}) {
+  return (
+    <div className="content-stretch flex gap-[12px] items-start justify-center relative shrink-0 pointer-events-auto">
+      <div 
+        onClick={onPrev}
+        className="h-[60px] relative rounded-[30px] shrink-0 cursor-pointer hover:bg-white/10 active:scale-95 transition-all duration-300" 
+        data-name="Button"
+      >
+        <div className="content-stretch flex isolate items-center overflow-clip px-[30px] py-[16px] relative rounded-[inherit] size-full">
+          <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[22px] not-italic relative shrink-0 text-[20px] text-white whitespace-nowrap z-[1]">Câu trước</p>
+        </div>
+        <div aria-hidden="true" className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[30px]" />
+      </div>
+      
+      <div 
+        onClick={isNextActive ? onNext : undefined}
+        className={`content-stretch flex h-[60px] isolate items-center overflow-clip px-[30px] py-[16px] relative rounded-[30px] shrink-0 transition-all duration-300 ${
+          isNextActive 
+            ? 'cursor-pointer hover:scale-105 active:scale-95 text-white' 
+            : 'cursor-not-allowed opacity-60 text-[#b9a69c]'
+        }`} 
+        style={isNextActive ? { backgroundImage: "linear-gradient(-12.5431deg, rgb(228, 95, 53) 20.897%, rgb(255, 169, 90) 110.29%)" } : { backgroundColor: "#e4d2c7" }}
+        data-name="Button"
+      >
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[22px] not-italic relative shrink-0 text-[20px] whitespace-nowrap z-[1]">Tiếp theo</p>
+      </div>
+    </div>
+  );
+}
+
+function Frame16({
+  selectedIndex,
+  setSelectedIndex,
+  inputText,
+  setInputText,
+  onPrev,
+  onNext
+}: {
+  selectedIndex: number | null;
+  setSelectedIndex: (i: number | null) => void;
+  inputText: string;
+  setInputText: (t: string) => void;
+  onPrev: () => void;
+  onNext: () => void;
+}) {
+  return (
+    <div className="content-stretch flex flex-col gap-[40px] items-center relative shrink-0 w-full">
+      <Frame17 />
+      <Frame23 />
+      <Frame20 selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} />
+      <InputMoTDiSn inputText={inputText} setInputText={setInputText} />
+      <Frame26 
+        isNextActive={selectedIndex !== null && inputText.trim() !== ''} 
+        onPrev={onPrev}
+        onNext={onNext}
+      />
+    </div>
+  );
+}
+
+function Frame11({
+  selectedIndex,
+  setSelectedIndex,
+  inputText,
+  setInputText,
+  onPrev,
+  onNext
+}: {
+  selectedIndex: number | null;
+  setSelectedIndex: (i: number | null) => void;
+  inputText: string;
+  setInputText: (t: string) => void;
+  onPrev: () => void;
+  onNext: () => void;
+}) {
+  return (
+    <div className="content-stretch flex flex-col gap-[40px] items-center justify-center pb-[100px] pt-[160px] relative shrink-0 w-full">
+      <div className="h-[24px] overflow-clip relative shrink-0 w-[100px]" data-name="MSB352">
+        <div className="absolute inset-[0_0.01%_0.04%_0]" data-name="Group">
+          <Page />
+        </div>
+      </div>
+      <Frame16 
+        selectedIndex={selectedIndex} 
+        setSelectedIndex={setSelectedIndex} 
+        inputText={inputText} 
+        setInputText={setInputText}
+        onPrev={onPrev}
+        onNext={onNext}
+      />
+    </div>
+  );
+}
+
+function Frame12({
+  selectedIndex,
+  setSelectedIndex,
+  inputText,
+  setInputText,
+  onPrev,
+  onNext
+}: {
+  selectedIndex: number | null;
+  setSelectedIndex: (i: number | null) => void;
+  inputText: string;
+  setInputText: (t: string) => void;
+  onPrev: () => void;
+  onNext: () => void;
+}) {
+  return (
+    <div className="absolute content-stretch flex flex-col items-end left-0 top-0 w-full max-w-[1440px] px-[16px] md:px-0">
+      <Frame11 
+        selectedIndex={selectedIndex} 
+        setSelectedIndex={setSelectedIndex} 
+        inputText={inputText} 
+        setInputText={setInputText}
+        onPrev={onPrev}
+        onNext={onNext}
+      />
+      <div className="bg-white content-stretch flex flex-col items-center justify-end relative rounded-tl-[12px] rounded-tr-[12px] shrink-0 w-full" data-name="Footer">
+        <Frame2 />
+        <Frame5 />
+      </div>
+    </div>
+  );
+}
+
+function Icon() {
+  return (
+    <div className="relative shrink-0 size-[24px]" data-name="Icon">
+      <div className="absolute inset-[-33.33%_-83.33%_-133.33%_-83.33%]">
+        <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 64 64">
+          <g filter="url(#filter0_d_1_3019)" id="Icon">
+            <rect fill="var(--fill-0, #ED1C24)" fillOpacity="0.5" height="24" rx="12" shapeRendering="crispEdges" width="24" x="20" y="8" />
+            <path clipRule="evenodd" d={svgPaths.pdd2d7c0} fill="var(--fill-0, white)" fillRule="evenodd" id="Vector" />
+          </g>
+          <defs>
+            <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="64" id="filter0_d_1_3019" width="64" x="0" y="0">
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+              <feOffset dy="12" />
+              <feGaussianBlur stdDeviation="10" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix type="matrix" values="0 0 0 0 0.810134 0 0 0 0 0.429844 0 0 0 0 0.229691 0 0 0 0.5 0" />
+              <feBlend in2="BackgroundImageFix" mode="normal" result="effect1_dropShadow_1_3019" />
+              <feBlend in="BackgroundImageFix" in2="effect1_dropShadow_1_3019" mode="normal" result="BackgroundImageFix" />
+              <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  );
+}
+
+function ButtonTiepNoiDiSan({ onClick }: { onClick: () => void }) {
+  return (
+    <div 
+      onClick={onClick}
+      className="content-stretch flex gap-[12px] items-center pl-[8px] pr-[20px] py-[8px] relative rounded-[26px] shrink-0 cursor-pointer hover:scale-105 active:scale-95 transition-all duration-300 pointer-events-auto" 
+      data-name="Button_Tiep noi di san"
+    >
+      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[26px] size-full" src={imgButtonTiepNoiDiSan} />
+      <Icon />
+      <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[16px] text-center text-white whitespace-nowrap">Trở về</p>
+    </div>
+  );
+}
+
+function Frame27({ onBack }: { onBack: () => void }) {
+  return (
+    <div className="absolute content-stretch flex items-center justify-between left-0 right-0 px-[16px] md:px-[120px] top-[70px] md:top-[128px] w-full max-w-[1440px] mx-auto pointer-events-none">
+      <ButtonTiepNoiDiSan onClick={onBack} />
+      <div className="content-stretch flex gap-[12px] items-center pl-[8px] pr-[20px] py-[8px] relative rounded-[26px] shrink-0 cursor-pointer hover:scale-105 active:scale-95 transition-all duration-300 pointer-events-auto" data-name="Button_Tiep noi di san">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[26px] size-full" src={imgButtonTiepNoiDiSan1} />
+        <div className="overflow-clip relative shrink-0 size-[24px]" data-name="Icon/info">
+          <div className="absolute inset-[0_-0.05%_0_0]" data-name="Vector">
+            <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24.0127 24">
+              <path d={svgPaths.p64c6d60} fill="var(--fill-0, white)" />
+            </svg>
+          </div>
+        </div>
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[16px] text-center text-white whitespace-nowrap">{`Thể lệ & Giải thưởng`}</p>
+      </div>
+    </div>
+  );
+}
+
+export default function Component3DiSnStep() {
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const [inputText, setInputText] = useState<string>('');
+  const navigate = useNavigate();
+
+  const handlePrev = () => {
+    navigate('/di-san-home-2');
+  };
+
+  const handleNext = () => {
+    navigate('/di-san-step-2');
+  };
+
+  return (
+    <div className="bg-[#FFCF84] relative w-full min-h-screen flex flex-col items-center" data-name="3. Di sản/Step 1">
+      <div className="absolute bottom-0 h-[1173px] left-0 pointer-events-none top-0">
+        <Bg />
+      </div>
+      <Frame12 
+        selectedIndex={selectedIndex} 
+        setSelectedIndex={setSelectedIndex} 
+        inputText={inputText} 
+        setInputText={setInputText}
+        onPrev={handlePrev}
+        onNext={handleNext}
+      />
+      <div className="absolute bg-white h-[40.035px] left-0 right-0 top-0" />
+      <Frame27 onBack={handlePrev} />
+      <div className="fixed top-0 left-0 right-0 pointer-events-none z-[9999]">
+        <Header />
+      </div>
+    </div>
+  );
+}

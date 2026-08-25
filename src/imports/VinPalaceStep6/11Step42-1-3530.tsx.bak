@@ -1,0 +1,763 @@
+import Footer from "../../app/components/layout/Footer";
+import svgPaths from "./svg-2j1i7w1bn6";
+import imgBg from "./bg_final_page.png";
+import imgLogoMsbCvtWhite1 from "./c6ec0d24b8a4207a7e6fca70124b4af014d9f188.png";
+import imgGetItOnGooglePlayBadgeWebColorVietnamese1 from "./3ac909401012fd5310e51918c106ba79f3444bb5.png";
+import imgSocialIcon from "./e3306c8635541fed0f99b5892dbacb4ffb3c2d3d.png";
+import imgImage5 from "./d6c3f320cb8d9fc41bb2a31b1a330fc20fcbfe3d.png";
+import imgFrame31 from "./4e98e8ab2b018af76bbbdd2524c947e7e844ecd4.png";
+import imgFlagsViet from "./98f98befd43bf9d5547ecb4ec1ade495c7e9bc11.png";
+import imgButtonTiepNoiDiSan from "./61efa201599d8cb82a0113a3b0b4af7b7d518b5f.png";
+import imgButtonTiepNoiDiSan1 from "./110ccd213c03f95479a0137a39acbe80ab0fa7da.png";
+import { imgGroup } from "./svg-pkq18";
+import { useNavigate, Link } from "react-router";
+import imgButtonHome from "./ButtonHome.png";
+import Header from "../../app/components/layout/Header";
+
+function Bg() {
+  return (
+    <div className="absolute inset-0 w-full h-full pointer-events-none" data-name="BG">
+      <img alt="" className="absolute inset-0 object-top object-cover w-full h-full" src={imgBg} />
+    </div>
+  );
+}
+
+function Frame15() {
+  return (
+    <div className="absolute content-stretch flex flex-col h-[1389px] items-start left-0 top-0 w-[1440px]">
+      <Bg />
+      <div className="h-[501px] relative shrink-0 w-full">
+        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1440 501">
+          <path d="M0 0H1440V501H0V0Z" fill="var(--fill-0, #FFCF84)" id="Rectangle 781" />
+        </svg>
+      </div>
+    </div>
+  );
+}
+
+function Group1() {
+  return (
+    <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-84.601px_-10.383px] mask-size-[99.986px_23.99px] relative size-full" style={{ maskImage: `url('${imgGroup}')` }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 16.487 7.25586">
+        <g id="Group">
+          <path d={svgPaths.p2f9b3e80} fill="var(--fill-0, white)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group2() {
+  return (
+    <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-92.965px_2.728px] mask-size-[99.986px_23.99px] relative size-full" style={{ maskImage: `url('${imgGroup}')` }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 6.01474 5.19705">
+        <g id="Group">
+          <path d={svgPaths.p1a47e500} fill="var(--fill-0, white)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group3() {
+  return (
+    <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-79.64px_-3.456px] mask-size-[99.986px_23.99px] relative size-full" style={{ maskImage: `url('${imgGroup}')` }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 14.7615 14.8146">
+        <g id="Group">
+          <path d={svgPaths.pb870c80} fill="var(--fill-0, white)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group4() {
+  return (
+    <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-86.453px_1.884px] mask-size-[99.986px_23.99px] relative size-full" style={{ maskImage: `url('${imgGroup}')` }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 9.62235 3.59399">
+        <g id="Group">
+          <path d={svgPaths.p36a803f0} fill="var(--fill-0, white)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group5() {
+  return (
+    <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-77.37px_-1.668px] mask-size-[99.986px_23.99px] relative size-full" style={{ maskImage: `url('${imgGroup}')` }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 14.6954 1.71861">
+        <g id="Group">
+          <path d={svgPaths.p2a027580} fill="var(--fill-0, white)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group6() {
+  return (
+    <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-73.631px_-2.805px] mask-size-[99.986px_23.99px] relative size-full" style={{ maskImage: `url('${imgGroup}')` }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1.72129 8.98124">
+        <g id="Group">
+          <path d={svgPaths.p376c4300} fill="var(--fill-0, white)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group7() {
+  return (
+    <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-68.596px_-6.314px] mask-size-[99.986px_23.99px] relative size-full" style={{ maskImage: `url('${imgGroup}')` }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 15.2537 16.5257">
+        <g id="Group">
+          <path d={svgPaths.p2a2683f0} fill="var(--fill-0, white)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group8() {
+  return (
+    <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-76.856px_-2.805px] mask-size-[99.986px_23.99px] relative size-full" style={{ maskImage: `url('${imgGroup}')` }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 8.07074 6.35407">
+        <g id="Group">
+          <path d={svgPaths.p15e10100} fill="var(--fill-0, white)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group9() {
+  return (
+    <div className="absolute inset-[23.24%_32.97%_23.23%_56.55%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-56.545px_-5.574px] mask-size-[99.986px_23.99px]" style={{ maskImage: `url('${imgGroup}')` }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 10.4797 12.8417">
+        <g id="Group">
+          <path d={svgPaths.p2f6c5c80} fill="var(--fill-0, white)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group10() {
+  return (
+    <div className="absolute inset-[22.08%_44.88%_22.08%_45.32%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-45.313px_-5.297px] mask-size-[99.986px_23.99px]" style={{ maskImage: `url('${imgGroup}')` }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 9.80396 13.3951">
+        <g id="Group">
+          <path d={svgPaths.pd6f400} fill="var(--fill-0, white)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group11() {
+  return (
+    <div className="absolute inset-[23.25%_56.11%_22.75%_31.08%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-31.075px_-5.578px] mask-size-[99.986px_23.99px]" style={{ maskImage: `url('${imgGroup}')` }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 12.8099 12.9549">
+        <g id="Group">
+          <path d={svgPaths.p1d770200} fill="var(--fill-0, white)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Layer() {
+  return (
+    <div className="absolute contents inset-[-11.37%_-0.86%_-15.56%_0]" data-name="Layer-1">
+      <div className="absolute flex inset-[43.28%_-0.72%_-15.56%_84.61%] items-center justify-center" style={{ containerType: "size" }}>
+        <div className="-scale-x-100 flex-none h-[hypot(34.5343cqw,26.8854cqh)] rotate-[-50.26deg] skew-x-[0.24deg] w-[hypot(-65.4657cqw,73.1146cqh)]">
+          <Group1 />
+        </div>
+      </div>
+      <div className="absolute flex inset-[-11.37%_-0.86%_78.18%_92.98%] items-center justify-center" style={{ containerType: "size" }}>
+        <div className="-scale-x-100 flex-none h-[hypot(48.627cqw,44.1135cqh)] rotate-[-47.72deg] skew-x-[0.24deg] w-[hypot(-51.373cqw,55.8865cqh)]">
+          <Group2 />
+        </div>
+      </div>
+      <div className="absolute flex inset-[14.4%_0.64%_3.28%_79.65%] items-center justify-center" style={{ containerType: "size" }}>
+        <div className="-scale-x-100 flex-none h-[hypot(67.7339cqw,-32.5387cqh)] rotate-[-115.52deg] skew-x-[-0.19deg] w-[hypot(32.2661cqw,67.4613cqh)]">
+          <Group3 />
+        </div>
+      </div>
+      <div className="absolute flex inset-[-7.86%_5.46%_65.77%_86.46%] items-center justify-center" style={{ containerType: "size" }}>
+        <div className="-scale-x-100 flex-none h-[hypot(-37.8781cqw,-18.6773cqh)] rotate-[121.43deg] skew-x-[0.21deg] w-[hypot(62.1219cqw,-81.3227cqh)]">
+          <Group4 />
+        </div>
+      </div>
+      <div className="absolute flex inset-[6.95%_11.63%_42.29%_77.38%] items-center justify-center" style={{ containerType: "size" }}>
+        <div className="-scale-x-100 flex-none h-[hypot(11.6993cqw,9.36544cqh)] rotate-[-48.67deg] skew-x-[0.24deg] w-[hypot(-88.3007cqw,90.6346cqh)]">
+          <Group5 />
+        </div>
+      </div>
+      <div className="absolute flex inset-[11.69%_17.38%_81.13%_73.64%] items-center justify-center" style={{ containerType: "size" }}>
+        <div className="-rotate-90 -scale-x-100 flex-none h-[100cqw] w-[100cqh]">
+          <Group6 />
+        </div>
+      </div>
+      <div className="absolute flex inset-[26.32%_10.66%_-9.83%_68.61%] items-center justify-center" style={{ containerType: "size" }}>
+        <div className="-scale-x-100 flex-none h-[hypot(74.7984cqw,-28.4698cqh)] rotate-[-110.03deg] skew-x-[-0.16deg] w-[hypot(25.2016cqw,71.5302cqh)]">
+          <Group7 />
+        </div>
+      </div>
+      <div className="absolute flex inset-[11.69%_15.06%_61.82%_76.87%] items-center justify-center" style={{ containerType: "size" }}>
+        <div className="-rotate-180 -scale-x-100 flex-none h-[100cqh] w-[100cqw]">
+          <Group8 />
+        </div>
+      </div>
+      <Group9 />
+      <Group10 />
+      <Group11 />
+      <div className="-translate-y-1/2 absolute aspect-[19/11] left-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_-4px] mask-size-[99.986px_23.99px] right-[72%] top-[calc(50%+0.01px)]" style={{ maskImage: `url('${imgGroup}')` }} data-name="Logo MSB_CVT White 1">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[303.41%] left-[-43.64%] max-w-none top-[-93.77%] w-[323.64%]" src={imgLogoMsbCvtWhite1} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Group() {
+  return (
+    <div className="absolute contents inset-[-11.37%_-0.86%_-15.56%_0]" data-name="Group">
+      <Layer />
+    </div>
+  );
+}
+
+function ClipPathGroup() {
+  return (
+    <div className="absolute contents inset-0" data-name="Clip path group">
+      <Group />
+    </div>
+  );
+}
+
+function Page() {
+  return (
+    <div className="absolute contents inset-0" data-name="Page-2">
+              <img src="/logo-msb-white.svg" className="absolute block inset-0 size-full object-contain" alt="Logo MSB" />
+      <ClipPathGroup />
+    </div>
+  );
+}
+
+function Frame17() {
+  return (
+    <div className="content-stretch flex items-center relative shrink-0 w-full">
+      <p className="[word-break:break-word] flex-[1_0_0] font-['SVN-Gotham_Rounded:Bold',sans-serif] leading-[28px] min-w-px not-italic relative text-[24px] text-center text-shadow-[0px_0px_80px_rgba(0,0,0,0.4)] text-white tracking-[2.4px] uppercase">Tạp chí di sản</p>
+    </div>
+  );
+}
+
+function Group12() {
+  return (
+    <div className="absolute inset-[12.36%_15.52%_1.9%_0.15%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 323.832 51.4436">
+        <g id="Group">
+          <g id="Group_2">
+            <path d={svgPaths.p2f036b00} fill="var(--fill-0, white)" id="Vector" />
+            <path d={svgPaths.p20857800} fill="var(--fill-0, white)" id="Vector_2" />
+            <path d={svgPaths.p1ba2af00} fill="var(--fill-0, white)" id="Vector_3" />
+            <path d={svgPaths.p14fd5e00} fill="var(--fill-0, white)" id="Vector_4" />
+            <path d={svgPaths.p76c3b00} fill="var(--fill-0, white)" id="Vector_5" />
+            <path d={svgPaths.p248e3500} fill="var(--fill-0, white)" id="Vector_6" />
+          </g>
+          <path d={svgPaths.p15907a00} fill="var(--fill-0, white)" id="Vector_7" />
+          <path d={svgPaths.p5df7480} fill="var(--fill-0, white)" id="Vector_8" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group13() {
+  return (
+    <div className="absolute inset-[1.92%_0.18%_2.62%_82.35%]">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 67.0785 57.2746">
+        <g filter="url(#filter0_i_1_2853)" id="Group 4">
+          <g id="Group 4_2">
+            <path d={svgPaths.p2cb58600} fill="url(#paint0_linear_1_2853)" id="Vector" />
+            <path d={svgPaths.p11817800} fill="url(#paint1_linear_1_2853)" id="Vector_2" />
+          </g>
+          <path d={svgPaths.p447e100} fill="var(--fill-0, #ED1C24)" id="Vector_3" />
+          <path d={svgPaths.p26b45e00} fill="var(--fill-0, #FFB81C)" id="Vector_4" />
+          <path d={svgPaths.p2601b600} fill="url(#paint2_linear_1_2853)" id="Vector_5" />
+        </g>
+        <defs>
+          <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="59.2746" id="filter0_i_1_2853" width="67.0785" x="0" y="0">
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
+            <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
+            <feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+            <feOffset dy="2" />
+            <feGaussianBlur stdDeviation="1" />
+            <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.826883 0 0 0 0 0.446514 0 0 0 0.8 0" />
+            <feBlend in2="shape" mode="normal" result="effect1_innerShadow_1_2853" />
+          </filter>
+          <linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_1_2853" x1="13.0412" x2="15.2118" y1="6.31261" y2="57.1969">
+            <stop stopColor="#ED1C24" />
+            <stop offset="1" stopColor="#FFB81C" />
+          </linearGradient>
+          <linearGradient gradientUnits="userSpaceOnUse" id="paint1_linear_1_2853" x1="32.0241" x2="34.1946" y1="6.31261" y2="57.1969">
+            <stop stopColor="#ED1C24" />
+            <stop offset="1" stopColor="#FFB81C" />
+          </linearGradient>
+          <linearGradient gradientUnits="userSpaceOnUse" id="paint2_linear_1_2853" x1="59.1728" x2="62.7504" y1="17.3051" y2="56.8046">
+            <stop stopColor="#ED1C24" />
+            <stop offset="1" stopColor="#FFB81C" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Layer1() {
+  return (
+    <div className="h-[60px] relative shrink-0 w-full max-w-[384px] aspect-[384/60] h-auto" data-name="Layer_1">
+      <Group12 />
+      <Group13 />
+    </div>
+  );
+}
+
+function TpChiDiSnTươngLai() {
+  return (
+    <div className="content-stretch flex flex-col gap-[12px] items-center relative shrink-0" data-name="TẠP CHÍ DI SẢN T� �� �NG LAI">
+      <Frame17 />
+      <Layer1 />
+    </div>
+  );
+}
+
+function Frame14() {
+  const navigate = useNavigate();
+  return (
+    <div className="content-stretch flex flex-col sm:flex-row gap-[12px] items-center justify-center relative shrink-0 w-full px-[16px] sm:px-0">
+      <div onClick={() => navigate('/di-san-home-2')} className="h-[60px] w-full sm:w-[150px] relative rounded-[30px] shrink-0 cursor-pointer hover:scale-105 hover:brightness-110 active:scale-95 transition-all duration-300 ease-in-out flex items-center justify-center" data-name="Button Home">
+        <img src={imgButtonHome} alt="Về trang chủ" className="h-full w-auto object-contain pointer-events-none" />
+      </div>
+      <div onClick={() => navigate('/di-san-step-2')} className="content-stretch flex h-[60px] isolate justify-center items-center px-[30px] py-[16px] relative rounded-[30px] shrink-0 cursor-pointer hover:scale-105 hover:brightness-110 active:scale-95 transition-all duration-300 ease-in-out shadow-[0px_4px_15px_rgba(237, 28, 36, 0.4)] hover:shadow-[0px_8px_25px_rgba(237, 28, 36, 0.6)] w-full sm:w-auto text-center" style={{ backgroundImage: "linear-gradient(269.948deg, rgb(237, 28, 36) 0%, rgb(239, 64, 41) 19.152%, rgb(255, 103, 31) 99.992%)" }} data-name="Button">
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[22px] not-italic relative shrink-0 text-[20px] text-white whitespace-nowrap z-[1]">Tạo hình ảnh khác</p>
+      </div>
+    </div>
+  );
+}
+
+function Frame13() {
+  return (
+    <div className="content-stretch flex flex-col gap-[40px] items-center relative shrink-0 w-full max-w-[446px] px-[16px] md:px-0">
+      <TpChiDiSnTươngLai />
+      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[26px] not-italic relative shrink-0 text-[24px] text-center text-white whitespace-normal md:whitespace-pre">{`Chúc mừng bạn đã hoàn thành!  `}</p>
+      <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic relative shrink-0 text-[18px] text-center text-white w-full">Kết quả chương trình sẽ được cập nhật trên fanpage MSB - Ngân hàng TMCP Hàng Hải Việt Nam</p>
+      <Frame14 />
+    </div>
+  );
+}
+
+function Frame11() {
+  return (
+    <div className="flex-[1_0_0] min-h-px relative w-full">
+      <div className="flex flex-col items-center size-full">
+        <div className="content-stretch flex flex-col gap-[32px] md:gap-[40px] items-center pb-[40px] md:pb-[80px] pt-[120px] md:pt-[160px] relative size-full">
+          <div className="h-[24px] overflow-clip relative shrink-0 w-[100px]" data-name="MSB352">
+            <div className="absolute inset-[0_0.01%_0.04%_0]" data-name="Group">
+              <Page />
+            </div>
+          </div>
+          <Frame13 />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame() {
+  return (
+    <div className="absolute inset-[0_0_0.28%_0]" data-name="Frame">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 97 22.9361">
+        <g clipPath="url(#clip0_1_2902)" id="Frame">
+          <path d={svgPaths.p39119a40} fill="var(--fill-0, black)" id="Vector" />
+          <path d={svgPaths.p2b53f630} fill="var(--fill-0, black)" id="Vector_2" />
+          <path d={svgPaths.pab5400} fill="var(--fill-0, black)" id="Vector_3" />
+          <path d={svgPaths.p5af1000} fill="url(#paint0_radial_1_2902)" id="Vector_4" />
+          <path d={svgPaths.p2027100} fill="url(#paint1_radial_1_2902)" id="Vector_5" />
+          <path d={svgPaths.p2945dc00} fill="url(#paint2_radial_1_2902)" id="Vector_6" />
+          <path d={svgPaths.p202a4980} fill="url(#paint3_radial_1_2902)" id="Vector_7" />
+        </g>
+        <defs>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(18.0814 6.50804) scale(10.2303 10.1072)" gradientUnits="userSpaceOnUse" id="paint0_radial_1_2902" r="1">
+            <stop stopColor="#9D0B0F" />
+            <stop offset="0.07" stopColor="#AA0E12" />
+            <stop offset="0.26" stopColor="#C7141A" />
+            <stop offset="0.44" stopColor="#DB1820" />
+            <stop offset="0.62" stopColor="#E81B23" />
+            <stop offset="0.8" stopColor="#EC1C24" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(27.5868 11.9817) scale(10.2642 10.1408)" gradientUnits="userSpaceOnUse" id="paint1_radial_1_2902" r="1">
+            <stop offset="0.3" stopColor="#9D0B0F" />
+            <stop offset="0.35" stopColor="#AA0E12" />
+            <stop offset="0.48" stopColor="#C7141A" />
+            <stop offset="0.6" stopColor="#DB1820" />
+            <stop offset="0.73" stopColor="#E81B23" />
+            <stop offset="0.85" stopColor="#EC1C24" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(20.2158 1.18833) scale(21.8977 21.6344)" gradientUnits="userSpaceOnUse" id="paint2_radial_1_2902" r="1">
+            <stop offset="0.35" stopColor="#EC1C24" />
+            <stop offset="1" stopColor="#F26F21" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(3.17965 19.5021) scale(7.68402 7.5916)" gradientUnits="userSpaceOnUse" id="paint3_radial_1_2902" r="1">
+            <stop offset="0.3" stopColor="#EC1C24" />
+            <stop offset="1" stopColor="#9D0B0F" />
+          </radialGradient>
+          <clipPath id="clip0_1_2902">
+            <rect fill="white" height="22.9361" width="97" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Frame8() {
+  return (
+    <div className="content-stretch flex gap-[24px] h-[32px] items-center relative shrink-0 w-[423.333px]">
+      <div className="content-stretch flex gap-[24px] h-[32px] items-center justify-center min-w-[96px] py-[6px] relative rounded-[8px] shrink-0" data-name="Button">
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[20px] not-italic relative shrink-0 text-[#091e42] text-[14px] text-center whitespace-nowrap">S� � �����S website</p>
+      </div>
+    </div>
+  );
+}
+
+function Frame6() {
+  return (
+    <div className="col-1 content-stretch flex flex-col gap-[12px] items-start justify-self-start relative row-1 self-start shrink-0 w-[423.333px]">
+      <div className="h-[23px] overflow-clip relative shrink-0 w-[97px]" data-name="Logo MSB">
+        <div className="-translate-x-1/2 absolute aspect-[150/36] bottom-0 left-1/2 overflow-clip top-0" data-name="_logo black_Msb">
+          <Frame />
+        </div>
+      </div>
+      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[24px] min-w-full not-italic relative shrink-0 text-[#091e42] text-[18px] w-[min-content]">Ngân hàng TMCP Hàng Hải Việt Nam</p>
+      <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[20px] min-w-full not-italic relative shrink-0 text-[#091e42] text-[14px] w-[min-content]">Số 54A Nguyễn Chí Thanh, Phường Láng, Thành phố Hà Nội, Việt Nam</p>
+      <Frame8 />
+    </div>
+  );
+}
+
+function Group18() {
+  return (
+    <div className="absolute inset-[21.8%_76.86%_23.76%_8.33%]" data-name="<Group>">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 18.9507 23.2929">
+        <g id="<Group>">
+          <path d={svgPaths.p349c0e80} fill="var(--fill-0, white)" id="<Path>" />
+          <path d={svgPaths.p35e9c00} fill="var(--fill-0, white)" id="<Path>_2" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group17() {
+  return (
+    <div className="absolute contents inset-[21.8%_76.86%_23.76%_8.33%]" data-name="<Group>">
+      <Group18 />
+    </div>
+  );
+}
+
+function Group19() {
+  return (
+    <div className="absolute inset-[44.68%_8.5%_16.27%_28.77%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 80.2894 16.7083">
+        <g id="Group">
+          <path d={svgPaths.paab5680} fill="var(--fill-0, white)" id="Vector" />
+          <path d={svgPaths.pce0c900} fill="var(--fill-0, white)" id="Vector_2" />
+          <path d={svgPaths.p2468be00} fill="var(--fill-0, white)" id="Vector_3" />
+          <path d={svgPaths.p1cf88e00} fill="var(--fill-0, white)" id="Vector_4" />
+          <path d={svgPaths.pd3675c0} fill="var(--fill-0, white)" id="Vector_5" />
+          <path d={svgPaths.p25b11d00} fill="var(--fill-0, white)" id="Vector_6" />
+          <path d={svgPaths.p2205a200} fill="var(--fill-0, white)" id="Vector_7" />
+          <path d={svgPaths.p1fc49f20} fill="var(--fill-0, white)" id="Vector_8" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group16() {
+  return (
+    <div className="absolute contents inset-[21.8%_8.5%_16.27%_8.33%]" data-name="<Group>">
+      <Group17 />
+      <Group19 />
+    </div>
+  );
+}
+
+function Group15() {
+  return (
+    <div className="absolute contents inset-0" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 128 42.7866">
+        <g id="Group">
+          <path d={svgPaths.p27f1a500} fill="var(--fill-0, #A6A6A6)" id="Vector" />
+          <path d={svgPaths.p2c572e00} fill="var(--fill-0, black)" id="Vector_2" />
+        </g>
+      </svg>
+      <Group16 />
+    </div>
+  );
+}
+
+function Group21() {
+  return (
+    <div className="absolute inset-[17%_34.79%_63.01%_29.51%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 45.6985 8.55251">
+        <g id="Group">
+          <path d={svgPaths.p1221800} fill="var(--fill-0, white)" id="Vector" />
+          <path d={svgPaths.p201d1540} fill="var(--fill-0, white)" id="Vector_2" />
+          <path d={svgPaths.p161eab00} fill="var(--fill-0, white)" id="Vector_3" />
+          <path d={svgPaths.p19d41200} fill="var(--fill-0, white)" id="Vector_4" />
+          <path d={svgPaths.p1db7f280} fill="var(--fill-0, white)" id="Vector_5" />
+          <path d={svgPaths.p2a71e900} fill="var(--fill-0, white)" id="Vector_6" />
+          <path d={svgPaths.p35b5b700} fill="var(--fill-0, white)" id="Vector_7" />
+          <path d={svgPaths.p1da7a600} fill="var(--fill-0, white)" id="Vector_8" />
+          <path d={svgPaths.p2ec65f00} fill="var(--fill-0, white)" id="Vector_9" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group20() {
+  return (
+    <div className="absolute contents inset-[17%_34.79%_63.01%_29.51%]" data-name="<Group>">
+      <Group21 />
+    </div>
+  );
+}
+
+function Group14() {
+  return (
+    <div className="absolute contents inset-0" data-name="Group">
+      <Group15 />
+      <Group20 />
+    </div>
+  );
+}
+
+function DownloadOnTheAppStoreBadgeVnRgbBlk() {
+  return (
+    <div className="h-[42.786px] overflow-clip relative shrink-0 w-[128px]" data-name="Download_on_the_App_Store_Badge_VN_RGB_blk_100217 1">
+      <Group14 />
+    </div>
+  );
+}
+
+function Frame9() {
+  return (
+    <div className="content-stretch flex gap-[12px] items-start relative shrink-0">
+      <a className="block cursor-pointer h-[41.853px] relative shrink-0 w-[141.252px]" href="https://play.google.com/store/apps/details?id=vn.com.msb.smartBanking&pcampaignid=fdl_short&url=https://msbmobile.page.link/2005596&pli=1" target="_blank" data-name="GetItOnGooglePlay_Badge_Web_color_Vietnamese 1">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgGetItOnGooglePlayBadgeWebColorVietnamese1} />
+      </a>
+      <DownloadOnTheAppStoreBadgeVnRgbBlk />
+    </div>
+  );
+}
+
+function Group22() {
+  return (
+    <div className="absolute inset-[8.33%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
+        <g id="Group">
+          <path d={svgPaths.p1aab0240} fill="var(--fill-0, #2573C8)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group23() {
+  return (
+    <div className="absolute inset-[8.33%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
+        <g id="Group">
+          <path d={svgPaths.p2737aa00} fill="var(--fill-0, #2E90FA)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group24() {
+  return (
+    <div className="absolute inset-[20.83%_8.33%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 14">
+        <g id="Group">
+          <path d={svgPaths.p28df2a00} fill="var(--fill-0, #F04438)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Frame3() {
+  return (
+    <div className="content-stretch flex gap-[12px] items-center relative shrink-0">
+      <div className="overflow-clip relative shrink-0 size-[24px]" data-name="Social icon">
+        <Group22 />
+      </div>
+      <div className="overflow-clip relative shrink-0 size-[24px]" data-name="Social icon">
+        <Group23 />
+      </div>
+      <div className="overflow-clip relative shrink-0 size-[24px]" data-name="Social icon">
+        <Group24 />
+      </div>
+      <div className="relative shrink-0 size-[24px]" data-name="Social icon">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgSocialIcon} />
+      </div>
+      <div className="relative rounded-[4px] shrink-0 size-[24px]" data-name="image 5">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[4px] size-full" src={imgImage5} />
+      </div>
+    </div>
+  );
+}
+
+function Frame4() {
+  return (
+    <div className="col-3 content-stretch flex flex-col gap-[12px] items-end justify-self-stretch relative row-1 self-start shrink-0">
+      <p className="[word-break:break-word] font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[24px] not-italic relative shrink-0 text-[#091e42] text-[16px] whitespace-nowrap">MSB Digital Bank</p>
+      <Frame9 />
+      <Frame3 />
+    </div>
+  );
+}
+
+function Frame7() {
+  return (
+    <div className="gap-x-[24px] gap-y-[12px] grid grid-cols-[repeat(3,minmax(0,1fr))] grid-rows-[repeat(1,minmax(0,1fr))] h-[157px] relative shrink-0 w-full">
+      <Frame6 />
+      <Frame4 />
+    </div>
+  );
+}
+
+function Frame2() {
+  return (
+    <div className="max-w-[1366px] relative rounded-tl-[12px] rounded-tr-[12px] shrink-0 w-full">
+      <div className="flex flex-col items-center max-w-[inherit] overflow-clip rounded-[inherit] size-full">
+        <div className="content-stretch flex flex-col items-center max-w-[inherit] pb-[12px] pt-[24px] px-[24px] relative size-full">
+          <Frame7 />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame5() {
+  return (
+    <div className="relative shrink-0 w-full">
+      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgFrame31} />
+      <div className="flex flex-row items-center size-full">
+        <div className="content-stretch flex items-center px-[24px] py-[8px] relative size-full">
+          <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[16px] not-italic relative shrink-0 text-[12px] text-white whitespace-nowrap">Bản quyền © 2026 thuộc về Ngân hàng TMCP Hàng Hải Việt Nam MSB</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame12() {
+  return (
+    <div className="relative content-stretch flex flex-col items-center w-full flex-1 justify-between">
+      <Frame11 />
+      <Footer />
+    </div>
+  );
+}
+
+function Icon() {
+  return (
+    <div className="relative shrink-0 size-[24px]" data-name="Icon">
+      <div className="absolute inset-[-33.33%_-83.33%_-133.33%_-83.33%]">
+        <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 64 64">
+          <g filter="url(#filter0_d_1_2788)" id="Icon">
+            <rect fill="var(--fill-0, #ED1C24)" fillOpacity="0.5" height="24" rx="12" shapeRendering="crispEdges" width="24" x="20" y="8" />
+            <path clipRule="evenodd" d={svgPaths.pdd2d7c0} fill="var(--fill-0, white)" fillRule="evenodd" id="Vector" />
+          </g>
+          <defs>
+            <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="64" id="filter0_d_1_2788" width="64" x="0" y="0">
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+              <feOffset dy="12" />
+              <feGaussianBlur stdDeviation="10" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix type="matrix" values="0 0 0 0 0.810134 0 0 0 0 0.429844 0 0 0 0 0.229691 0 0 0 0.5 0" />
+              <feBlend in2="BackgroundImageFix" mode="normal" result="effect1_dropShadow_1_2788" />
+              <feBlend in="BackgroundImageFix" in2="effect1_dropShadow_1_2788" mode="normal" result="BackgroundImageFix" />
+              <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  );
+}
+
+function ButtonTiepNoiDiSan() {
+  const navigate = useNavigate();
+  return (
+    <div onClick={() => navigate('/di-san-home-2')} className="content-stretch flex gap-[12px] items-center pl-[8px] pr-[20px] py-[8px] relative rounded-[26px] shrink-0 cursor-pointer hover:scale-105 active:scale-95 hover:brightness-110 transition-all duration-300 ease-in-out" data-name="Button_Tiep noi di san">
+      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[26px] size-full" src={imgButtonTiepNoiDiSan} />
+      <Icon />
+      <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[16px] text-center text-white whitespace-nowrap">Thoát</p>
+    </div>
+  );
+}
+
+function Frame16() {
+  return (
+    <div className="content-stretch flex items-center justify-between px-[16px] md:px-[120px] pt-[80px] md:pt-[128px] w-full gap-[8px]">
+      <div className="scale-90 origin-left md:scale-100">
+        <ButtonTiepNoiDiSan />
+      </div>
+      <div className="scale-90 origin-right md:scale-100 content-stretch flex gap-[6px] md:gap-[12px] items-center pl-[6px] pr-[14px] py-[6px] md:pl-[8px] md:pr-[20px] md:py-[8px] relative rounded-[26px] shrink-0 cursor-pointer hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out" data-name="Button_Tiep noi di san">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[26px] size-full" src={imgButtonTiepNoiDiSan1} />
+        <div className="overflow-clip relative shrink-0 size-[20px] md:size-[24px]" data-name="Icon/info">
+          <div className="absolute inset-[0_-0.05%_0_0]" data-name="Vector">
+            <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24.0127 24">
+              <path d={svgPaths.p64c6d60} fill="var(--fill-0, white)" id="Vector" />
+            </svg>
+          </div>
+        </div>
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[13px] md:text-[16px] text-center text-white whitespace-nowrap">Th�� l�! chi tiết</p>
+      </div>
+    </div>
+  );
+}
+
+export default function Component11Step() {
+  return (
+    <div className="bg-[#FFCF84] relative w-full min-h-screen flex flex-col" data-name="11. Step4/2">
+      <div className="fixed inset-0 pointer-events-none overflow-hidden">
+        <Bg />
+      </div>
+      <div className="relative w-full z-10 flex-1 flex flex-col">
+        <Frame12 />
+      </div>
+      <div className="absolute inset-x-0 top-0 z-30 pointer-events-none">
+        <div className="pointer-events-auto relative max-w-[1440px] mx-auto w-full">
+          <Frame16 />
+        </div>
+      </div>
+      
+      <div className="fixed top-0 left-0 right-0 pointer-events-none z-[9999]">
+        <Header />
+      </div>
+    </div>
+  );
+}

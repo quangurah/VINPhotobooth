@@ -1,0 +1,53 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node dependencies
+node_modules
+dist
+dist-ssr
+*.local
+
+# Firebase & Functions
+.firebase
+*-debug.log
+firestore-debug.log
+ui-debug.log
+firebase-debug.log
+jobs/
+backend_error.log
+brandsafety.log
+
+# Secret keys & Credentials
+sake.json
+api_keys.json
+*serviceAccount*.json
+*service_account*.json
+*.pem
+*.key
+msbtapchidisan-*.json
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Temporary python/scratch
+*.pyc
+__pycache__/

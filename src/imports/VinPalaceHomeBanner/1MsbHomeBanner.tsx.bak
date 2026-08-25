@@ -1,0 +1,1765 @@
+import Footer from "../../app/components/layout/Footer";
+import Header from "../../app/components/layout/Header";
+import { Link } from "react-router";
+import svgPaths from "./svg-736tk21ize";
+import imgBanner from "./e98a653b684166c0644ad7e88b6df52b524aaa51.png";
+import imgImage from "./banner_new.png";
+import imgImageMobile from "./banner_mobile.png";
+import imgFrame2087327371 from "./Frame2087327371.png";
+import imgFrame2117130460 from "./Frame_2117130460.png";
+import imgFrame2117130459 from "./Frame_2117130459.png";
+import imgFlagsViet from "./98f98befd43bf9d5547ecb4ec1ade495c7e9bc11.png";
+import imgButtonTiepNoiDiSan from "./e64cc2dcc1ea4837f2e5d10c38a05694ff8f21a6.png";
+import imgGetItOnGooglePlayBadgeWebColorVietnamese1 from "./3ac909401012fd5310e51918c106ba79f3444bb5.png";
+import imgSocialIcon from "./e3306c8635541fed0f99b5892dbacb4ffb3c2d3d.png";
+import imgImage5 from "./d6c3f320cb8d9fc41bb2a31b1a330fc20fcbfe3d.png";
+import imgFrame31 from "./4e98e8ab2b018af76bbbdd2524c947e7e844ecd4.png";
+import imgPlaceholder from "./421334b269887ef4b0f59f843c22c177eb4ab7e8.png";
+import imgPlaceholder1 from "./c73971837288e1757dc0bfa59fd63ee9bac609fd.png";
+import imgPlaceholder2 from "./2c6fe65620d9102c7c302ef42b3d20d7410abab3.png";
+import imgPlaceholder3 from "./4c58e2b40ce040dbe5113125d923c3b0078d6411.png";
+import imgPlaceholder4 from "./975a48434906b154e4228f3556c97e64fcd31570.png";
+import imgPlaceholder5 from "./7f1a98f41248a5e473036843fa6155ecc3e40adb.png";
+import imgPlaceholder6 from "./4690bb0dacdb4d3f4c87fac94b67ada83b40f71c.png";
+import imgPlaceholder7 from "./87c80a8119f25e756ae1d7eed9634fdc21156e4f.png";
+import imgPlaceholder8 from "./4047bf66fb6baaa1f170c881cb416acf74d143c2.png";
+import imgPlaceholder9 from "./dd758f6372c0d79344aab17fe69e579a05edbac0.png";
+import imgBtnSoSanh from "./123.png";
+import imgBtnDangKy from "./CTA.png";
+import { imgMusicIcon } from "./svg-4144a";
+
+function Frame17() {
+  return (
+    <div className="flex-[1_0_0] min-h-px relative w-full pointer-events-none">
+      <div className="flex flex-row items-center justify-center w-full size-full pointer-events-none">
+        <div className="content-stretch flex items-center justify-center w-full pt-[108px] relative size-full pointer-events-none">
+          <div className="pointer-events-auto hidden md:flex md:flex-col -translate-y-1/2 absolute backdrop-blur-[2px] bg-[rgba(255,255,255,0.4)] content-stretch items-center justify-center left-0 overflow-clip rounded-[32px] size-[48px] top-[calc(50%+52px)] cursor-pointer hover:scale-110 hover:bg-white/60 active:scale-95 transition-all duration-300 ease-in-out" data-name="scroll">
+            <div className="relative shrink-0 size-[32px]" data-name="left">
+              <div className="absolute inset-[20.83%_33.85%]" data-name="Union">
+                <svg className="absolute block inset-0 size-full rotate-180" fill="none" preserveAspectRatio="none" viewBox="0 0 10.3333 18.6667">
+                  <path d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L10.0404 8.62623C10.431 9.01675 10.431 9.64992 10.0404 10.0404L1.70711 18.3738C1.31658 18.7643 0.683417 18.7643 0.292893 18.3738C-0.0976311 17.9832 -0.0976311 17.3501 0.292893 16.9596L7.91912 9.33333L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" fill="#f4600c" id="Union"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div className="pointer-events-auto hidden md:flex md:flex-col -translate-y-1/2 absolute backdrop-blur-[2px] bg-[rgba(255,255,255,0.4)] content-stretch items-center justify-center overflow-clip right-0 rounded-[32px] size-[48px] top-[calc(50%+52px)] cursor-pointer hover:scale-110 hover:bg-white/60 active:scale-95 transition-all duration-300 ease-in-out" data-name="scroll">
+            <div className="relative shrink-0 size-[32px]" data-name="right">
+              <div className="absolute inset-[20.83%_33.85%]" data-name="Union">
+                <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 10.3333 18.6667">
+                  <path d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L10.0404 8.62623C10.431 9.01675 10.431 9.64992 10.0404 10.0404L1.70711 18.3738C1.31658 18.7643 0.683417 18.7643 0.292893 18.3738C-0.0976311 17.9832 -0.0976311 17.3501 0.292893 16.9596L7.91912 9.33333L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" fill="#f4600c" id="Union"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Group_A() {
+  return (
+    <div className="absolute inset-[2.75%_18.1%_-0.01%_0]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 332.468 58.3537">
+        <g id="Group">
+          <path d={svgPaths.p16f97680} fill="var(--fill-0, white)" id="Vector" />
+          <path d={svgPaths.p28e80a80} fill="var(--fill-0, white)" id="Vector_2" />
+          <path d={svgPaths.p38f50d80} fill="var(--fill-0, white)" id="Vector_3" />
+          <path d={svgPaths.p30da1f80} fill="var(--fill-0, white)" id="Vector_4" />
+          <path d={svgPaths.p2de566f0} fill="var(--fill-0, white)" id="Vector_5" />
+          <path d={svgPaths.p3cf74900} fill="var(--fill-0, white)" id="Vector_6" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group1() {
+  return (
+    <div className="absolute inset-[0_0_0.7%_82.16%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 73.1348 59.5756">
+        <g id="Group">
+          <path d={svgPaths.p2b2fea80} fill="var(--fill-0, #FFB81C)" id="Vector" />
+          <path d={svgPaths.pd181480} fill="var(--fill-0, #FFB81C)" id="Vector_2" />
+          <path d={svgPaths.p3a81d4c0} fill="var(--fill-0, #FFB81C)" id="Vector_3" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function TngLai() {
+  return (
+    <div className="h-[60px] overflow-clip relative shrink-0 w-[410px]" data-name="TƯƠNG LAI">
+      <Group_A />
+      <Group1 />
+    </div>
+  );
+}
+
+function Banner1() {
+  return (
+    <div className="h-[768px] relative shrink-0 w-full" data-name="Banner">
+      <div className="flex flex-col items-center justify-center overflow-clip rounded-[inherit] size-full">
+        <div className="content-stretch flex flex-col gap-[10px] items-center justify-center px-[61px] relative size-full">
+          <div className="-translate-y-1/2 absolute aspect-[1500/3200] md:aspect-[1440/768] left-0 right-0 top-1/2 overflow-hidden w-full h-full" data-name="IMAGE">
+            <img 
+              alt="Banner Mobile" 
+              className="absolute inset-0 max-w-none object-cover object-center pointer-events-none size-full block md:hidden" 
+              src={imgImageMobile} 
+            />
+            <img 
+              alt="Banner Desktop" 
+              className="absolute inset-0 max-w-none object-cover object-center pointer-events-none size-full hidden md:block" 
+              src={imgImage} 
+            />
+          </div>
+          <Frame17 />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame18() {
+  return (
+    <div className="content-stretch flex flex-col items-center md:items-start relative shrink-0 scale-[0.75] xs:scale-[0.85] sm:scale-100 origin-center md:origin-left">
+      <TngLai />
+    </div>
+  );
+}
+
+function Frame20() {
+  return (
+    <div className="content-stretch flex flex-col gap-[12px] items-center md:items-start relative shrink-0">
+      <p className="[word-break:break-word] font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[24px] sm:text-[32px] text-white uppercase whitespace-nowrap">Tạp chí di sản</p>
+      <Frame18 />
+    </div>
+  );
+}
+
+function Frame21Desktop() {
+  return (
+    <div className="w-full max-w-[533px] relative shrink-0 flex flex-col gap-4">
+      <img src={imgFrame2117130460} className="w-[40%] self-center md:self-start h-auto object-contain" alt="Kỷ niệm" />
+      <img src={imgFrame2087327371} className="w-full h-auto object-contain" alt="Tạp chí di sản" />
+    </div>
+  );
+}
+
+function Frame21Mobile() {
+  return (
+    <div className="w-full max-w-[533px] relative shrink-0 flex flex-col">
+      <img src={imgFrame2117130460} className="w-[40%] self-center md:self-start h-auto object-contain" alt="Kỷ niệm" />
+      <img src={imgFrame2117130459} className="w-full h-auto object-contain" alt="Tạp chí di sản" />
+      <p className="font-['Inter_18pt',sans-serif] font-normal text-[16px] leading-[24px] tracking-[0px] text-center text-white mt-[12px] w-full">
+        Khoe ngay nỗ lực hiện tại để MSB cho bạn thấy hình ảnh ấy vươn tầm ở tương lai như thế nào?
+      </p>
+    </div>
+  );
+}
+
+function Frame1_A() {
+  return (
+    <div className="absolute content-stretch flex flex-col gap-[24px] sm:gap-[32px] lg:gap-[40px] items-center md:items-start left-1/2 md:left-[48px] lg:left-[180px] -translate-x-1/2 md:translate-x-0 top-[100px] md:top-1/2 -translate-y-0 md:-translate-y-1/2 w-[calc(100%-32px)] md:w-[550px] lg:w-[600px] z-20">
+      <div className="w-full block md:hidden">
+        <Frame21Mobile />
+      </div>
+      <div className="w-full hidden md:block">
+        <Frame21Desktop />
+      </div>
+      <Link to="/di-san-home-2" className="bg-white content-stretch flex isolate items-center justify-center self-center md:self-start overflow-clip px-[30px] py-[16px] relative rounded-[30px] shrink-0 hover:scale-105 active:scale-95 hover:shadow-[0px_8px_25px_rgba(255,255,255,0.3)] transition-all duration-300 ease-in-out" data-name="Button" style={{ textDecoration: 'none' }}>
+        <p className="[word-break:break-word] bg-clip-text font-['Inter:Medium',sans-serif] font-medium leading-[22px] not-italic relative shrink-0 text-[16px] text-[transparent] whitespace-nowrap z-[1]" style={{ backgroundImage: "linear-gradient(26.32deg, rgb(237, 28, 36) 0%, rgb(23, 64, 41) 1.152%, rgb(255, 103, 31) .2%)" }}>
+          Tham gia ngay
+        </p>
+      </Link>
+    </div>
+  );
+}
+
+function Banner() {
+  return (
+    <div className="relative content-stretch flex flex-col items-center w-full overflow-clip" data-name="Banner">
+      <Banner1 />
+      <Frame1_A />
+    </div>
+  );
+}
+
+function Frame13() {
+  return (
+    <div className="content-stretch flex gap-[10px] items-center justify-center w-full">
+      <div className="flex-[1_0_0] h-0 min-w-px relative">
+        <div className="absolute inset-[-1px_0_0_0]">
+          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 582 1">
+            <line id="Line 7" stroke="var(--stroke-0, #FBBFE)" x2="582" y1="0.5" y2="0.5" />
+          </svg>
+        </div>
+      </div>
+      <div className="bg-white content-stretch flex gap-[8px] items-center justify-center min-w-[6px] px-[12px] py-[10px] relative rounded-[8px] shrink-0 cursor-pointer hover:bg-orange-50 hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out" data-name="Button">
+        <div aria-hidden="true" className="absolute border border-[#f4600c] border-solid inset-0 pointer-events-none rounded-[8px]" />
+        <div className="relative shrink-0 size-[24px]" data-name="down">
+          <div className="absolute flex inset-[33.86%_20.83%_33.85%_20.83%] items-center justify-center" style={{ containerType: "size" }}>
+            <div className="flex-none h-[100cqw] rotate-0 w-[100cqh]">
+              <div className="relative size-full" data-name="Union">
+                <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7.75 14">
+                  <path d={svgPaths.p5c5d580} fill="var(--fill-0, #01E42)" id="Union" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[24px] not-italic relative shrink-0 text-[#f4600c] text-[16px] text-center whitespace-nowrap">Xem thêm</p>
+      </div>
+      <div className="flex-[1_0_0] h-0 min-w-px relative">
+        <div className="absolute inset-[-1px_0_0_0]">
+          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 582 1">
+            <line id="Line 7" stroke="var(--stroke-0, #FBBFE)" x2="582" y1="0.5" y2="0.5" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame_A() {
+  return (
+    <div className="absolute inset-[0_0_0.28%_0]" data-name="Frame">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 100 23.333">
+        <g clipPath="url(#clip0_1_18815)" id="Frame">
+          <path d={svgPaths.p3f70a80} fill="var(--fill-0, black)" id="Vector" />
+          <path d={svgPaths.p3ef7fe80} fill="var(--fill-0, black)" id="Vector_2" />
+          <path d={svgPaths.p2e80d00} fill="var(--fill-0, black)" id="Vector_3" />
+          <path d={svgPaths.p3bbec400} fill="url(#paint0_radial_1_18815)" id="Vector_4" />
+          <path d={svgPaths.p640000} fill="url(#paint1_radial_1_18815)" id="Vector_5" />
+          <path d={svgPaths.p1cff8200} fill="url(#paint2_radial_1_18815)" id="Vector_6" />
+          <path d={svgPaths.p2b8b580} fill="url(#paint3_radial_1_18815)" id="Vector_7" />
+        </g>
+        <defs>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(18.6407 6.71) scale(10.5467 10.5467)" gradientUnits="userSpaceOnUse" id="paint0_radial_1_18815" r="1">
+            <stop stopColor="#D0B0F" />
+            <stop offset="0.07" stopColor="#AA0E12" />
+            <stop offset="0.26" stopColor="#C7141A" />
+            <stop offset="0.44" stopColor="#DB1820" />
+            <stop offset="0.62" stopColor="#E81B23" />
+            <stop offset="0.8" stopColor="#EC1C24" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(28.44 12.5027) scale(10.5817 10.5817)" gradientUnits="userSpaceOnUse" id="paint1_radial_1_18815" r="1">
+            <stop offset="0.3" stopColor="#D0B0F" />
+            <stop offset="0.35" stopColor="#AA0E12" />
+            <stop offset="0.48" stopColor="#C7141A" />
+            <stop offset="0.6" stopColor="#DB1820" />
+            <stop offset="0.73" stopColor="#E81B23" />
+            <stop offset="0.85" stopColor="#EC1C24" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(20.841 1.24) scale(22.575)" gradientUnits="userSpaceOnUse" id="paint2_radial_1_18815" r="1">
+            <stop offset="0.35" stopColor="#EC1C24" />
+            <stop offset="1" stopColor="#F26F21" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(3.277 20.35) scale(7.2167 7.2166)" gradientUnits="userSpaceOnUse" id="paint3_radial_1_18815" r="1">
+            <stop offset="0.3" stopColor="#EC1C24" />
+            <stop offset="1" stopColor="#D0B0F" />
+          </radialGradient>
+          <clipPath id="clip0_1_18815">
+            <rect fill="white" height="23.333" width="100" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+
+
+function Frame1() {
+  return (
+    <div className="absolute inset-[0_0_0.28%_0]" data-name="Frame">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7 22.361">
+        <g clipPath="url(#clip0_1_18782)" id="Frame">
+          <path d={svgPaths.p311a40} fill="var(--fill-0, black)" id="Vector" />
+          <path d={svgPaths.p2b53f630} fill="var(--fill-0, black)" id="Vector_2" />
+          <path d={svgPaths.pab5400} fill="var(--fill-0, black)" id="Vector_3" />
+          <path d={svgPaths.p5af1000} fill="url(#paint0_radial_1_18782)" id="Vector_4" />
+          <path d={svgPaths.p2027100} fill="url(#paint1_radial_1_18782)" id="Vector_5" />
+          <path d={svgPaths.p245dc00} fill="url(#paint2_radial_1_18782)" id="Vector_6" />
+          <path d={svgPaths.p202a480} fill="url(#paint3_radial_1_18782)" id="Vector_7" />
+        </g>
+        <defs>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(18.0814 6.50804) scale(10.2303 10.1072)" gradientUnits="userSpaceOnUse" id="paint0_radial_1_18782" r="1">
+            <stop stopColor="#D0B0F" />
+            <stop offset="0.07" stopColor="#AA0E12" />
+            <stop offset="0.26" stopColor="#C7141A" />
+            <stop offset="0.44" stopColor="#DB1820" />
+            <stop offset="0.62" stopColor="#E81B23" />
+            <stop offset="0.8" stopColor="#EC1C24" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(27.5868 11.817) scale(10.2642 10.1408)" gradientUnits="userSpaceOnUse" id="paint1_radial_1_18782" r="1">
+            <stop offset="0.3" stopColor="#D0B0F" />
+            <stop offset="0.35" stopColor="#AA0E12" />
+            <stop offset="0.48" stopColor="#C7141A" />
+            <stop offset="0.6" stopColor="#DB1820" />
+            <stop offset="0.73" stopColor="#E81B23" />
+            <stop offset="0.85" stopColor="#EC1C24" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(20.2158 1.18833) scale(21.877 21.6344)" gradientUnits="userSpaceOnUse" id="paint2_radial_1_18782" r="1">
+            <stop offset="0.35" stopColor="#EC1C24" />
+            <stop offset="1" stopColor="#F26F21" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(3.1765 1.5021) scale(7.68402 7.516)" gradientUnits="userSpaceOnUse" id="paint3_radial_1_18782" r="1">
+            <stop offset="0.3" stopColor="#EC1C24" />
+            <stop offset="1" stopColor="#D0B0F" />
+          </radialGradient>
+          <clipPath id="clip0_1_18782">
+            <rect fill="white" height="22.361" width="7" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Frame8() {
+  return (
+    <div className="content-stretch flex gap-[24px] h-[32px] items-center relative shrink-0 w-[423.333px]">
+      <div className="content-stretch flex gap-[24px] h-[32px] items-center justify-center min-w-[6px] py-[6px] relative rounded-[8px] shrink-0" data-name="Button">
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[20px] not-italic relative shrink-0 text-[#01e42] text-[14px] text-center whitespace-nowrap">Sơ đồ website</p>
+      </div>
+    </div>
+  );
+}
+
+function Frame6() {
+  return (
+    <div className="col-1 content-stretch flex flex-col gap-[12px] items-start justify-self-start relative row-1 self-start shrink-0 w-[423.333px]">
+      <div className="h-[23px] overflow-clip relative shrink-0 w-[7px]" data-name="Logo MSB">
+        <div className="-translate-x-1/2 absolute aspect-[150/36] bottom-0 left-1/2 overflow-clip top-0" data-name="_logo black_Msb">
+          <Frame1 />
+        </div>
+      </div>
+      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[24px] min-w-full not-italic relative shrink-0 text-[#01e42] text-[18px] w-[min-content]">Ngân hàng TMCP Hàng Hải Việt Nam</p>
+      <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[20px] min-w-full not-italic relative shrink-0 text-[#01e42] text-[14px] w-[min-content]">Số 54A Nguyễn Chí Thanh, Phường Láng, Thành phố Hà Nội, Việt Nam</p>
+      <Frame8 />
+    </div>
+  );
+}
+
+function Group7() {
+  return (
+    <div className="absolute inset-[21.8%_76.86%_23.76%_8.33%]" data-name="<Group>">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 18.507 23.22">
+        <g id="<Group>">
+          <path d={svgPaths.p34c0e80} fill="var(--fill-0, white)" id="<Path>" />
+          <path d={svgPaths.p35ec00} fill="var(--fill-0, white)" id="<Path>_2" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group6() {
+  return (
+    <div className="absolute contents inset-[21.8%_76.86%_23.76%_8.33%]" data-name="<Group>">
+      <Group7 />
+    </div>
+  );
+}
+
+function Group8() {
+  return (
+    <div className="absolute inset-[44.68%_8.5%_16.27%_28.77%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 80.284 16.7083">
+        <g id="Group">
+          <path d={svgPaths.paab5680} fill="var(--fill-0, white)" id="Vector" />
+          <path d={svgPaths.pce0c00} fill="var(--fill-0, white)" id="Vector_2" />
+          <path d={svgPaths.p2468be00} fill="var(--fill-0, white)" id="Vector_3" />
+          <path d={svgPaths.p1cf88e00} fill="var(--fill-0, white)" id="Vector_4" />
+          <path d={svgPaths.pd3675c0} fill="var(--fill-0, white)" id="Vector_5" />
+          <path d={svgPaths.p25b11d00} fill="var(--fill-0, white)" id="Vector_6" />
+          <path d={svgPaths.p2205a200} fill="var(--fill-0, white)" id="Vector_7" />
+          <path d={svgPaths.p1fc4f20} fill="var(--fill-0, white)" id="Vector_8" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group5() {
+  return (
+    <div className="absolute contents inset-[21.8%_8.5%_16.27%_8.33%]" data-name="<Group>">
+      <Group6 />
+      <Group8 />
+    </div>
+  );
+}
+
+function Group4() {
+  return (
+    <div className="absolute contents inset-0" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 128 42.7866">
+        <g id="Group">
+          <path d={svgPaths.p27f1a500} fill="var(--fill-0, #A6A6A6)" id="Vector" />
+          <path d={svgPaths.p2c572e00} fill="var(--fill-0, black)" id="Vector_2" />
+        </g>
+      </svg>
+      <Group5 />
+    </div>
+  );
+}
+
+function Group10() {
+  return (
+    <div className="absolute inset-[17%_34.7%_63.01%_2.51%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 45.686 8.5525">
+        <g id="Group">
+          <path d={svgPaths.p1221800} fill="var(--fill-0, white)" id="Vector" />
+          <path d={svgPaths.p201d1540} fill="var(--fill-0, white)" id="Vector_2" />
+          <path d={svgPaths.p161eab00} fill="var(--fill-0, white)" id="Vector_3" />
+          <path d={svgPaths.p1d41200} fill="var(--fill-0, white)" id="Vector_4" />
+          <path d={svgPaths.p1db7f280} fill="var(--fill-0, white)" id="Vector_5" />
+          <path d={svgPaths.p2a71e00} fill="var(--fill-0, white)" id="Vector_6" />
+          <path d={svgPaths.p35b5b700} fill="var(--fill-0, white)" id="Vector_7" />
+          <path d={svgPaths.p1da7a600} fill="var(--fill-0, white)" id="Vector_8" />
+          <path d={svgPaths.p2ec65f00} fill="var(--fill-0, white)" id="Vector_" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group() {
+  return (
+    <div className="absolute contents inset-[17%_34.7%_63.01%_2.51%]" data-name="<Group>">
+      <Group10 />
+    </div>
+  );
+}
+
+function Group3() {
+  return (
+    <div className="absolute contents inset-0" data-name="Group">
+      <Group4 />
+      <Group />
+    </div>
+  );
+}
+
+function DownloadOnTheAppStoreBadgeVnRgbBlk() {
+  return (
+    <div className="h-[42.786px] overflow-clip relative shrink-0 w-[128px]" data-name="Download_on_the_App_Store_Badge_VN_RGB_blk_100217 1">
+      <Group3 />
+    </div>
+  );
+}
+
+function Frame() {
+  return (
+    <div className="content-stretch flex gap-[12px] items-start relative shrink-0">
+      <a className="block cursor-pointer h-[41.853px] relative shrink-0 w-[141.252px]" href="https://play.google.com/store/apps/details?id=vn.com.msb.smartBanking&pcampaignid=fdl_short&url=https://msbmobile.page.link/200556&pli=1" target="_blank" data-name="GetItOnGooglePlay_Badge_Web_color_Vietnamese 1">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgGetItOnGooglePlayBadgeWebColorVietnamese1} />
+      </a>
+      <DownloadOnTheAppStoreBadgeVnRgbBlk />
+    </div>
+  );
+}
+
+function Group11() {
+  return (
+    <div className="absolute inset-[8.33%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
+        <g id="Group">
+          <path d={svgPaths.p1aab0240} fill="var(--fill-0, #2573C8)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group12() {
+  return (
+    <div className="absolute inset-[8.33%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
+        <g id="Group">
+          <path d={svgPaths.p2737aa00} fill="var(--fill-0, #2E0FA)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group13() {
+  return (
+    <div className="absolute inset-[20.83%_8.33%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 14">
+        <g id="Group">
+          <path d={svgPaths.p28df2a00} fill="var(--fill-0, #F04438)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Frame3() {
+  return (
+    <div className="content-stretch flex gap-[12px] items-center relative shrink-0">
+      <div className="overflow-clip relative shrink-0 size-[24px]" data-name="Social icon">
+        <Group11 />
+      </div>
+      <div className="overflow-clip relative shrink-0 size-[24px]" data-name="Social icon">
+        <Group12 />
+      </div>
+      <div className="overflow-clip relative shrink-0 size-[24px]" data-name="Social icon">
+        <Group13 />
+      </div>
+      <div className="relative shrink-0 size-[24px]" data-name="Social icon">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgSocialIcon} />
+      </div>
+      <div className="relative rounded-[4px] shrink-0 size-[24px]" data-name="image 5">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[4px] size-full" src={imgImage5} />
+      </div>
+    </div>
+  );
+}
+
+function Frame4() {
+  return (
+    <div className="col-3 content-stretch flex flex-col gap-[12px] items-end justify-self-stretch relative row-1 self-start shrink-0">
+      <p className="[word-break:break-word] font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[24px] not-italic relative shrink-0 text-[#01e42] text-[16px] whitespace-nowrap">MSB Digital Bank</p>
+      <Frame />
+      <Frame3 />
+    </div>
+  );
+}
+
+function Frame7() {
+  return (
+    <div className="gap-x-[24px] gap-y-[12px] grid grid-cols-[repeat(3,minmax(0,1fr))] grid-rows-[repeat(1,minmax(0,1fr))] h-[157px] relative shrink-0 w-full">
+      <Frame6 />
+      <Frame4 />
+    </div>
+  );
+}
+
+function Frame2() {
+  return (
+    <div className="relative rounded-tl-[12px] rounded-tr-[12px] shrink-0 w-full">
+      <div className="flex flex-col items-center w-full overflow-clip rounded-[inherit] size-full">
+        <div className="content-stretch flex flex-col items-center w-full pb-[12px] pt-[24px] px-[24px] relative size-full">
+          <Frame7 />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame5() {
+  return (
+    <div className="relative shrink-0 w-full">
+      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgFrame31} />
+      <div className="flex flex-row items-center size-full">
+        <div className="content-stretch flex items-center px-[24px] py-[8px] relative size-full">
+          <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[16px] not-italic relative shrink-0 text-[12px] text-white whitespace-nowrap">Bản quyềnỗ© 2026 thuộc về Ngân hàng TMCP Hàng Hải Việt Nam MSB</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame11() {
+  return (
+    <div className="content-stretch flex items-center pointer-events-auto pt-[12px] w-full">
+      <div className="content-stretch flex items-center pl-[8px] pr-[2px] py-[2px] relative shrink-0" data-name="Breadcrum">
+        <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[20px] not-italic relative shrink-0 text-[#505f7] text-[14px] text-center whitespace-nowrap">Trang chủ</p>
+        <div className="relative shrink-0 size-[16px]" data-name="right">
+          <div className="absolute inset-[20.83%_33.85%]" data-name="Union">
+            <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 5.16667 .33333">
+              <path d={svgPaths.p1fdae080} fill="var(--fill-0, #6B788E)" id="Union" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div className="content-stretch flex items-center pl-[8px] pr-[2px] py-[2px] relative shrink-0" data-name="Breadcrum">
+        <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[20px] not-italic relative shrink-0 text-[#505f7] text-[14px] text-center whitespace-nowrap">Cá nhân</p>
+        <div className="relative shrink-0 size-[16px]" data-name="right">
+          <div className="absolute inset-[20.83%_33.85%]" data-name="Union">
+            <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 5.16667 .33333">
+              <path d={svgPaths.p1fdae080} fill="var(--fill-0, #6B788E)" id="Union" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div className="content-stretch flex items-center pl-[8px] pr-[2px] py-[2px] relative shrink-0" data-name="Breadcrum">
+        <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[20px] not-italic relative shrink-0 text-[#f4600c] text-[14px] text-center whitespace-nowrap">Tiết kiệm</p>
+      </div>
+    </div>
+  );
+}
+
+function TitleContent() {
+  return (
+    <div className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-start justify-center min-w-px relative" data-name="Title content">
+      <p className="[word-break:break-word] font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[36px] max-h-[36px] not-italic overflow-hidden relative shrink-0 text-[#01e42] text-[26px] text-ellipsis w-full">Tiết kiệm</p>
+    </div>
+  );
+}
+
+function More() {
+  return <div className="content-stretch flex gap-[12px] h-[44px] items-center justify-end relative shrink-0 w-[134px]" data-name="More" />;
+}
+
+function Thumbnail_A() {
+  return (
+    <div className="aspect-[360/203] bg-[#f7f8f] overflow-clip relative shrink-0 w-full" data-name="Thumbnail">
+      <div className="absolute inset-0" data-name="placeholder">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPlaceholder} />
+      </div>
+    </div>
+  );
+}
+
+function Hl_A() {
+  return (
+    <div className="[word-break:break-word] content-stretch flex flex-col gap-[2px] items-start not-italic relative shrink-0 text-[#01e42] w-full" data-name="HL 1">
+      <ul className="block font-['Inter:Semi_Bold',sans-serif] font-semibold leading-normal relative w-full text-[12px] sm:text-[14px] md:text-[16px]">
+        <li className="list-disc ms-[12px] md:ms-[24px]">
+          <span className="leading-[18px] md:leading-[24px]">Lãi suất cao nhất thị trường</span>
+        </li>
+      </ul>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] relative shrink-0 text-[11px] sm:text-[13px] md:text-[14px] ms-[12px] md:ms-[24px]">lên tới 8.6%/năm</p>
+    </div>
+  );
+}
+
+function Hl1() {
+  return (
+    <div className="[word-break:break-word] content-stretch flex flex-col gap-[2px] items-start not-italic relative shrink-0 text-[#01e42] w-full" data-name="HL 2">
+      <ul className="block font-['Inter:Semi_Bold',sans-serif] font-semibold leading-normal relative w-full text-[12px] sm:text-[14px] md:text-[16px]">
+        <li className="list-disc ms-[12px] md:ms-[24px]">
+          <span className="leading-[18px] md:leading-[24px]">Kỳ hạn linh hoạt từ</span>
+        </li>
+      </ul>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] relative shrink-0 text-[11px] sm:text-[13px] md:text-[14px] ms-[12px] md:ms-[24px]">1-60 tháng</p>
+    </div>
+  );
+}
+
+function Hl2() {
+  return (
+    <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="HL 3">
+      <ul className="[word-break:break-word] block font-['Inter:Semi_Bold',sans-serif] font-semibold leading-normal not-italic relative w-full text-[#01e42] text-[12px] sm:text-[14px] md:text-[16px]">
+        <li className="list-disc ms-[12px] md:ms-[24px]">
+          <span className="leading-[18px] md:leading-[24px]">Định kỳ gửi góp nhiều lần</span>
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+function Highlight() {
+  return (
+    <div className="content-stretch flex flex-col gap-[6px] md:gap-[12px] items-start justify-center relative shrink-0 w-full" data-name="Highlight">
+      <Hl />
+      <Hl1 />
+      <Hl2 />
+    </div>
+  );
+}
+
+function Shape() {
+  return (
+    <div className="absolute inset-[5.0%]" data-name="shape">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 21.5576 21.5576">
+        <g id="shape">
+          <path d={svgPaths.p3cd21f0} fill="var(--fill-0, #01E42)" id="Vector (Stroke)" />
+          <path d={svgPaths.p371db80} fill="var(--fill-0, #F4600C)" id="Vector_2 (Stroke)" />
+          <path d={svgPaths.p3c635a80} fill="var(--fill-0, #F4600C)" id="Vector_3 (Stroke)" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Button1() {
+  return (
+    <div className="content-stretch flex gap-[6px] md:gap-[12px] items-center relative shrink-0 w-full" data-name="Button">
+      <img src={imgBtnSoSanh} alt="So sánh" className="flex-1 min-w-0 object-contain cursor-pointer hover:scale-105 active:scale-95 transition-transform" />
+      <img src={imgBtnDangKy} alt="Đăng ký" className="flex-1 min-w-0 object-contain cursor-pointer hover:scale-105 active:scale-95 transition-transform" />
+    </div>
+  );
+}
+
+function Information_A() {
+  return (
+    <div className="relative w-full flex-1 flex flex-col" data-name="Information">
+      <div className="content-stretch flex flex-col gap-[10px] md:gap-[24px] items-start p-[8px] md:p-[12px] relative w-full flex-1">
+        <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[20px] md:leading-[24px] max-h-[48px] min-w-full not-italic overflow-hidden relative shrink-0 text-[#01e42] text-[14px] sm:text-[16px] md:text-[18px] text-ellipsis w-[min-content]">Tiết kiệm măng non</p>
+        <Highlight />
+        <Button1 />
+      </div>
+    </div>
+  );
+}
+
+function Thumbnail1() {
+  return (
+    <div className="aspect-[360/203] bg-[#f7f8f] overflow-clip relative shrink-0 w-full" data-name="Thumbnail">
+      <div className="absolute inset-0" data-name="placeholder">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPlaceholder1} />
+      </div>
+    </div>
+  );
+}
+
+function Hl3() {
+  return (
+    <div className="[word-break:break-word] content-stretch flex flex-col gap-[2px] items-start not-italic relative shrink-0 text-[#01e42] w-full" data-name="HL 1">
+      <ul className="block font-['Inter:Semi_Bold',sans-serif] font-semibold leading-normal relative w-full text-[12px] sm:text-[14px] md:text-[16px]">
+        <li className="list-disc ms-[12px] md:ms-[24px]">
+          <span className="leading-[18px] md:leading-[24px]">Lãi suất cao nhất thị trường</span>
+        </li>
+      </ul>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] relative shrink-0 text-[11px] sm:text-[13px] md:text-[14px] ms-[12px] md:ms-[24px]">lên tới 8.6%/năm</p>
+    </div>
+  );
+}
+
+function Hl4() {
+  return (
+    <div className="[word-break:break-word] content-stretch flex flex-col gap-[2px] items-start not-italic relative shrink-0 text-[#01e42] w-full" data-name="HL 2">
+      <ul className="block font-['Inter:Semi_Bold',sans-serif] font-semibold leading-normal relative w-full text-[12px] sm:text-[14px] md:text-[16px]">
+        <li className="list-disc ms-[12px] md:ms-[24px]">
+          <span className="leading-[18px] md:leading-[24px]">Kỳ hạn linh hoạt từ</span>
+        </li>
+      </ul>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] relative shrink-0 text-[11px] sm:text-[13px] md:text-[14px] ms-[12px] md:ms-[24px]">1-60 tháng</p>
+    </div>
+  );
+}
+
+function Hl5() {
+  return (
+    <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="HL 3">
+      <ul className="[word-break:break-word] block font-['Inter:Semi_Bold',sans-serif] font-semibold leading-normal not-italic relative w-full text-[#01e42] text-[12px] sm:text-[14px] md:text-[16px]">
+        <li className="list-disc ms-[12px] md:ms-[24px]">
+          <span className="leading-[18px] md:leading-[24px]">Định kỳ gửi góp nhiều lần</span>
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+function Highlight1() {
+  return (
+    <div className="content-stretch flex flex-col gap-[6px] md:gap-[12px] items-start justify-center relative shrink-0 w-full" data-name="Highlight">
+      <Hl3 />
+      <Hl4 />
+      <Hl5 />
+    </div>
+  );
+}
+
+function Shape1() {
+  return (
+    <div className="absolute inset-[5.0%]" data-name="shape">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 21.5576 21.5576">
+        <g id="shape">
+          <path d={svgPaths.p3cd21f0} fill="var(--fill-0, #01E42)" id="Vector (Stroke)" />
+          <path d={svgPaths.p371db80} fill="var(--fill-0, #F4600C)" id="Vector_2 (Stroke)" />
+          <path d={svgPaths.p3c635a80} fill="var(--fill-0, #F4600C)" id="Vector_3 (Stroke)" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Button2() {
+  return (
+    <div className="content-stretch flex gap-[6px] md:gap-[12px] items-center relative shrink-0 w-full" data-name="Button">
+      <img src={imgBtnSoSanh} alt="So sánh" className="flex-1 min-w-0 object-contain cursor-pointer hover:scale-105 active:scale-95 transition-transform" />
+      <img src={imgBtnDangKy} alt="Đăng ký" className="flex-1 min-w-0 object-contain cursor-pointer hover:scale-105 active:scale-95 transition-transform" />
+    </div>
+  );
+}
+
+function Information1() {
+  return (
+    <div className="relative w-full flex-1 flex flex-col" data-name="Information">
+      <div className="content-stretch flex flex-col gap-[10px] md:gap-[24px] items-start p-[8px] md:p-[12px] relative w-full flex-1">
+        <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[20px] md:leading-[24px] max-h-[48px] min-w-full not-italic overflow-hidden relative shrink-0 text-[#01e42] text-[14px] sm:text-[16px] md:text-[18px] text-ellipsis w-[min-content]">Định kỳ sinh lời</p>
+        <Highlight1 />
+        <Button2 />
+      </div>
+    </div>
+  );
+}
+
+function Thumbnail2() {
+  return (
+    <div className="aspect-[360/203] bg-[#f7f8f] overflow-clip relative shrink-0 w-full" data-name="Thumbnail">
+      <div className="absolute inset-0" data-name="placeholder">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPlaceholder2} />
+      </div>
+    </div>
+  );
+}
+
+function Hl6() {
+  return (
+    <div className="[word-break:break-word] content-stretch flex flex-col gap-[2px] items-start not-italic relative shrink-0 text-[#01e42] w-full" data-name="HL 1">
+      <ul className="block font-['Inter:Semi_Bold',sans-serif] font-semibold leading-normal relative w-full text-[12px] sm:text-[14px] md:text-[16px]">
+        <li className="list-disc ms-[12px] md:ms-[24px]">
+          <span className="leading-[18px] md:leading-[24px]">Lãi suất cao nhất thị trường</span>
+        </li>
+      </ul>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] relative shrink-0 text-[11px] sm:text-[13px] md:text-[14px] ms-[12px] md:ms-[24px]">lên tới 8.6%/năm</p>
+    </div>
+  );
+}
+
+function Hl7() {
+  return (
+    <div className="[word-break:break-word] content-stretch flex flex-col gap-[2px] items-start not-italic relative shrink-0 text-[#01e42] w-full" data-name="HL 2">
+      <ul className="block font-['Inter:Semi_Bold',sans-serif] font-semibold leading-normal relative w-full text-[12px] sm:text-[14px] md:text-[16px]">
+        <li className="list-disc ms-[12px] md:ms-[24px]">
+          <span className="leading-[18px] md:leading-[24px]">Kỳ hạn linh hoạt từ</span>
+        </li>
+      </ul>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] relative shrink-0 text-[11px] sm:text-[13px] md:text-[14px] ms-[12px] md:ms-[24px]">1-60 tháng</p>
+    </div>
+  );
+}
+
+function Hl8() {
+  return (
+    <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="HL 3">
+      <ul className="[word-break:break-word] block font-['Inter:Semi_Bold',sans-serif] font-semibold leading-normal not-italic relative w-full text-[#01e42] text-[12px] sm:text-[14px] md:text-[16px]">
+        <li className="list-disc ms-[12px] md:ms-[24px]">
+          <span className="leading-[18px] md:leading-[24px]">Định kỳ gửi góp nhiều lần</span>
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+function Highlight2() {
+  return (
+    <div className="content-stretch flex flex-col gap-[6px] md:gap-[12px] items-start justify-center relative shrink-0 w-full" data-name="Highlight">
+      <Hl6 />
+      <Hl7 />
+      <Hl8 />
+    </div>
+  );
+}
+
+function Shape2() {
+  return (
+    <div className="absolute inset-[5.0%]" data-name="shape">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 21.5576 21.5576">
+        <g id="shape">
+          <path d={svgPaths.p3cd21f0} fill="var(--fill-0, #01E42)" id="Vector (Stroke)" />
+          <path d={svgPaths.p371db80} fill="var(--fill-0, #F4600C)" id="Vector_2 (Stroke)" />
+          <path d={svgPaths.p3c635a80} fill="var(--fill-0, #F4600C)" id="Vector_3 (Stroke)" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Button3() {
+  return (
+    <div className="content-stretch flex gap-[6px] md:gap-[12px] items-center relative shrink-0 w-full" data-name="Button">
+      <img src={imgBtnSoSanh} alt="So sánh" className="flex-1 min-w-0 object-contain cursor-pointer hover:scale-105 active:scale-95 transition-transform" />
+      <img src={imgBtnDangKy} alt="Đăng ký" className="flex-1 min-w-0 object-contain cursor-pointer hover:scale-105 active:scale-95 transition-transform" />
+    </div>
+  );
+}
+
+function Information2() {
+  return (
+    <div className="relative w-full flex-1 flex flex-col" data-name="Information">
+      <div className="content-stretch flex flex-col gap-[10px] md:gap-[24px] items-start p-[8px] md:p-[12px] relative w-full flex-1">
+        <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[20px] md:leading-[24px] max-h-[48px] min-w-full not-italic overflow-hidden relative shrink-0 text-[#01e42] text-[14px] sm:text-[16px] md:text-[18px] text-ellipsis w-[min-content]">Tiết kiệm ngoại tệ</p>
+        <Highlight2 />
+        <Button3 />
+      </div>
+    </div>
+  );
+}
+
+function Thumbnail3() {
+  return (
+    <div className="aspect-[360/203] bg-[#f7f8f] overflow-clip relative shrink-0 w-full" data-name="Thumbnail">
+      <div className="absolute inset-0" data-name="placeholder">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPlaceholder3} />
+      </div>
+    </div>
+  );
+}
+
+function Hl() {
+  return (
+    <div className="[word-break:break-word] content-stretch flex flex-col gap-[2px] items-start not-italic relative shrink-0 text-[#01e42] w-full" data-name="HL 1">
+      <ul className="block font-['Inter:Semi_Bold',sans-serif] font-semibold leading-normal relative w-full text-[12px] sm:text-[14px] md:text-[16px]">
+        <li className="list-disc ms-[12px] md:ms-[24px]">
+          <span className="leading-[18px] md:leading-[24px]">Lãi suất cao nhất thị trường</span>
+        </li>
+      </ul>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] relative shrink-0 text-[11px] sm:text-[13px] md:text-[14px] ms-[12px] md:ms-[24px]">lên tới 8.6%/năm</p>
+    </div>
+  );
+}
+
+function Hl10() {
+  return (
+    <div className="[word-break:break-word] content-stretch flex flex-col gap-[2px] items-start not-italic relative shrink-0 text-[#01e42] w-full" data-name="HL 2">
+      <ul className="block font-['Inter:Semi_Bold',sans-serif] font-semibold leading-normal relative w-full text-[12px] sm:text-[14px] md:text-[16px]">
+        <li className="list-disc ms-[12px] md:ms-[24px]">
+          <span className="leading-[18px] md:leading-[24px]">Kỳ hạn linh hoạt từ</span>
+        </li>
+      </ul>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] relative shrink-0 text-[11px] sm:text-[13px] md:text-[14px] ms-[12px] md:ms-[24px]">1-60 tháng</p>
+    </div>
+  );
+}
+
+function Hl11() {
+  return (
+    <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="HL 3">
+      <ul className="[word-break:break-word] block font-['Inter:Semi_Bold',sans-serif] font-semibold leading-normal not-italic relative w-full text-[#01e42] text-[12px] sm:text-[14px] md:text-[16px]">
+        <li className="list-disc ms-[12px] md:ms-[24px]">
+          <span className="leading-[18px] md:leading-[24px]">Định kỳ gửi góp nhiều lần</span>
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+function Highlight3() {
+  return (
+    <div className="content-stretch flex flex-col gap-[6px] md:gap-[12px] items-start justify-center relative shrink-0 w-full" data-name="Highlight">
+      <Hl />
+      <Hl10 />
+      <Hl11 />
+    </div>
+  );
+}
+
+function Shape3() {
+  return (
+    <div className="absolute inset-[5.0%]" data-name="shape">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 21.5576 21.5576">
+        <g id="shape">
+          <path d={svgPaths.p3cd21f0} fill="var(--fill-0, #01E42)" id="Vector (Stroke)" />
+          <path d={svgPaths.p371db80} fill="var(--fill-0, #F4600C)" id="Vector_2 (Stroke)" />
+          <path d={svgPaths.p3c635a80} fill="var(--fill-0, #F4600C)" id="Vector_3 (Stroke)" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Button4() {
+  return (
+    <div className="content-stretch flex gap-[6px] md:gap-[12px] items-center relative shrink-0 w-full" data-name="Button">
+      <img src={imgBtnSoSanh} alt="So sánh" className="flex-1 min-w-0 object-contain cursor-pointer hover:scale-105 active:scale-95 transition-transform" />
+      <img src={imgBtnDangKy} alt="Đăng ký" className="flex-1 min-w-0 object-contain cursor-pointer hover:scale-105 active:scale-95 transition-transform" />
+    </div>
+  );
+}
+
+function Information3() {
+  return (
+    <div className="relative w-full flex-1 flex flex-col" data-name="Information">
+      <div className="content-stretch flex flex-col gap-[10px] md:gap-[24px] items-start p-[8px] md:p-[12px] relative w-full flex-1">
+        <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[20px] md:leading-[24px] max-h-[48px] min-w-full not-italic overflow-hidden relative shrink-0 text-[#01e42] text-[14px] sm:text-[16px] md:text-[18px] text-ellipsis w-[min-content]">Ong vàng</p>
+        <Highlight3 />
+        <Button4 />
+      </div>
+    </div>
+  );
+}
+
+function Thumbnail4() {
+  return (
+    <div className="aspect-[360/203] bg-[#f7f8f] overflow-clip relative shrink-0 w-full" data-name="Thumbnail">
+      <div className="absolute inset-0" data-name="placeholder">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[24px] size-full" src={imgPlaceholder4} />
+      </div>
+    </div>
+  );
+}
+
+function Hl12() {
+  return (
+    <div className="[word-break:break-word] content-stretch flex flex-col gap-[2px] items-start not-italic relative shrink-0 text-[#01e42] w-full" data-name="HL 1">
+      <ul className="block font-['Inter:Semi_Bold',sans-serif] font-semibold leading-normal relative w-full text-[12px] sm:text-[14px] md:text-[16px]">
+        <li className="list-disc ms-[12px] md:ms-[24px]">
+          <span className="leading-[18px] md:leading-[24px]">Lãi suất cao nhất thị trường</span>
+        </li>
+      </ul>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] relative shrink-0 text-[11px] sm:text-[13px] md:text-[14px] ms-[12px] md:ms-[24px]">lên tới 8.6%/năm</p>
+    </div>
+  );
+}
+
+function Hl13() {
+  return (
+    <div className="[word-break:break-word] content-stretch flex flex-col gap-[2px] items-start not-italic relative shrink-0 text-[#01e42] w-full" data-name="HL 2">
+      <ul className="block font-['Inter:Semi_Bold',sans-serif] font-semibold leading-normal relative w-full text-[12px] sm:text-[14px] md:text-[16px]">
+        <li className="list-disc ms-[12px] md:ms-[24px]">
+          <span className="leading-[18px] md:leading-[24px]">Kỳ hạn linh hoạt từ</span>
+        </li>
+      </ul>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] relative shrink-0 text-[11px] sm:text-[13px] md:text-[14px] ms-[12px] md:ms-[24px]">1-60 tháng</p>
+    </div>
+  );
+}
+
+function Hl14() {
+  return (
+    <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="HL 3">
+      <ul className="[word-break:break-word] block font-['Inter:Semi_Bold',sans-serif] font-semibold leading-normal not-italic relative w-full text-[#01e42] text-[12px] sm:text-[14px] md:text-[16px]">
+        <li className="list-disc ms-[12px] md:ms-[24px]">
+          <span className="leading-[18px] md:leading-[24px]">Định kỳ gửi góp nhiều lần</span>
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+function Highlight4() {
+  return (
+    <div className="content-stretch flex flex-col gap-[6px] md:gap-[12px] items-start justify-center relative shrink-0 w-full" data-name="Highlight">
+      <Hl12 />
+      <Hl13 />
+      <Hl14 />
+    </div>
+  );
+}
+
+function Shape4() {
+  return (
+    <div className="absolute inset-[5.0%]" data-name="shape">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 21.5576 21.5576">
+        <g id="shape">
+          <path d={svgPaths.p3cd21f0} fill="var(--fill-0, #01E42)" id="Vector (Stroke)" />
+          <path d={svgPaths.p371db80} fill="var(--fill-0, #F4600C)" id="Vector_2 (Stroke)" />
+          <path d={svgPaths.p3c635a80} fill="var(--fill-0, #F4600C)" id="Vector_3 (Stroke)" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Button5() {
+  return (
+    <div className="content-stretch flex gap-[6px] md:gap-[12px] items-center relative shrink-0 w-full" data-name="Button">
+      <img src={imgBtnSoSanh} alt="So sánh" className="flex-1 min-w-0 object-contain cursor-pointer hover:scale-105 active:scale-95 transition-transform" />
+      <img src={imgBtnDangKy} alt="Đăng ký" className="flex-1 min-w-0 object-contain cursor-pointer hover:scale-105 active:scale-95 transition-transform" />
+    </div>
+  );
+}
+
+function Information4() {
+  return (
+    <div className="relative w-full flex-1 flex flex-col" data-name="Information">
+      <div className="content-stretch flex flex-col gap-[10px] md:gap-[24px] items-start p-[8px] md:p-[12px] relative w-full flex-1">
+        <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[20px] md:leading-[24px] max-h-[48px] min-w-full not-italic overflow-hidden relative shrink-0 text-[#01e42] text-[14px] sm:text-[16px] md:text-[18px] text-ellipsis w-[min-content]">Trả lãi ngay</p>
+        <Highlight4 />
+        <Button5 />
+      </div>
+    </div>
+  );
+}
+
+function Thumbnail5() {
+  return (
+    <div className="aspect-[360/203] bg-[#f7f8f] overflow-clip relative shrink-0 w-full" data-name="Thumbnail">
+      <div className="absolute inset-0" data-name="placeholder">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPlaceholder5} />
+      </div>
+    </div>
+  );
+}
+
+function Hl15() {
+  return (
+    <div className="[word-break:break-word] content-stretch flex flex-col gap-[2px] items-start not-italic relative shrink-0 text-[#01e42] w-full" data-name="HL 1">
+      <ul className="block font-['Inter:Semi_Bold',sans-serif] font-semibold leading-normal relative w-full text-[12px] sm:text-[14px] md:text-[16px]">
+        <li className="list-disc ms-[12px] md:ms-[24px]">
+          <span className="leading-[18px] md:leading-[24px]">Lãi suất cao nhất thị trường</span>
+        </li>
+      </ul>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] relative shrink-0 text-[11px] sm:text-[13px] md:text-[14px] ms-[12px] md:ms-[24px]">lên tới 8.6%/năm</p>
+    </div>
+  );
+}
+
+function Hl16() {
+  return (
+    <div className="[word-break:break-word] content-stretch flex flex-col gap-[2px] items-start not-italic relative shrink-0 text-[#01e42] w-full" data-name="HL 2">
+      <ul className="block font-['Inter:Semi_Bold',sans-serif] font-semibold leading-normal relative w-full text-[12px] sm:text-[14px] md:text-[16px]">
+        <li className="list-disc ms-[12px] md:ms-[24px]">
+          <span className="leading-[18px] md:leading-[24px]">Kỳ hạn linh hoạt từ</span>
+        </li>
+      </ul>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] relative shrink-0 text-[11px] sm:text-[13px] md:text-[14px] ms-[12px] md:ms-[24px]">1-60 tháng</p>
+    </div>
+  );
+}
+
+function Hl17() {
+  return (
+    <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="HL 3">
+      <ul className="[word-break:break-word] block font-['Inter:Semi_Bold',sans-serif] font-semibold leading-normal not-italic relative w-full text-[#01e42] text-[12px] sm:text-[14px] md:text-[16px]">
+        <li className="list-disc ms-[12px] md:ms-[24px]">
+          <span className="leading-[18px] md:leading-[24px]">Định kỳ gửi góp nhiều lần</span>
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+function Highlight5() {
+  return (
+    <div className="content-stretch flex flex-col gap-[6px] md:gap-[12px] items-start justify-center relative shrink-0 w-full" data-name="Highlight">
+      <Hl15 />
+      <Hl16 />
+      <Hl17 />
+    </div>
+  );
+}
+
+function Shape5() {
+  return (
+    <div className="absolute inset-[5.0%]" data-name="shape">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 21.5576 21.5576">
+        <g id="shape">
+          <path d={svgPaths.p3cd21f0} fill="var(--fill-0, #01E42)" id="Vector (Stroke)" />
+          <path d={svgPaths.p371db80} fill="var(--fill-0, #F4600C)" id="Vector_2 (Stroke)" />
+          <path d={svgPaths.p3c635a80} fill="var(--fill-0, #F4600C)" id="Vector_3 (Stroke)" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Button6() {
+  return (
+    <div className="content-stretch flex gap-[6px] md:gap-[12px] items-center relative shrink-0 w-full" data-name="Button">
+      <img src={imgBtnSoSanh} alt="So sánh" className="flex-1 min-w-0 object-contain cursor-pointer hover:scale-105 active:scale-95 transition-transform" />
+      <img src={imgBtnDangKy} alt="Đăng ký" className="flex-1 min-w-0 object-contain cursor-pointer hover:scale-105 active:scale-95 transition-transform" />
+    </div>
+  );
+}
+
+function Information5() {
+  return (
+    <div className="relative w-full flex-1 flex flex-col" data-name="Information">
+      <div className="content-stretch flex flex-col gap-[10px] md:gap-[24px] items-start p-[8px] md:p-[12px] relative w-full flex-1">
+        <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[20px] md:leading-[24px] max-h-[48px] min-w-full not-italic overflow-hidden relative shrink-0 text-[#01e42] text-[14px] sm:text-[16px] md:text-[18px] text-ellipsis w-[min-content]">Rút gốc từng phần</p>
+        <Highlight5 />
+        <Button6 />
+      </div>
+    </div>
+  );
+}
+
+function Component6X() {
+  return (
+    <div className="gap-x-[12px] md:gap-x-[24px] gap-y-[12px] md:gap-y-[24px] grid grid-cols-2 md:grid-cols-3 w-full" data-name="6x6">
+      <div className="backdrop-blur-[12px] bg-white justify-self-stretch relative rounded-[12px] self-stretch shrink-0" data-name="item Product">
+        <div className="content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
+          <Thumbnail3 />
+          <Information3 />
+        </div>
+        <div aria-hidden="true" className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[12px] shadow-[0px_0px_4px_0px_rgba(2,41,57,0.15)]" />
+      </div>
+      <div className="backdrop-blur-[12px] bg-white justify-self-stretch relative rounded-[12px] self-stretch shrink-0" data-name="item Product">
+        <div className="content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
+          <Thumbnail4 />
+          <Information4 />
+        </div>
+        <div aria-hidden="true" className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[12px] shadow-[0px_0px_4px_0px_rgba(2,41,57,0.15)]" />
+      </div>
+      <div className="backdrop-blur-[12px] bg-white justify-self-stretch relative rounded-[12px] self-stretch shrink-0" data-name="item Product">
+        <div className="content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
+          <Thumbnail5 />
+          <Information5 />
+        </div>
+        <div aria-hidden="true" className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[12px] shadow-[0px_0px_4px_0px_rgba(2,41,57,0.15)]" />
+      </div>
+      <div className="backdrop-blur-[12px] bg-white justify-self-stretch relative rounded-[12px] self-stretch shrink-0" data-name="item Product">
+        <div className="content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
+          <Thumbnail_A />
+          <Information_A />
+        </div>
+        <div aria-hidden="true" className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[12px] shadow-[0px_0px_4px_0px_rgba(2,41,57,0.15)]" />
+      </div>
+      <div className="backdrop-blur-[12px] bg-white justify-self-stretch relative rounded-[12px] self-stretch shrink-0" data-name="item Product">
+        <div className="content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
+          <Thumbnail1 />
+          <Information1 />
+        </div>
+        <div aria-hidden="true" className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[12px] shadow-[0px_0px_4px_0px_rgba(2,41,57,0.15)]" />
+      </div>
+      <div className="backdrop-blur-[12px] bg-white justify-self-stretch relative rounded-[12px] self-stretch shrink-0" data-name="item Product">
+        <div className="content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
+          <Thumbnail2 />
+          <Information2 />
+        </div>
+        <div aria-hidden="true" className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[12px] shadow-[0px_0px_4px_0px_rgba(2,41,57,0.15)]" />
+      </div>
+    </div>
+  );
+}
+
+function Frame16() {
+  return (
+    <div className="content-stretch flex gap-[10px] items-center justify-center w-full">
+      <div className="flex-[1_0_0] h-0 min-w-px relative">
+        <div className="absolute inset-[-1px_0_0_0]">
+          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 582 1">
+            <line id="Line 7" stroke="var(--stroke-0, #FBBFE)" x2="582" y1="0.5" y2="0.5" />
+          </svg>
+        </div>
+      </div>
+      <div className="bg-white content-stretch flex gap-[8px] items-center justify-center min-w-[6px] px-[12px] py-[10px] relative rounded-[8px] shrink-0" data-name="Button">
+        <div aria-hidden="true" className="absolute border border-[#f4600c] border-solid inset-0 pointer-events-none rounded-[8px]" />
+        <div className="relative shrink-0 size-[24px]" data-name="down">
+          <div className="absolute flex inset-[33.86%_20.83%_33.85%_20.83%] items-center justify-center" style={{ containerType: "size" }}>
+            <div className="flex-none h-[100cqw] rotate-0 w-[100cqh]">
+              <div className="relative size-full" data-name="Union">
+                <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7.75 14">
+                  <path d={svgPaths.p5c5d580} fill="var(--fill-0, #01E42)" id="Union" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[24px] not-italic relative shrink-0 text-[#f4600c] text-[16px] text-center whitespace-nowrap">Xem thêm</p>
+      </div>
+      <div className="flex-[1_0_0] h-0 min-w-px relative">
+        <div className="absolute inset-[-1px_0_0_0]">
+          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 582 1">
+            <line id="Line 7" stroke="var(--stroke-0, #FBBFE)" x2="582" y1="0.5" y2="0.5" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function TitleContent1() {
+  return (
+    <div className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-start justify-center min-w-px relative" data-name="Title content">
+      <p className="[word-break:break-word] font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[36px] max-h-[36px] not-italic overflow-hidden relative shrink-0 text-[#01e42] text-[26px] text-ellipsis w-full">Ưu đãi</p>
+    </div>
+  );
+}
+
+function More1() {
+  return (
+    <div className="content-stretch flex gap-[12px] items-center justify-end relative shrink-0" data-name="More">
+      <div className="content-stretch flex gap-[8px] items-center justify-center min-w-[6px] px-[12px] py-[10px] relative rounded-[8px] shrink-0" data-name="icon 3">
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[24px] not-italic relative shrink-0 text-[#01e42] text-[16px] text-center whitespace-nowrap">Xem thêm</p>
+        <div className="relative shrink-0 size-[24px]" data-name="right">
+          <div className="absolute inset-[20.83%_33.85%]" data-name="Union">
+            <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7.75 14">
+              <path d={svgPaths.p5c5d580} fill="var(--fill-0, #01E42)" id="Union" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Thumbnail6() {
+  return (
+    <div className="aspect-[360/203] bg-[#f7f8f] overflow-clip relative shrink-0 w-full" data-name="Thumbnail">
+      <div className="absolute inset-0" data-name="placeholder">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPlaceholder6} />
+      </div>
+    </div>
+  );
+}
+
+function Information6() {
+  return (
+    <div className="relative w-full flex-1 flex flex-col" data-name="Information">
+      <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic p-[12px] relative size-full">
+        <p className="font-['Inter:Bold',sans-serif] font-bold leading-[24px] min-w-full relative shrink-0 text-[#01e42] text-[18px]">Tiêu đề bài viết (Tối đa 2 dòng)</p>
+        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] min-w-full relative shrink-0 text-[#505f7] text-[14px] whitespace-nowrap">31/12/2025</p>
+        <div className="font-['Inter:Regular',sans-serif] font-normal leading-[0] min-w-full relative text-[#505f7] text-[14px] whitespace-pre-wrap">
+          <p className="leading-[20px] mb-0">{`Tối đa 3 dòng L...`}</p>
+          </div>
+      </div>
+    </div>
+  );
+}
+
+function Thumbnail7() {
+  return (
+    <div className="aspect-[360/203] bg-[#f7f8f] overflow-clip relative shrink-0 w-full" data-name="Thumbnail">
+      <div className="absolute inset-0" data-name="placeholder">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPlaceholder6} />
+      </div>
+    </div>
+  );
+}
+
+function Information7() {
+  return (
+    <div className="relative w-full flex-1 flex flex-col" data-name="Information">
+      <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic p-[12px] relative size-full">
+        <p className="font-['Inter:Bold',sans-serif] font-bold leading-[24px] min-w-full relative shrink-0 text-[#01e42] text-[18px]">Tiêu đề bài viết (Tối đa 2 dòng)</p>
+        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] min-w-full relative shrink-0 text-[#505f7] text-[14px] whitespace-nowrap">31/12/2025</p>
+        <div className="font-['Inter:Regular',sans-serif] font-normal leading-[0] min-w-full relative text-[#505f7] text-[14px] whitespace-pre-wrap">
+          <p className="leading-[20px] mb-0">{`Tối đa 3 dòng L...`}</p>
+          </div>
+      </div>
+    </div>
+  );
+}
+
+function Thumbnail8() {
+  return (
+    <div className="aspect-[360/203] bg-[#f7f8f] overflow-clip relative shrink-0 w-full" data-name="Thumbnail">
+      <div className="absolute inset-0" data-name="placeholder">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPlaceholder6} />
+      </div>
+    </div>
+  );
+}
+
+function Information8() {
+  return (
+    <div className="relative w-full flex-1 flex flex-col" data-name="Information">
+      <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic p-[12px] relative size-full">
+        <p className="font-['Inter:Bold',sans-serif] font-bold leading-[24px] min-w-full relative shrink-0 text-[#01e42] text-[18px]">Tiêu đề bài viết (Tối đa 2 dòng)</p>
+        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] min-w-full relative shrink-0 text-[#505f7] text-[14px] whitespace-nowrap">31/12/2025</p>
+        <div className="font-['Inter:Regular',sans-serif] font-normal leading-[0] min-w-full relative text-[#505f7] text-[14px] whitespace-pre-wrap">
+          <p className="leading-[20px] mb-0">{`Tối đa 3 dòng L...`}</p>
+          </div>
+      </div>
+    </div>
+  );
+}
+
+function Component6X1() {
+  return (
+    <div className="gap-x-[24px] gap-y-[24px] grid grid-cols-[repeat(3,minmax(0,1fr))] grid-rows-[auto] relative shrink-0 w-full" data-name="6x6">
+      <div className="backdrop-blur-[12px] bg-white col-3 relative rounded-[12px] row-1 self-stretch shrink-0 flex flex-col" data-name="Item INFO">
+        <div className="content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
+          <Thumbnail6 />
+          <Information6 />
+        </div>
+        <div aria-hidden="true" className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[12px] shadow-[0px_0px_16px_0px_rgba(2,41,57,0.06)]" />
+      </div>
+      <div className="backdrop-blur-[12px] bg-white col-1 relative rounded-[12px] row-1 self-stretch shrink-0 flex flex-col" data-name="Item INFO">
+        <div className="content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
+          <Thumbnail7 />
+          <Information7 />
+        </div>
+        <div aria-hidden="true" className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[12px] shadow-[0px_0px_16px_0px_rgba(2,41,57,0.06)]" />
+      </div>
+      <div className="backdrop-blur-[12px] bg-white col-2 relative rounded-[12px] row-1 self-stretch shrink-0 flex flex-col" data-name="Item INFO">
+        <div className="content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
+          <Thumbnail8 />
+          <Information8 />
+        </div>
+        <div aria-hidden="true" className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[12px] shadow-[0px_0px_16px_0px_rgba(2,41,57,0.06)]" />
+      </div>
+    </div>
+  );
+}
+
+function Frame12() {
+  return (
+    <div className="content-stretch flex flex-col gap-[12px] items-start w-full">
+      <div className="content-stretch flex items-center justify-between pt-[48px] relative shrink-0 w-full" data-name="Title">
+        <TitleContent1 />
+        <More1 />
+      </div>
+      <Component6X1 />
+    </div>
+  );
+}
+
+function TitleContent2() {
+  return (
+    <div className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-start justify-center min-w-px relative" data-name="Title content">
+      <p className="[word-break:break-word] font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[36px] max-h-[36px] not-italic overflow-hidden relative shrink-0 text-[#01e42] text-[26px] text-ellipsis w-full">Tin tức</p>
+    </div>
+  );
+}
+
+function More2() {
+  return (
+    <div className="content-stretch flex gap-[12px] items-center justify-end relative shrink-0" data-name="More">
+      <div className="content-stretch flex gap-[8px] items-center justify-center min-w-[6px] px-[12px] py-[10px] relative rounded-[8px] shrink-0" data-name="icon 3">
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[24px] not-italic relative shrink-0 text-[#01e42] text-[16px] text-center whitespace-nowrap">Xem thêm</p>
+        <div className="relative shrink-0 size-[24px]" data-name="right">
+          <div className="absolute inset-[20.83%_33.85%]" data-name="Union">
+            <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7.75 14">
+              <path d={svgPaths.p5c5d580} fill="var(--fill-0, #01E42)" id="Union" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Filter() {
+  return (
+    <div className="content-stretch flex gap-[10px] items-start py-[4px] relative shrink-0 w-full" data-name="Filter">
+      <div className="bg-[#feefe7] content-stretch flex items-center justify-center px-[12px] py-[8px] relative rounded-[32px] shrink-0" data-name="CHIP">
+        <div aria-hidden="true" className="absolute border border-[#f8a06d] border-solid inset-0 pointer-events-none rounded-[32px]" />
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[24px] not-italic relative shrink-0 text-[#f4600c] text-[16px] text-center whitespace-nowrap">Lorem ipsum</p>
+      </div>
+      <div className="bg-white content-stretch flex items-center justify-center px-[12px] py-[8px] relative rounded-[32px] shrink-0" data-name="CHIP">
+        <div aria-hidden="true" className="absolute border border-[#dee5ef] border-solid inset-0 pointer-events-none rounded-[32px]" />
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[24px] not-italic relative shrink-0 text-[#01e42] text-[16px] text-center whitespace-nowrap">Lorem ipsum</p>
+      </div>
+      <div className="bg-white content-stretch flex items-center justify-center px-[12px] py-[8px] relative rounded-[32px] shrink-0" data-name="CHIP">
+        <div aria-hidden="true" className="absolute border border-[#dee5ef] border-solid inset-0 pointer-events-none rounded-[32px]" />
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[24px] not-italic relative shrink-0 text-[#01e42] text-[16px] text-center whitespace-nowrap">Lorem ipsum</p>
+      </div>
+      <div className="bg-white content-stretch flex items-center justify-center px-[12px] py-[8px] relative rounded-[32px] shrink-0" data-name="CHIP">
+        <div aria-hidden="true" className="absolute border border-[#dee5ef] border-solid inset-0 pointer-events-none rounded-[32px]" />
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[24px] not-italic relative shrink-0 text-[#01e42] text-[16px] text-center whitespace-nowrap">Lorem ipsum</p>
+      </div>
+      <div className="bg-white content-stretch flex items-center justify-center px-[12px] py-[8px] relative rounded-[32px] shrink-0" data-name="CHIP">
+        <div aria-hidden="true" className="absolute border border-[#dee5ef] border-solid inset-0 pointer-events-none rounded-[32px]" />
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[24px] not-italic relative shrink-0 text-[#01e42] text-[16px] text-center whitespace-nowrap">Lorem ipsum</p>
+      </div>
+    </div>
+  );
+}
+
+function Thumbnail() {
+  return (
+    <div className="aspect-[360/203] bg-[#f7f8f] overflow-clip relative shrink-0 w-full" data-name="Thumbnail">
+      <div className="absolute inset-0" data-name="placeholder">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[177.78%] left-0 max-w-none top-[-47.3%] w-full" src={imgPlaceholder7} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Information() {
+  return (
+    <div className="relative w-full flex-1 flex flex-col" data-name="Information">
+      <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic p-[12px] relative size-full">
+        <p className="font-['Inter:Bold',sans-serif] font-bold leading-[24px] min-w-full relative shrink-0 text-[#01e42] text-[18px]">Công bố kết quả</p>
+        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] min-w-full relative shrink-0 text-[#505f7] text-[14px] whitespace-nowrap">31/12/2025 12:32</p>
+        <div className="font-['Inter:Regular',sans-serif] font-normal leading-[0] min-w-full relative text-[#505f7] text-[14px] whitespace-pre-wrap">
+          <p className="leading-[20px] mb-0">{`Tối đa 3 dòng L...`}</p>
+          </div>
+      </div>
+    </div>
+  );
+}
+
+function Thumbnail10() {
+  return (
+    <div className="aspect-[360/203] bg-[#f7f8f] overflow-clip relative shrink-0 w-full" data-name="Thumbnail">
+      <div className="absolute inset-0" data-name="placeholder">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPlaceholder8} />
+      </div>
+    </div>
+  );
+}
+
+function Information10() {
+  return (
+    <div className="relative w-full flex-1 flex flex-col" data-name="Information">
+      <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic p-[12px] relative size-full">
+        <p className="font-['Inter:Bold',sans-serif] font-bold leading-[24px] min-w-full relative shrink-0 text-[#01e42] text-[18px]">Trao thưởng</p>
+        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] min-w-full relative shrink-0 text-[#505f7] text-[14px] whitespace-nowrap">31/12/2025 12:32</p>
+        <div className="font-['Inter:Regular',sans-serif] font-normal leading-[0] min-w-full relative text-[#505f7] text-[14px] whitespace-pre-wrap">
+          <p className="leading-[20px] mb-0">{`Tối đa 3 dòng L...`}</p>
+          </div>
+      </div>
+    </div>
+  );
+}
+
+function Thumbnail11() {
+  return (
+    <div className="aspect-[360/203] bg-[#f7f8f] overflow-clip relative shrink-0 w-full" data-name="Thumbnail">
+      <div className="absolute inset-0" data-name="placeholder">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPlaceholder9} />
+      </div>
+    </div>
+  );
+}
+
+function Information11() {
+  return (
+    <div className="relative w-full flex-1 flex flex-col" data-name="Information">
+      <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic p-[12px] relative size-full">
+        <p className="font-['Inter:Bold',sans-serif] font-bold leading-[24px] min-w-full relative shrink-0 text-[#01e42] text-[18px]">Tiêu đề bài viết (Tối đa 2 dòng)</p>
+        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] min-w-full relative shrink-0 text-[#505f7] text-[14px] whitespace-nowrap">31/12/2025 12:32</p>
+        <div className="font-['Inter:Regular',sans-serif] font-normal leading-[0] min-w-full relative text-[#505f7] text-[14px] whitespace-pre-wrap">
+          <p className="leading-[20px] mb-0">{`Tối đa 3 dòng L...`}</p>
+          </div>
+      </div>
+    </div>
+  );
+}
+
+function Component6X2() {
+  return (
+    <div className="gap-x-[24px] gap-y-[24px] grid grid-cols-[repeat(3,minmax(0,1fr))] grid-rows-[auto] relative shrink-0 w-full" data-name="6x6">
+      <div className="backdrop-blur-[12px] bg-white col-1 relative rounded-[12px] row-1 shrink-0 flex flex-col" data-name="Item INFO">
+        <div className="content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
+          <Thumbnail />
+          <Information />
+        </div>
+        <div aria-hidden="true" className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[12px] shadow-[0px_0px_16px_0px_rgba(2,41,57,0.06)]" />
+      </div>
+      <div className="backdrop-blur-[12px] bg-white col-2 relative rounded-[12px] row-1 shrink-0 flex flex-col" data-name="Item INFO">
+        <div className="content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
+          <Thumbnail10 />
+          <Information10 />
+        </div>
+        <div aria-hidden="true" className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[12px] shadow-[0px_0px_16px_0px_rgba(2,41,57,0.06)]" />
+      </div>
+      <div className="backdrop-blur-[12px] bg-white col-3 relative rounded-[12px] row-1 shrink-0 flex flex-col" data-name="Item INFO">
+        <div className="content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
+          <Thumbnail11 />
+          <Information11 />
+        </div>
+        <div aria-hidden="true" className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[12px] shadow-[0px_0px_16px_0px_rgba(2,41,57,0.06)]" />
+      </div>
+    </div>
+  );
+}
+
+function Frame14() {
+  return (
+    <div className="content-stretch flex flex-col gap-[12px] items-start w-full">
+      <div className="content-stretch flex items-center justify-between pt-[48px] relative shrink-0 w-full" data-name="Title">
+        <TitleContent2 />
+        <More2 />
+      </div>
+      <Filter />
+      <Component6X2 />
+    </div>
+  );
+}
+
+function TitleContent3() {
+  return (
+    <div className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-start justify-center min-w-px relative" data-name="Title content">
+      <p className="[word-break:break-word] font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[36px] max-h-[36px] not-italic overflow-hidden relative shrink-0 text-[#01e42] text-[26px] text-ellipsis w-full">Câu hỏi thường gặp</p>
+    </div>
+  );
+}
+
+function More3() {
+  return (
+    <div className="content-stretch flex gap-[12px] items-center justify-end relative shrink-0" data-name="More">
+      <div className="content-stretch flex gap-[8px] items-center justify-center min-w-[6px] px-[12px] py-[10px] relative rounded-[8px] shrink-0" data-name="icon 3">
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[24px] not-italic relative shrink-0 text-[#01e42] text-[16px] text-center whitespace-nowrap">Xem thêm</p>
+        <div className="relative shrink-0 size-[24px]" data-name="right">
+          <div className="absolute inset-[20.83%_33.85%]" data-name="Union">
+            <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7.75 14">
+              <path d={svgPaths.p5c5d580} fill="var(--fill-0, #01E42)" id="Union" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Title() {
+  return (
+    <div className="content-stretch flex gap-[4px] items-center justify-center relative shrink-0 w-full" data-name="Title">
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Medium',sans-serif] font-medium leading-[24px] min-w-px not-italic relative text-[#01e42] text-[18px] text-left">Tôi nhậnỗđược tin nhắn thông báo khi giao dịch thẻ tín dụng là hạn mức khả dụng tạm tính?</p>
+      <div className="relative shrink-0 size-[24px]" data-name="up">
+        <div className="absolute flex inset-[33.85%_20.83%_33.86%_20.83%] items-center justify-center" style={{ containerType: "size" }}>
+          <div className="-rotate-0 flex-none h-[100cqw] w-[100cqh]">
+            <div className="relative size-full" data-name="Union">
+              <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7.75 14">
+                <path d={svgPaths.p5c5d580} fill="var(--fill-0, #01E42)" id="Union" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Subtitle() {
+  return (
+    <div className="content-stretch flex gap-[12px] items-start relative shrink-0 w-full" data-name="Subtitle">
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[20px] min-w-px not-italic relative text-[#505f7] text-[14px] text-right">12/12/2024</p>
+    </div>
+  );
+}
+
+function Title1() {
+  return (
+    <div className="content-stretch flex gap-[4px] items-center justify-center relative shrink-0 w-full" data-name="Title">
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Medium',sans-serif] font-medium leading-[24px] min-w-px not-italic relative text-[#01e42] text-[18px]">Số tiền thanh toán tối thiểu của mỗi kỳ sao kê tôi phải thanh toán được tính như thế nào?</p>
+      <div className="flex items-center justify-center relative shrink-0">
+        <div className="flex-none rotate-180">
+          <div className="relative size-[24px]" data-name="up">
+            <div className="absolute flex inset-[33.85%_20.83%_33.86%_20.83%] items-center justify-center" style={{ containerType: "size" }}>
+              <div className="-rotate-0 flex-none h-[100cqw] w-[100cqh]">
+                <div className="relative size-full" data-name="Union">
+                  <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7.75 14">
+                    <path d={svgPaths.p5c5d580} fill="var(--fill-0, #01E42)" id="Union" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Title2() {
+  return (
+    <div className="content-stretch flex gap-[4px] items-center justify-center relative shrink-0 w-full" data-name="Title">
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Medium',sans-serif] font-medium leading-[24px] min-w-px not-italic relative text-[#01e42] text-[18px]">Tôi không nhậnỗđược OTP để liên kết thẻ, tôi phải làm sao?</p>
+      <div className="flex items-center justify-center relative shrink-0">
+        <div className="flex-none rotate-180">
+          <div className="relative size-[24px]" data-name="up">
+            <div className="absolute flex inset-[33.85%_20.83%_33.86%_20.83%] items-center justify-center" style={{ containerType: "size" }}>
+              <div className="-rotate-0 flex-none h-[100cqw] w-[100cqh]">
+                <div className="relative size-full" data-name="Union">
+                  <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7.75 14">
+                    <path d={svgPaths.p5c5d580} fill="var(--fill-0, #01E42)" id="Union" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Title3() {
+  return (
+    <div className="content-stretch flex gap-[4px] items-center justify-center relative shrink-0 w-full" data-name="Title">
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Medium',sans-serif] font-medium leading-[24px] min-w-px not-italic relative text-[#01e42] text-[18px]">Lorem ipsum</p>
+      <div className="flex items-center justify-center relative shrink-0">
+        <div className="flex-none rotate-180">
+          <div className="relative size-[24px]" data-name="up">
+            <div className="absolute flex inset-[33.85%_20.83%_33.86%_20.83%] items-center justify-center" style={{ containerType: "size" }}>
+              <div className="-rotate-0 flex-none h-[100cqw] w-[100cqh]">
+                <div className="relative size-full" data-name="Union">
+                  <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7.75 14">
+                    <path d={svgPaths.p5c5d580} fill="var(--fill-0, #01E42)" id="Union" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame10() {
+  return (
+    <div className="content-stretch flex flex-col gap-[12px] items-center relative w-full">
+      <button className="bg-white cursor-pointer relative rounded-[12px] shrink-0 w-full" data-name="Question">
+        <div className="content-stretch flex flex-col gap-[24px] items-start p-[12px] relative size-full">
+          <Title />
+          <Subtitle />
+          <div className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[0] min-w-full not-italic relative shrink-0 text-[#01e42] text-[14px] text-left w-[min-content]">
+            <p className="leading-[20px] mb-0">Lorem ipsum dolor sit amet consectetur. Ornare imperdiet diam arcu dictum pellentesque consequat ac etiam sed. Nunc pellentesque interdum ipsum etiam convallis in aenean at. Cursus diam dolor eleifend id neque in quam ut. Ut malesuada consectetur et tempor. Diam aliquet vel magna elementum vivamus nulla. Accumsan elementum netus vel tellus ut. Facilisis tristique velit nunc at.</p>
+            <p className="leading-[20px]">Purus imperdiet lorem lectus velit. Faucibus risus mauris malesuada massa commodo. Sapien duis facilisis fames urna quisque lobortis habitant sed. Ultrices en im nunc mattis donec mauris. A euismod eu a nec. Mauris arcu integer leo dapibus lectus fringilla dapibus. Rhoncus dolor sollicitudin nec quam est. Dictum lorem tincidunt non iaculis aliquam non sollicitudin sit.</p>
+          </div>
+        </div>
+      </button>
+      <div className="bg-white relative rounded-[12px] shrink-0 w-full" data-name="Question">
+        <div className="content-stretch flex flex-col gap-[12px] items-start p-[12px] relative size-full">
+          <Title1 />
+        </div>
+      </div>
+      <div className="bg-white relative rounded-[12px] shrink-0 w-full" data-name="Question">
+        <div className="content-stretch flex flex-col gap-[12px] items-start p-[12px] relative size-full">
+          <Title2 />
+        </div>
+      </div>
+      <div className="bg-white relative rounded-[12px] shrink-0 w-full" data-name="Question">
+        <div className="content-stretch flex flex-col gap-[12px] items-start p-[12px] relative size-full">
+          <Title3 />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame15() {
+  return (
+    <div className="content-stretch flex flex-col gap-[12px] items-center w-full">
+      <div className="content-stretch flex items-center justify-between pt-[48px] relative shrink-0 w-full" data-name="Title">
+        <TitleContent3 />
+        <More3 />
+      </div>
+      <Frame10 />
+    </div>
+  );
+}
+
+export default function Component1MsbHomeBanner() {
+  return (
+    <div className="bg-[#f7f8f] flex flex-col items-center min-h-screen w-full" data-name="1. MSB Home/Banner">
+      {/* Header - sticky trên cùng */}
+
+      {/* Banner */}
+      <div className="relative w-full">
+        <Banner />
+      </div>
+
+      {/* Nội dung chính */}
+      <div className="w-full px-[16px] sm:px-[24px] md:px-[40px] lg:px-[61px] flex flex-col gap-[24px]">
+        {/* Breadcrumb */}
+        <Frame11 />
+
+        {/* Section: Tiết kiệm */}
+        <div className="content-stretch flex items-center justify-between pt-[48px] w-full" data-name="Title">
+          <TitleContent />
+          <More />
+        </div>
+        <Component6X />
+        <Frame16 />
+
+        {/* Section: Ưu đãi */}
+        <Frame12 />
+
+        {/* Section: Tin tức */}
+        <Frame14 />
+
+        {/* Section: Xem thêm */}
+        <Frame13 />
+
+        {/* Section: Câu hỏi thường gặp */}
+        <Frame15 />
+      </div>
+
+      {/* Footer */}
+      <Footer />
+    
+      <div className="fixed top-0 left-0 right-0 pointer-events-none z-[9999]">
+        <Header />
+      </div>
+    </div>
+  );
+}

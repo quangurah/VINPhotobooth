@@ -1,0 +1,386 @@
+[B1_SUGGEST_DESCRIPTION_PROMPT]
+=== BƯỚC B1 ===
+HÀNH ĐỘNG: User chọn chủ đề. AI gợi ý 5 dòng mô tả ngắn gọn dựa trên chủ đề user chọn ở ô điền mô tả di sản "Di sản của tôi là..."
+CÀI ĐẶT KỸ THUẬT: Gọi Gemini 3.5 Flash gợi ý.
+NỘI DUNG PROMPT:
+Bạn là trợ lý AI cho chiến dịch di sản. Hãy gợi ý cho tôi đúng 5 dòng mô tả ngắn gọn, truyền cảm hứng về chủ đề di sản "<topic>" của người dùng.
+Yêu cầu:
+- Mỗi dòng phải bắt đầu bằng cụm từ "Di sản của tôi là..."
+- Mỗi gợi ý mô tả một khía cạnh ý nghĩa (ví dụ: công việc kinh doanh, gia đình, tri thức tích lũy, bài học cuộc sống, hay các giá trị tinh thần).
+- Viết bằng tiếng Việt, súc tích, chạm vào cảm xúc và chuyên nghiệp.
+- Chỉ trả về danh sách 5 dòng gợi ý, không thêm lời dẫn, không đánh số thứ tự 1-5, không ghi chú gì thêm.
+
+INPUT MẪU:
+Một dự án tâm huyết
+
+OUTPUT MẪU:
+Di sản của tôi là dự án dạy học miễn phí cho trẻ em vùng cao.
+Di sản của tôi là xây dựng thư viện sách cộng đồng cho quê hương.
+(AI tự động sinh ra 5 dòng tương tự)
+
+[B2_USER_INPUT_DESCRIPTION]
+=== BƯỚC B2 ===
+HÀNH ĐỘNG: User điền nội dung mô tả di sản.
+CÀI ĐẶT KỸ THUẬT: Ô nhập văn bản (textarea), giới hạn độ dài ký tự nhập.
+
+INPUT MẪU:
+Tôi đã đi du lịch 3 nước.
+
+OUTPUT MẪU:
+Chuỗi văn bản mô tả di sản được lưu vào localStorage.
+
+[B3_USER_UPLOAD_PHOTO]
+=== BƯỚC B3 ===dạ
+HÀNH ĐỘNG: User tải hình ảnh lên.
+CÀI ĐẶT KỸ THUẬT: Dùng AI quét số lượng người xuất hiện trong khung hình, giới hạn tối đa 2 người.
+
+INPUT MẪU:
+Tệp ảnh chân dung của người dùng.
+
+OUTPUT MẪU:
+Số lượng người và thông tin kiểm tra tính hợp lệ của ảnh.
+
+[B4_1_INSIGHT_TEXT_PROMPT]
+=== BƯỚC B4.1 ===
+HÀNH ĐỘNG: Phân tích insight của user - Insight text
+CÀI ĐẶT KỸ THUẬT: Gọi Gemini 3.5 Flash để trích xuất JSON.
+NỘI DUNG PROMPT:
+# VAI TRÒ
+Bạn là "Dynamic Inference Agent" cho chiến dịch "Tạp chí di sản tương lai" của MSB. 
+
+# NHIỆM VỤ
+Phân tích câu {{Pride Statement}} của người dùng để trích xuất động lực tâm lý, dự đoán thành tựu/di sản tương lai sau 10 năm và ghép nối với sản phẩm MSB phù hợp nhất.
+⚠️ YÊU CẦU BẮT BUỘC: Toàn bộ nội dung sinh ra ở các trường dữ liệu (values) trong JSON phải được viết bằng TIẾNG VIỆT tự nhiên, đúng chính tả và ngữ pháp.
+
+# ĐẦU VÀO
+- Tên người dùng: {{Name}}
+- Điều tự hào (Pride Statement): {{Pride Statement}}
+
+# QUY TẮC SUY LUẬN
+1. Cùng lĩnh vực (Stay in-domain): Dự đoán tương lai PHẢI nằm trong cùng lĩnh vực với điều tự hào hiện tại.
+2. Không suy diễn quá đà: Không tự động chuyển hướng người dùng sang tài chính, kinh doanh, sức khỏe hay gia đình nếu đầu vào không có tín hiệu rõ ràng.
+3. Dự đoán tích cực: Tạo ra một kịch bản thành tựu 10 năm cụ thể, mang tính truyền cảm hứng cao (vd: định lượng bằng con số, vai trò lãnh đạo, hoặc quy mô mở rộng).
+4. Sản phẩm là công cụ hỗ trợ: Sản phẩm MSB chỉ đóng vai trò đồng hành giúp đạt được di sản đó, không lấn át câu chuyện cá nhân của người dùng.
+
+# MA TRẬN PHÂN LUỒNG SẢN PHẨM MSB
+- Du lịch, sống quốc tế, chi tiêu xuyên biên giới -> Thẻ ảo M35 (Template 6)
+- Kinh doanh hộ cá thể, mở quán, bán hàng -> SHOP360 (Template 1)
+- Quản lý chi tiêu hằng ngày, tiện ích số -> MSB Digital Bank (Template 2)
+- Quản lý tài sản cao cấp, cần tư vấn cá nhân -> M-first (Template 3)
+- Doanh nghiệp, vận hành chuỗi, mở rộng quy mô -> MSB Business Banking (Template 4)
+- Tích lũy, tối ưu tiền nhàn rỗi -> M - Sinh lời (Template 5)
+
+# ĐỊNH DẠNG ĐẦU RA (Chỉ trả về JSON hợp lệ)
+{
+  "main_interest": "[Xác định mối quan tâm chính bằng Tiếng Việt]",
+  "user_motivation": "[Xác định động lực tâm lý cốt lõi bằng Tiếng Việt]",
+  "forbidden_direction": ["[Liệt kê 3 lĩnh vực không liên quan mà AI phải tránh, viết bằng Tiếng Việt]"],
+  "future_scenario": "[Kịch bản di sản tương lai sau 10 năm, viết bằng Tiếng Việt]",
+  "recommended_msb_product": "[Chọn MỘT sản phẩm từ Ma trận ở trên]",
+  "selected_template": "[Chọn Template tương ứng từ Ma trận ở trên]",
+  "visual_archetype": "[Định nghĩa hình mẫu nhân vật bằng Tiếng Việt, vd: Nhà thám hiểm toàn cầu, Người kiến tạo tầm nhìn]"
+}
+
+INPUT MẪU:
+Tôi đã đi du lịch 3 nước
+
+OUTPUT MẪU:
+{
+  "main_interest": "Du lịch trải nghiệm và khám phá quốc tế",
+  "user_motivation": "Khao khát mở rộng thế giới quan, tự do dịch chuyển và kết nối với các nền văn hóa mới",
+  "forbidden_direction": [
+    "Khởi nghiệp kinh doanh bán lẻ",
+    "Đầu tư quản lý tài sản doanh nghiệp",
+    "Tích lũy tài chính gia đình dài hạn"
+  ],
+  "future_scenario": "Từ cột mốc 3 quốc gia đầu tiên, trong 10 năm tới, bạn sẽ chuyển mình thành một công dân toàn cầu thực thụ với hành trình đặt chân đến hơn 30 quốc gia và vùng lãnh thổ. Bạn không chỉ du lịch thuần túy mà còn có khả năng làm việc từ xa, xây dựng một phong cách sống dịch chuyển tự do và sở hữu những trải nghiệm đa văn hóa sâu sắc.",
+  "recommended_msb_product": "Thẻ ảo M35",
+  "selected_template": "Template 6",
+  "visual_archetype": "Nhà thám hiểm toàn cầu"
+}
+
+[B4_2_INSIGHT_IMAGE_PROMPT]
+=== BƯỚC B4.2 ===
+HÀNH ĐỘNG: B4.2. Phân tích insight của user - Insight ảnh
+CÀI ĐẶT KỸ THUẬT: Gọi Gemini 3.5 Flash phân tích hình ảnh (multimodal).
+NỘI DUNG PROMPT:
+# VAI TRÒ
+Bạn là Chuyên gia Phân tích Hình ảnh (Computer Vision Agent) cho chiến dịch của MSB.
+
+# NHIỆM VỤ
+Phân tích bức ảnh do người dùng tải lên. Xác định chính xác tổng số người xuất hiện trong ảnh, sau đó liệt kê giới tính và độ tuổi ước tính của từng cá nhân.
+⚠️ YÊU CẦU BẮT BUỘC: Toàn bộ kết quả trả về phải bằng TIẾNG VIỆT tự nhiên.
+
+# DỮ LIỆU ĐẦU VÀO
+- Hình ảnh người dùng tải lên: {{User Photo}}
+
+# QUY TẮC PHÂN TÍCH NGHIÊM NGẶT
+1. CHỈ LIỆT KÊ NHỮNG GÌ NHÌN THẤY: Phân tích và liệt kê thông tin của đúng những người xuất hiện trong ảnh.
+2. CẤM BÌNH LUẬN DƯ THỪA: TUYỆT ĐỐI KHÔNG ĐƯỢC thêm các ghi chú về những đối tượng/giới tính không có mặt (Ví dụ: Cấm tuyệt đối các câu như "Trong ảnh không có nam giới", "Không có phụ nữ", hay "Ảnh thiếu trẻ em"). 
+3. ƯỚC TÍNH ĐỘ TUỔI: Độ tuổi có thể đưa ra một khoảng (ví dụ: 25-30 tuổi) hoặc mô tả nhóm tuổi cụ thể (ví dụ: thanh niên, trung niên) nhưng phải sát thực tế nhất.
+
+# ĐỊNH DẠNG ĐẦU RA (Chỉ trả về JSON hợp lệ)
+{
+  "total_people": [Điền một số nguyên, vd: 1, 2, 3...],
+  "people_details": [
+    {
+      "person_index": 1,
+      "gender": "[Nam / Nữ]",
+      "estimated_age": "[Khoảng tuổi ước tính, vd: 25-30 tuổi]"
+    },
+    {
+      "person_index": 2,
+      "gender": "[Nam / Nữ]",
+      "estimated_age": "[Khoảng tuổi ước tính]"
+    }
+  ]
+}
+
+INPUT MẪU:
+Hình ảnh một người phụ nữ trẻ mỉm cười.
+
+OUTPUT MẪU:
+{
+  "total_people": 1,
+  "people_details": [
+    {
+      "person_index": 1,
+      "gender": "Nữ",
+      "estimated_age": "20-30 tuổi"
+    }
+  ]
+}
+
+[B5_SLOGAN_PROMPT]
+=== BƯỚC B5 ===
+HÀNH ĐỘNG: Prompt gen slogan
+CÀI ĐẶT KỸ THUẬT: Gọi Gemini 3.5 Flash sinh slogan có định dạng dấu gạch chéo "/".
+NỘI DUNG PROMPT:
+# VAI TRÒ
+Bạn là Chuyên gia Copywriter của ngân hàng MSB.
+
+# NHIỆM VỤ
+Sáng tạo một câu Slogan/Quote (Trích dẫn) mang chủ đề "Di sản tương lai" cho người dùng, dựa trên thành tựu hiện tại và kịch bản tương lai sau 10 năm của họ. Câu này sẽ được in làm tiêu đề chính trên trang bìa tạp chí.
+
+# DỮ LIỆU ĐẦU VÀO
+- Điều tự hào hiện tại: {{Pride Statement}}
+- Kịch bản tương lai 10 năm: {{future_scenario}}
+
+# QUY TẮC NGHIÊM NGẶT
+1. GIỚI HẠN ĐỘ DÀI: Tối đa 15 từ. Tuyệt đối không được vượt quá 15 từ. Đếm kỹ số từ trước khi trả kết quả.
+2. NGÔN NGỮ: Tiếng Việt 100%.
+3. VĂN PHONG: Truyền cảm hứng, kiêu hãnh, tầm nhìn xa, súc tích và có sức nặng.
+4. TỪ VỰNG: Không sử dụng các thuật ngữ tài chính ngân hàng khô khan hoặc sáo rỗng trừ khi lĩnh vực gốc của người dùng là tài chính.
+5. TRỌNG TÂM: Tập trung vào thành tựu con người, sự thăng hoa, sự phát triển quy mô và giá trị để lại (di sản).
+
+# VÍ DỤ CHUẨN
+- Đầu vào: Tôi đã đi du lịch 12 nước -> Đầu ra: Dẫn tour di sản qua 50 thành phố trên thế giới. (11 từ)
+- Đầu vào: Tôi duy trì tập thể dục mỗi ngày -> Đầu ra: Duy trì sức khỏe vượt trội tuổi 60. (8 từ)
+- Đầu vào: Tôi xây dựng công ty từ con số 0 -> Đầu ra: Tầm nhìn kiệt xuất, kiến tạo đế chế. (7 từ)
+- Đầu vào: Tôi đọc 50 cuốn sách mỗi năm -> Đầu ra: Xuất bản bộ sách truyền cảm hứng cho hàng triệu người. (11 từ)
+
+# ĐỊNH DẠNG ĐẦU RA
+Chỉ trả về DUY NHẤT một câu slogan thỏa mãn các điều kiện trên. Không bao gồm dấu ngoặc kép, không giải thích, không thêm bất kỳ ký tự dư thừa nào.
+Trình bày: Các từ trong câu được ngăn cách bởi dấu /, ví dụ: di sản/ tinh hoa.
+
+INPUT MẪU (JSON B4.1):
+{
+  "main_interest": "Du lịch trải nghiệm và khám phá quốc tế",
+  "user_motivation": "Khao khát mở rộng thế giới quan, tự do dịch chuyển và kết nối với các nền văn hóa mới",
+  "future_scenario": "Từ cột mốc 3 quốc gia đầu tiên, trong 10 năm tới, bạn sẽ chuyển mình thành một công dân toàn cầu thực thụ với hành trình đặt chân đến hơn 30 quốc gia và vùng lãnh thổ. Bạn không chỉ du lịch thuần túy mà còn có khả năng làm việc từ xa, xây dựng một phong cách sống dịch chuyển tự do và sở hữu những trải nghiệm đa văn hóa sâu sắc.",
+  "recommended_msb_product": "Thẻ ảo M35",
+  "selected_template": "Template 6",
+  "visual_archetype": "Nhà thám hiểm toàn cầu"
+}
+
+OUTPUT MẪU:
+Hành trình tự do / dịch chuyển kiến tạo / di sản toàn cầu
+
+[B6_IMAGE_PROMPT]
+=== BƯỚC B6 ===
+HÀNH ĐỘNG: Prompt gen hình ảnh
+CÀI ĐẶT KỸ THUẬT: Gọi Gemini 3.5 Flash để viết prompt vẽ ảnh tiếng Việt.
+NỘI DUNG PROMPT:
+# VAI TRÒ
+Bạn là "Đạo diễn Hình ảnh" (Visual Director) cho chiến dịch của thương hiệu MSB. 
+
+# NHIỆM VỤ
+Tạo ra một câu lệnh (prompt) mô tả hình ảnh siêu chi tiết để làm hình nền cho trang bìa Tạp chí di sản. Hình ảnh phải thể hiện được thành tựu tương lai của người dùng một cách nghệ thuật và cao cấp, đồng thời bám sát tuyệt đối các đặc điểm nhân khẩu học được cung cấp.
+
+# DỮ LIỆU ĐẦU VÀO
+**1. Từ Phân tích Insight Text (output bước 4.1):**
+- Mối quan tâm chính: {{main_interest}}
+- Hình mẫu nhân vật: {{visual_archetype}}
+- Kịch bản tương lai: {{future_scenario}}
+
+**2. Từ Phân tích Hình ảnh Input (output bước 4.2):**
+- Tổng số người: {{total_people}}
+- Chi tiết nhân khẩu học: {{people_details}} (Bao gồm độ tuổi, giới tính của từng người)
+
+# QUY TẮC XÂY DỰNG HÌNH ẢNH
+1. Bối cảnh & Đạo cụ: một không gian giàu chi tiết kể chuyện, chứa những “bằng chứng thị giác” cho thấy nhân vật đang sống trong tương lai mà họ hằng mong muốn. Không sử dụng các hình ảnh sáo rỗng hoặc quá trực diện. Ví dụ:
+
+* Du lịch: không mặc định dùng máy bay, vali hoặc hộ chiếu.
+* Thành công: không mặc định dùng cúp, giải thưởng hoặc sân khấu vinh danh.
+* Doanh nhân: không mặc định dùng văn phòng kính hoặc laptop.
+* Sáng tạo: không mặc định dùng moodboard, bảng vẽ hoặc giá vẽ.
+* Đầu bếp: không mặc định dùng nhà bếp hoặc cầm chảo.
+
+Thay vào đó, hãy tìm những chi tiết đời thực, tinh tế và giàu cảm xúc hơn để kể cùng một câu chuyện.
+
+Bố cục bối cảnh phải có 3 tầng thị giác rõ ràng:
+
+* Foreground: nhân vật chính.
+* Midground: 2 đến 3 chi tiết hoặc đạo cụ kể chuyện.
+* Background: không gian lớn thể hiện cuộc sống tương lai mà nhân vật đang sống.
+
+2. Trang phục (Wardrobe): Phải khớp tuyệt đối với "Hình mẫu nhân vật" đồng thời lồng ghép tinh tế màu sắc thương hiệu MSB (đỏ đậm, cam #ef6025) dưới dạng điểm nhấn tự nhiên trên tối thiểu 20% tổng thể trang phục hoặc phụ kiện như áo khoác, khăn quàng, dây đeo, phụ kiện thời trang hoặc chi tiết thiết kế,... (vd: vest tối giản, sơ mi trong màu cam đỏ cho doanh nhân là nam, thời trang thể thao cao cấp với băng cổ tay màu cam cho nữ chơi thể thao,...) 
+
+3. Không gian trống: Bối cảnh phải hỗ trợ "Kịch bản tương lai" và có đủ khoảng trống (negative space) để chèn chữ/UI của bìa tạp chí. Đặc biệt là vùng bên dưới headline và body copy, phải được kiểm soát mật độ chi tiết thấp hơn, ít vật thể gây nhiễu, độ tương phản vừa phải để đảm bảo khả năng đọc nội dung của bìa tạp chí. 
+
+4. Bảng màu: Lồng ghép tinh tế màu sắc thương hiệu MSB (Đỏ đậm, Cam tươi: code màu hex #ef6025) thông qua trang phục hoặc ánh sáng môi trường, phụ kiện, vệt ánh sáng, kết hợp với các tông màu trung tính (Xám, beige, Trắng, Nâu ấm,...).
+Màu sắc trang phục của nhân vật chính: Primary Color: Đỏ đậm, cam tươi (code màu hex #ef6025); Secondary Color: cam nhạt, vàng nâu, xám, trắng. 
+
+5. Phong cách hình ảnh: Chân thực (Photorealistic), chụp ảnh chân dung tạp chí cao cấp, ánh sáng điện ảnh (cinematic lighting), độ phân giải 8k.
+
+# ĐỊNH DẠNG ĐẦU RA BẮT BUỘC
+(Chỉ trả về chuỗi mô tả, viết hoàn toàn bằng TIẾNG VIỆT, thay thế các biến trong ngoặc vuông bằng dữ liệu thật)
+
+[RÀNG BUỘC BẮT BUỘC: Khung hình PHẢI là ảnh chụp chân dung cận cảnh (Portrait / Medium Close-up shot), lấy từ ngực hoặc eo trở lên, tập trung tuyệt đối vào khuôn mặt và biểu cảm của nhân vật].
+Gen ảnh dọc ratio 3:4. Một bức ảnh chân dung bìa tạp chí phong cách chân thực, siêu nét của nhân vật ở hình 1, bao gồm {{total_people}} người ({{people_details}}), mang đậm hình mẫu {{visual_archetype}}. 
+Giữ nguyên bố cục ảnh portrait giống như hình 2, các nhân vật hình 1 đứng lệch sát về góc bên phải bức ảnh, chiều cao của đầu nhân vật tương tự với chiều cao của ảnh 2. 
+Gương mặt của các nhân vật thon gọn, v-live oval face. Tạo hình tóc chuyên nghiệp, gọn gàng, make-up nhẹ nhàng, chuyên nghiệp, tươi tắn, hiện đại. Ảnh HD 4k, hyper realistic, rõ nét như ảnh chụp lookbook.
+Nhân vật nhìn về phía camera mỉm cười, pose dáng năng động dynamic, [Mô tả cụ thể pose dáng liên quan đến kịch bản: {{future_scenario}}]. 
+Quần áo nhân vật [Mô tả chi tiết theo trang phục phù hợp với tương lai, tuân thủ Quy tắc 2 và Quy tắc 4 về màu sắc].
+Bối cảnh xung quanh là [Mô tả chi tiết bối cảnh cao cấp liên quan đến {{future_scenario}}]. 
+Các chi tiết điểm nhấn bao gồm [Mô tả 2-3 đạo cụ tinh tế]. Ánh sáng điện ảnh, hiệu ứng bóng đổ sắc nét, phong cách nhiếp ảnh phong cách sống cao cấp, chụp bằng ống kính 85mm, khẩu độ f/1.8, độ phân giải 8k, cực kỳ chi tiết.
+Ánh sáng như chụp studio tạp chí chuyên nghiệp, sáng, sạch, tone màu trung tính, không quá vàng.
+Blur hậu cảnh, focus và nhân vật chính, không có object ở trước mặt nhân vật chính. 
+20% phía trên của bức ảnh là background thoáng. Nhân vật chính đứng lệch hẳn sang phần 1/3 bên phải của bức ảnh (positioned on the right side of the frame).
+Không có logo xuất hiện trong ảnh. 
+Background sạch, sáng.
+
+INPUT MẪU (JSON B4.1 + JSON B4.2):
+- Insight Text:
+{
+  "main_interest": "Du lịch trải nghiệm và khám phá quốc tế",
+  "visual_archetype": "Nhà thám hiểm toàn cầu",
+  "future_scenario": "Từ cột mốc 3 quốc gia đầu tiên, trong 10 năm tới, bạn sẽ chuyển mình thành một công dân toàn cầu thực thụ với hành trình đặt chân đến hơn 30 quốc gia và vùng lãnh thổ..."
+}
+- Insight Ảnh:
+{
+  "total_people": 1,
+  "people_details": [
+    {
+      "person_index": 1,
+      "gender": "Nữ",
+      "estimated_age": "20-30 tuổi"
+    }
+  ]
+}
+
+OUTPUT MẪU:
+[RÀNG BUỘC BẮT BUỘC: Khung hình PHẢI là ảnh chụp chân dung cận cảnh (Portrait / Medium Close-up shot), lấy từ ngực hoặc eo trở lên, tập trung tuyệt đối vào khuôn mặt và biểu cảm của nhân vật]. Gen ảnh dọc ratio 3:4. Một bức ảnh chân dung bìa tạp chí phong cách chân thực, siêu nét của nhân vật ở hình 1, bao gồm 1 người (nhân vật chính là nữ, khoảng 25 tuổi), mang đậm hình mẫu Nhà thám hiểm toàn cầu... (Prompt chi tiết bằng tiếng Việt)
+
+
+[B7_GENERATE_MAGAZINE_IMAGE]
+=== BƯỚC B7 ===
+HÀNH ĐỘNG: Gen ảnh bìa tạp chí.
+CÀI ĐẶT KỸ THUẬT:
+- Model: Nano Banana pro / Gemini 3 pro image / Gemini 3 pro image preview.
+- Settings:
+  - Aspect Ratio: 3:4
+  - Temperature: 1
+  - Resolution: 1K
+  - Tools: Grounding with Google Search On
+  - Advanced settings: Output length 32768, Top P 0.95
+- Lưu ảnh thô dưới tên: "output_raw.jpg"
+
+INPUT MẪU:
+Prompt hình ảnh đã được tạo ở Bước B6.
+
+OUTPUT MẪU:
+Tệp ảnh kết quả sinh ra từ Imagen ("output_raw.jpg").
+
+[B8_CROP_AND_RESIZE]
+=== BƯỚC B8 ===
+HÀNH ĐỘNG: Crop ảnh và resize lại về kích thước chuẩn.
+CÀI ĐẶT KỸ THUẬT:
+- Crop ảnh giữ chiều dọc (Height), crop chiều ngang (Width), theo ratio 5:7, vị trí bắt đầu crop sát lề trái ảnh.
+- Kích thước sau khi crop: 857x1200px.
+- Resize lại ảnh về kích thước: 731x1024px.
+- Lưu ảnh crop dưới tên: "output_crop.jpg"
+
+INPUT MẪU:
+Ảnh thô "output_raw.jpg" từ Bước B7.
+
+OUTPUT MẪU:
+Ảnh được cắt và resize về tỷ lệ 5:7 ("output_crop.jpg").
+
+[B9_REMOVE_BACKGROUND]
+=== BƯỚC B9 ===
+HÀNH ĐỘNG: Tách nền ảnh B8, vẫn giữ kích thước ảnh, không trim, nền trong suốt.
+CÀI ĐẶT KỸ THUẬT: Gọi API remove-bg của backend.
+- Lưu ảnh tách nền dưới tên: "output_removebg.png"
+
+INPUT MẪU:
+Ảnh "output_crop.jpg" từ Bước B8.
+
+OUTPUT MẪU:
+Ảnh chân dung đã tách nền trong suốt ("output_removebg.png").
+
+[B10_USER_INPUT_NAME]
+=== BƯỚC B10 ===
+HÀNH ĐỘNG: User nhập tên.
+CÀI ĐẶT KỸ THUẬT: Giới hạn tối đa 8 ký tự.
+
+INPUT MẪU:
+Tên do người dùng nhập (ví dụ: MINH TRÍ).
+
+OUTPUT MẪU:
+Tên in hoa (ví dụ: MINH TRÍ) để đưa lên layer canvas.
+
+[B11_COMPOSITE_LAYERS]
+=== BƯỚC B11 ===
+HÀNH ĐỘNG: Ghép layer ảnh output theo thứ tự từ dưới lên trên.
+CÀI ĐẶT KỸ THUẬT & ĐẶC TẢ CHI TIẾT CÁC LỚP:
+1. output_crop.jpg
+2. msb_2026/material/layer/header_gradient.png
+3. msb_2026/material/layer/headline.png
+4. output_removebg.png
+5. msb_2026/material/layer/footer_gradient.png
+6. msb_2026/material/layer/box_text.png
+7. Tên user:
+   - Tọa độ chữ: Y = 303px
+   - Căn lề: Căn giữa
+   - Font: msb_2026/material/font/SVN-Gotham Rounded Medium.ttf
+   - Kích thước chiều ngang text box: 268px
+   - Tọa độ của text box: X = 40px (sát lề trái, cùng lề với slogan), do đó tọa độ vẽ chữ textAlign='center' là X = 174px (tâm X = 40 + 268/2 = 174px)
+   - Kích thước text: 55px
+   - Màu: #ffffff
+8. Caption đã gen ở B5:
+   - Tọa độ chữ: Y = 365px (dòng đầu tiên), line-height = 60px
+   - Căn lề: Căn trái
+   - Font: msb_2026/material/font/SVN-Gotham Rounded Medium.ttf
+   - Kích thước chiều ngang text box: 440px
+   - Tọa độ của text box: X = 40px
+   - Kích thước text: 55px
+   - Màu: #ffffff
+   - Stroke setting: Size 4px, Position Outside, Opacity 50%, Color #640009
+   - Drop shadow setting: Opacity 59%, Color #000000, Angle 15 độ, Distance 5px, Size 76px (tương đương blur 15px, offsetX = 4.8px, offsetY = 1.3px)
+9. msb_2026/material/layer/frame.png
+10. msb_2026/material/layer/logo_msb.png
+11. QR code (phân loại dựa vào các từ khóa trong mô tả di sản ở B2):
+    - Nhóm 1: "khởi nghiệp, startup, mở công ty, vốn sản xuất, mua thiết bị, máy tính mới, đầu tư, dự án mới, mua xe, mua nhà, decor, sửa nhà, nội thất, sắm đồ, căn hộ, xe máy, máy tính" -> msb_2026/material/layer/qr_code_msb_business_banking.png
+    - Nhóm 2: "biệt thự, chung cư cao cấp, xe sang, bất động sản, đất đai, gia sản, xe hơi, tài sản, bộ sưu tập, doanh nhân, lãnh đạo, vị thế, tri thức" -> msb_2026/material/layer/qr_code_m_first.png
+    - Nhóm 3: "quán cafe, cà phê công thức gia truyền, bí quyết, tiệm ăn, quán cơm, shop thời trang, tạp hóa, xưởng sản xuất, kinh doanh, cửa hàng, bán hàng." -> msb_2026/material/layer/qr_code_shop360.png
+    - Nhóm 4: "tiết kiệm, quỹ phòng thân, vàng, sổ tiết kiệm, tiền nhàn rỗi, mua đất, kết hôn, lập gia đình, nuôi con, cho con đi học, bố, mẹ, vợ chồng, tương lai, phụng dưỡng, quỹ gia đình, tri thức, học tập, kinh nghiệm, trưởng thành, tự lập, bản lĩnh." -> msb_2026/material/layer/qr_code_m_sinh_loi.png
+    - Nhóm 5: "tương lai, vươn tầm, vươn xa, bứt phá, phát triển, quốc tế, toàn cầu, tỏa sáng, hiện đại, công nghệ, quy mô, di sản, truyền thống, bản sắc, cổ truyền, gia truyền, cha ông, tiền bối, tiếp nối, kế thừa, giữ lửa, nguyên bản, mài giũa, tỉ mỉ, tâm huyết, kiên trì, làm nghề, tự thân, độc bản, dấu ấn, đam mê, nghệ thuật" -> msb_2026/material/layer/the_tin_dung_vuon_tam_tu_di_san.png
+    - Nhóm 6 (các từ khóa nằm ngoài các mục trên): msb_2026/material/layer/qr_code_msb_digital_bank.png
+- Lưu ảnh kết quả dưới tên: "output.jpg"
+
+INPUT MẪU:
+Các tệp ảnh layer thành phần, tên user và slogan.
+
+OUTPUT MẪU:
+Bìa tạp chí hoàn chỉnh ghép từ 11 lớp layer ("output.jpg").

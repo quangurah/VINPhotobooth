@@ -1,0 +1,324 @@
+import { Link } from "react-router";
+import { useState } from "react";
+import imgLogoMsbNew from "./logo_msb_new.png";
+
+// Định nghĩa SVG paths vẽ logo MSB, logo chữ M và các icon cho Header
+const svgPaths = {
+  p3c830c90: "M98.1365 11.5142L98.0034 11.381L98.1231 11.2346C98.9636 10.2441 99.3966 8.97142 99.3345 7.67388C99.1947 4.73212 96.5458 2.42264 93.2979 2.42264H86.3228C85.7708 2.42434 85.2415 2.64304 84.8493 3.03153C84.4571 3.42002 84.2333 3.94716 84.2263 4.49918V19.3744C84.2263 19.6497 84.2806 19.9223 84.3859 20.1767C84.4913 20.431 84.6457 20.6622 84.8404 20.8568C85.0351 21.0515 85.2662 21.2059 85.5205 21.3113C85.7749 21.4167 86.0475 21.4709 86.3228 21.4709H93.2779C94.9695 21.4793 96.6048 20.8631 97.8703 19.7404C98.4785 19.2184 98.9684 18.5725 99.3069 17.846C99.6455 17.1195 99.8251 16.329 99.8336 15.5275C99.8213 14.0178 99.211 12.5746 98.1365 11.5142V11.5142ZM88.3062 6.24294H93.5841C93.8202 6.21301 94.0601 6.23369 94.2876 6.30362C94.5152 6.37355 94.7252 6.49112 94.9038 6.64851C95.0824 6.80591 95.2255 6.99952 95.3235 7.21648C95.4215 7.43344 95.4722 7.66877 95.4722 7.90683C95.4722 8.14489 95.4215 8.38022 95.3235 8.59718C95.2255 8.81414 95.0824 9.00775 94.9038 9.16515C94.7252 9.32254 94.5152 9.44011 94.2876 9.51004C94.0601 9.57997 93.8202 9.60066 93.5841 9.57073H88.3062V6.24294ZM93.6306 17.6572H88.3062V13.4043H93.6306C93.9199 13.3881 94.2094 13.4311 94.4815 13.5307C94.7536 13.6302 95.0025 13.7843 95.213 13.9833C95.4235 14.1823 95.5911 14.4223 95.7057 14.6883C95.8203 14.9544 95.8794 15.2411 95.8794 15.5308C95.8794 15.8205 95.8203 16.1072 95.7057 16.3732C95.5911 16.6393 95.4235 16.8792 95.213 17.0783C95.0025 17.2773 94.7536 17.4313 94.4815 17.5309C94.2094 17.6304 93.9199 17.6734 93.6306 17.6572Z",
+  p34a4ff00: "M75.6206 10.0233C74.0166 9.59066 72.0998 9.09149 72.0266 7.79365C71.9733 6.88184 72.6922 6.11645 73.8635 5.97003C76.2196 5.67053 78.3427 7.06154 79.4476 7.33442C79.6919 7.37989 79.9431 7.37398 80.185 7.31706C80.427 7.26015 80.6544 7.15349 80.8529 7.00385C81.0513 6.85422 81.2165 6.6649 81.3378 6.44795C81.4591 6.231 81.5339 5.99118 81.5574 5.74374C81.7371 4.31945 80.3261 3.54074 79.7937 3.21462C78.3048 2.37155 76.6117 1.95692 74.9018 2.01662C70.7088 2.01662 67.787 4.43925 67.787 7.9068C67.7479 8.73802 67.9168 9.56586 68.2782 10.3154C68.6396 11.065 69.1822 11.7126 69.8569 12.1996C72.5191 14.1963 77.7504 13.9767 77.757 16.0466C77.757 17.9101 74.3228 19.0615 70.5357 16.5524C70.2592 16.3336 69.9267 16.1971 69.5762 16.1585C69.2257 16.12 68.8714 16.181 68.5539 16.3345C68.2365 16.488 67.9687 16.7278 67.7812 17.0265C67.5938 17.3252 67.4943 17.6706 67.4941 18.0233C67.4926 18.3582 67.5824 18.6872 67.7537 18.975L67.6805 19.015H67.7537L67.8203 19.1214C68.2134 19.6625 68.7086 20.1215 69.2778 20.4725C70.9117 21.4622 72.8 21.9505 74.7088 21.8769C76.6275 21.9693 78.5202 21.4034 80.0732 20.2729C80.7237 19.7396 81.2423 19.0634 81.5886 18.2968C81.935 17.5303 82.0996 16.6942 82.0698 15.8536C82.0698 12.2263 78.975 10.9417 75.6206 10.0233Z",
+  p57c100: "M63.2746 2.4293H61.9834C61.6188 2.42969 61.2618 2.53295 60.9533 2.72722C60.6449 2.92148 60.3975 3.19887 60.2396 3.52747L55.807 12.6589L51.3877 3.52747C51.2316 3.1989 50.9856 2.92132 50.6781 2.72694C50.3706 2.53256 50.0144 2.42936 49.6506 2.4293H48.3594C47.812 2.43616 47.2888 2.65624 46.901 3.04275C46.5133 3.42927 46.2915 3.95176 46.2829 4.49919V19.6073C46.2865 19.9725 46.3867 20.3303 46.5732 20.6443C46.7598 20.9582 47.0261 21.2173 47.3452 21.395C47.6642 21.5728 48.0246 21.663 48.3898 21.6564C48.7549 21.6499 49.1119 21.5468 49.4243 21.3578C49.7134 21.1972 49.9539 20.9616 50.1202 20.6758C50.2865 20.3899 50.3726 20.0645 50.3694 19.7338V10.7554L54.0366 17.8103C54.2022 18.1426 54.4572 18.4221 54.7729 18.6175C55.0885 18.8129 55.4524 18.9164 55.8237 18.9164C56.1949 18.9164 56.5588 18.8129 56.8745 18.6175C57.1901 18.4221 57.4451 18.1426 57.6107 17.8103L61.2779 10.7687V19.7338C61.2761 20.0642 61.3628 20.3891 61.529 20.6747C61.6952 20.9603 61.9348 21.1961 62.223 21.3578C62.5355 21.5468 62.8924 21.6499 63.2576 21.6564C63.6227 21.663 63.9831 21.5728 64.3021 21.395C64.6212 21.2173 64.8875 20.9582 65.0741 20.6443C65.2606 20.3303 65.3608 19.9725 65.3644 19.6073V4.49919C65.3574 3.94893 65.1344 3.42349 64.7434 3.03625C64.3524 2.649 63.8249 2.431 63.2746 2.4293Z",
+  p38765a00: "M17.6905 22.0034L6.55577 8.73215C5.65137 7.64963 5.2135 6.25246 5.33828 4.84739C5.46306 3.44231 6.14031 2.14417 7.22133 1.23798C8.30386 0.333573 9.70103 -0.104302 11.1061 0.0204824C12.5112 0.145267 13.8093 0.822512 14.7155 1.90353L25.8569 15.1481C26.7613 16.2307 27.1992 17.6278 27.0744 19.0329C26.9496 20.438 26.2724 21.7361 25.1914 22.6423V22.6423C24.1118 23.5519 22.7153 23.9956 21.3087 23.8757C19.9021 23.7559 18.6007 23.0825 17.6905 22.0034V22.0034Z",
+  p36a92270: "M29.7305 6.42928L26.9684 19.6473C26.8288 20.3339 26.555 20.9863 26.1627 21.5669C25.7704 22.1475 25.2674 22.645 24.6825 23.0309C24.0976 23.4167 23.4422 23.6833 22.754 23.8153C22.0659 23.9474 21.3584 23.9423 20.6722 23.8003V23.8003C19.9839 23.6587 19.3305 23.3821 18.7495 22.9867C18.1686 22.5913 17.6717 22.0847 17.2875 21.4964C16.9033 20.908 16.6393 20.2493 16.5109 19.5584C16.3825 18.8675 16.392 18.158 16.5391 17.4709L19.3012 4.25291C19.5908 2.8736 20.4155 1.66541 21.5945 0.893146C22.7735 0.120886 24.2105 -0.152431 25.5907 0.133104V0.133104C26.2762 0.274242 26.9271 0.54913 27.5062 0.942046C28.0854 1.33496 28.5814 1.8382 28.9658 2.42297C29.3503 3.00774 29.6158 3.66257 29.747 4.35001C29.8782 5.03745 29.8726 5.74401 29.7305 6.42928Z",
+  p3db39980: "M31.5807 22.0034L20.446 8.73215C19.5416 7.64963 19.1037 6.25246 19.2285 4.84739C19.3532 3.44231 20.0305 2.14417 21.1115 1.23798C22.194 0.333573 23.5912 -0.104302 24.9963 0.0204824C26.4014 0.145267 27.6995 0.822512 28.6057 1.90353L39.7272 15.1481C40.6316 16.2307 41.0694 17.6278 40.9446 19.0329C40.8199 20.438 40.1426 21.7361 39.0616 22.6423V22.6423C37.9832 23.5457 36.5911 23.9856 35.1894 23.8658C33.7877 23.7461 32.4903 23.0765 31.5807 22.0034V22.0034Z",
+  p21fc9300: "M10.6223 18.1497C10.7113 19.2363 10.4647 20.3239 9.91567 21.2658C9.36668 22.2076 8.54181 22.9583 7.5525 23.4163C6.5632 23.8743 5.45715 24.0176 4.38379 23.8268C3.31044 23.636 2.32152 23.1203 1.55064 22.3495C0.779772 21.5786 0.264107 20.5897 0.0733194 19.5163C-0.117468 18.443 0.0258159 17.3369 0.483819 16.3476C0.941822 15.3583 1.69247 14.5334 2.63433 13.9844C3.57619 13.4355 4.66386 13.1888 5.7504 13.2778C7.00808 13.3809 8.18828 13.9273 9.08058 14.8195C9.97287 15.7118 10.5192 16.892 10.6223 18.1497Z",
+  p1c567100: "M29.8164 0C29.9492 0.00170019 29.92 0.081452 29.8955 1.64355C29.8941 1.73781 29.8562 1.71364 29.7578 1.71387C22.8189 1.73161 22.7974 1.69932 22.7334 1.77051C22.078 2.49963 19.9566 4.73809 19.9639 4.80566C19.9651 4.81161 22.9125 5.35454 24.8467 8.00488C29.5242 14.4146 23.3094 23.3853 15.1875 20.6377C15.0278 20.5837 14.8178 21.1807 13.6817 22.1045C8.4722 26.3401 0.0839927 22.8849 1.90331e-05 15.7373C-0.00150541 15.6072 0.0847413 15.6677 1.64357 15.6807C1.85155 15.6828 1.61936 16.2268 2.02248 17.5645C2.77163 20.0501 4.79144 21.3692 6.01076 21.8008C12.8248 24.2123 18.0039 15.9484 12.9737 10.9961C12.8286 10.8638 12.4613 10.4903 11.752 10.0615C11.6548 10.003 11.6223 10.074 11.2422 10.5C9.47927 12.4757 9.34036 12.6826 9.20705 12.6836C9.03144 12.6847 7.23309 12.6949 7.01174 12.6846C6.9463 12.6815 7.23018 12.3956 7.25978 12.3623C7.65797 11.9145 8.05593 11.4664 8.45412 11.0186C9.69203 9.63144 10.0007 9.33517 9.90627 9.31055C8.77371 9.01534 6.54721 9.16293 6.48732 9.11523C6.44222 9.07258 10.6672 4.57508 10.668 4.54297C10.6686 4.45807 3.25794 4.56093 3.19435 4.48828C3.17496 4.44772 3.18524 2.85621 3.1885 2.83008C3.21479 2.74875 12.6261 2.81189 14.4541 2.79297C14.4662 2.79285 14.6531 2.79068 14.5928 2.85547C14.2417 3.22951 11.152 6.52183 10.2403 7.56445C10.1869 7.62543 10.2627 7.62993 11.2022 7.89551C11.263 7.91189 11.5762 7.51148 13.6514 5.20117C15.7558 2.85827 15.737 2.7944 15.8906 2.79297C17.9983 2.77458 18.1952 2.72479 18.0781 2.85352C17.2848 3.72572 17.2937 3.72504 14.7363 6.59277C12.9578 8.58709 12.7631 8.63606 12.9502 8.76172C12.975 8.77839 16.1035 10.6151 16.6397 14.5205C16.9811 17.0084 16.1175 18.813 16.0313 19.041C15.9978 19.1295 16.3409 19.1974 16.3643 19.2031C22.6186 20.7536 26.9551 13.8576 23.4717 9.07617C20.7921 5.39828 16.384 6.52171 16.2197 6.30762C16.1893 6.25802 19.9323 2.27367 20.7432 1.36719C21.9425 0.0264839 21.9512 0.00463945 22.1065 0H29.8164ZM27.3828 13.6982C28.9576 13.684 29.0436 13.6647 29.0322 13.7949C28.7499 17.0229 27.3254 18.9289 26.4014 20.0156C25.1419 21.3936 23.3448 22.9272 20.1719 23.543C17.1807 24.1233 14.2475 23.0896 14.3457 22.9922C14.9928 22.3504 15.0043 22.3666 15.5801 21.6641C15.733 21.4775 18.805 23.0739 22.9561 20.666C26.1706 18.8012 26.9634 15.502 27.0947 14.9551C27.3129 14.0469 27.2131 13.6998 27.3828 13.6982Z",
+  p18669200: "M9.23633 0C14.3371 0.000122949 18.4717 4.13557 18.4717 9.23633C18.4716 11.5158 17.6432 13.6001 16.2744 15.2109L21.3379 20.2754C21.6309 20.5685 21.6308 21.0437 21.3379 21.3369C21.0447 21.6301 20.5696 21.63 20.2764 21.3369L15.2129 16.2734C13.6019 17.643 11.5166 18.4716 9.23633 18.4717C4.13557 18.4717 0.000122946 14.3371 0 9.23633C0 4.13549 4.13549 0 9.23633 0ZM9.23633 1.50195C4.96475 1.50195 1.50195 4.96475 1.50195 9.23633C1.50208 13.5078 4.96482 16.9707 9.23633 16.9707C11.369 16.9706 13.2991 16.1062 14.6982 14.71C14.7002 14.7079 14.703 14.7061 14.7051 14.7041C14.7074 14.7018 14.7096 14.6995 14.7119 14.6973C16.1073 13.2982 16.9706 11.3683 16.9707 9.23633C16.9707 4.96482 13.5078 1.50208 9.23633 1.50195Z",
+  p3bbed280: "M0.146447 0.146447C0.341709 -0.0488155 0.658291 -0.0488155 0.853553 0.146447L4.66667 3.95956L8.47978 0.146447C8.67504 -0.0488155 8.99162 -0.0488155 9.18689 0.146447C9.38215 0.341709 9.38215 0.658291 9.18689 0.853553L5.02022 5.02022C4.82496 5.21548 4.50838 5.21548 4.31311 5.02022L0.146447 0.853553C-0.0488155 0.658291 -0.0488155 0.341709 0.146447 0.146447Z",
+  p3387d500: "M0.183058 0.183058C0.427136 -0.0610194 0.822864 -0.0610194 1.06694 0.183058L6.27528 5.39139C6.51935 5.63547 6.51935 6.0312 6.27528 6.27528L1.06694 11.4836C0.822864 11.7277 0.427136 11.7277 0.183058 11.4836C-0.0610194 11.2395 -0.0610194 10.8438 0.183058 10.5997L4.94945 5.83333L0.183058 1.06694C-0.0610194 0.822864 -0.0610194 0.427136 0.183058 0.183058Z"
+};
+
+// Component vẽ logo MSB
+function Frame1() {
+  return (
+    <div className="absolute inset-0" data-name="Frame">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 99.8336 23.8935">
+        <g clipPath="url(#clip0_2_4005_h)" id="Frame">
+          <path d={svgPaths.p3c830c90} fill="var(--fill-0, black)" id="Vector" />
+          <path d={svgPaths.p34a4ff00} fill="var(--fill-0, black)" id="Vector_2" />
+          <path d={svgPaths.p57c100} fill="var(--fill-0, black)" id="Vector_3" />
+          <path d={svgPaths.p38765a00} fill="url(#paint0_radial_2_4005_h)" id="Vector_4" />
+          <path d={svgPaths.p36a92270} fill="url(#paint1_radial_2_4005_h)" id="Vector_5" />
+          <path d={svgPaths.p3db39980} fill="url(#paint2_radial_2_4005_h)" id="Vector_6" />
+          <path d={svgPaths.p21fc9300} fill="url(#paint3_radial_2_4005_h)" id="Vector_7" />
+        </g>
+        <defs>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(18.6097 6.77974) scale(10.5291 10.5291)" gradientUnits="userSpaceOnUse" id="paint0_radial_2_4005_h" r="1">
+            <stop stopColor="#9D0B0F" />
+            <stop offset="0.07" stopColor="#AA0E12" />
+            <stop offset="0.26" stopColor="#C7141A" />
+            <stop offset="0.44" stopColor="#DB1820" />
+            <stop offset="0.62" stopColor="#E81B23" />
+            <stop offset="0.8" stopColor="#EC1C24" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(28.3927 12.4819) scale(10.5641 10.5641)" gradientUnits="userSpaceOnUse" id="paint1_radial_2_4005_h" r="1">
+            <stop offset="0.3" stopColor="#9D0B0F" />
+            <stop offset="0.35" stopColor="#AA0E12" />
+            <stop offset="0.48" stopColor="#C7141A" />
+            <stop offset="0.6" stopColor="#DB1820" />
+            <stop offset="0.73" stopColor="#E81B23" />
+            <stop offset="0.85" stopColor="#EC1C24" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(20.8064 1.23798) scale(22.5374)" gradientUnits="userSpaceOnUse" id="paint2_radial_2_4005_h" r="1">
+            <stop offset="0.35" stopColor="#EC1C24" />
+            <stop offset="1" stopColor="#F26F21" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(3.27253 20.3161) scale(7.90849 7.90848)" gradientUnits="userSpaceOnUse" id="paint3_radial_2_4005_h" r="1">
+            <stop offset="0.3" stopColor="#EC1C24" />
+            <stop offset="1" stopColor="#9D0B0F" />
+          </radialGradient>
+          <clipPath id="clip0_2_4005_h">
+            <rect fill="white" height="23.8935" width="99.8336" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+// Component vẽ logo chữ M
+function Group46() {
+  return (
+    <div className="absolute inset-[0.18%_0_0.04%_0]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 29.9165 23.948">
+        <g id="Group">
+          <path d={svgPaths.p1c567100} fill="url(#paint0_linear_5_3782_h)" id="Union" />
+        </g>
+        <defs>
+          <linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_5_3782_h" x1="29.9165" x2="-9.54047e-05" y1="14.7965" y2="14.8051">
+            <stop stopColor="#ED1C24" />
+            <stop offset="0.191421" stopColor="#EF4029" />
+            <stop offset="1" stopColor="#FF671F" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function LogoM() {
+  return (
+    <div className="h-[24px] overflow-clip relative shrink-0 w-[29.918px]" data-name="35 1">
+      <Group46 />
+    </div>
+  );
+}
+
+function LogoMsbWrapper() {
+  return (
+    <Link to="/di-san-home-2" className="content-stretch flex gap-[10px] items-center pl-[4px] md:pl-[12px] relative shrink-0 cursor-pointer hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out" style={{ textDecoration: 'none' }}>
+      <img alt="Logo MSB" className="h-[24px] w-auto object-contain shrink-0" src={imgLogoMsbNew} />
+    </Link>
+  );
+}
+
+function GotoPage() {
+  return (
+    <div className="bg-white content-stretch flex items-center relative rounded-[24px] shrink-0" data-name="Goto Page">
+      <div aria-hidden="true" className="absolute border border-[#dee5ef] border-solid inset-0 pointer-events-none rounded-[24px]" />
+      <div className="content-stretch flex gap-[8px] h-[32px] items-center justify-center px-[12px] py-[6px] relative rounded-[8px] shrink-0" data-name="icon 2">
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[20px] not-italic relative shrink-0 text-[#f4600c] text-[14px] text-center whitespace-nowrap">Về chúng tôi</p>
+        <div className="relative shrink-0 size-[20px]" data-name="down">
+          <div className="absolute flex inset-[33.86%_20.83%_33.85%_20.83%] items-center justify-center" style={{ containerType: "size" }}>
+            <div className="flex-none h-[100cqw] rotate-90 w-[100cqh]">
+              <div className="relative size-full" data-name="Union">
+                <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 6.45833 11.6667">
+                  <path d={svgPaths.p3387d500} fill="var(--fill-0, #091E42)" id="Union" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function QuickActionWeb() {
+  return (
+    <div className="bg-[#f7f8f9] content-stretch flex gap-[8px] items-center relative rounded-[24px] shrink-0" data-name="Quick action_web">
+      <GotoPage />
+    </div>
+  );
+}
+
+function Nav() {
+  return (
+    <div className="content-stretch flex gap-[12px] items-center relative shrink-0" data-name="Nav">
+      <LogoMsbWrapper />
+      {/* Ẩn bớt QuickAction trên mobile để tránh chật chội */}
+      <div className="hidden sm:block">
+        <QuickActionWeb />
+      </div>
+    </div>
+  );
+}
+
+function Support() {
+  return (
+    <div className="content-stretch flex gap-[12px] items-center relative shrink-0" data-name="Support">
+      <div className="content-stretch flex items-center relative shrink-0" data-name="Language">
+        <div className="content-stretch flex gap-[8px] items-center relative shrink-0" data-name="_Language-web">
+          <div className="h-[16px] overflow-clip relative rounded-[4px] shrink-0 w-[24px]" data-name="_Flags/Viet">
+            {/* Dùng cờ trực tiếp từ URL hoặc vẽ bằng CSS, ở đây dùng cờ Việt Nam dạng SVG đơn giản để tránh lỗi thiếu ảnh */}
+            <div className="w-full h-full bg-[#da251d] relative flex items-center justify-center">
+              <svg className="w-[10px] h-[10px] text-[#ffff00]" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192z"/>
+              </svg>
+            </div>
+          </div>
+          <div className="relative shrink-0 size-[16px]" data-name="down">
+            <div className="absolute inset-[33.85%_20.83%]" data-name="Union">
+              <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 9.33333 5.16667">
+                <path d={svgPaths.p3bbed280} fill="var(--fill-0, #6B788E)" id="Union" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function BurgerButton({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (v: boolean) => void }) {
+  return (
+    <button 
+      onClick={() => setIsOpen(!isOpen)} 
+      className="relative w-8 h-8 flex flex-col justify-center items-center md:hidden focus:outline-none z-50 ml-[8px]"
+      aria-label="Toggle menu"
+    >
+      <div className="absolute w-[20px] h-[16px] flex flex-col justify-between">
+        <span className={`h-[2px] w-full bg-[#091e42] rounded-full transition-transform duration-300 ease-in-out origin-left ${isOpen ? 'rotate-[42deg] translate-y-[-1px] translate-x-[2px]' : ''}`} />
+        <span className={`h-[2px] w-full bg-[#091e42] rounded-full transition-opacity duration-300 ease-in-out ${isOpen ? 'opacity-0' : ''}`} />
+        <span className={`h-[2px] w-full bg-[#091e42] rounded-full transition-transform duration-300 ease-in-out origin-left ${isOpen ? '-rotate-[42deg] translate-y-[1px] translate-x-[2px]' : ''}`} />
+      </div>
+    </button>
+  );
+}
+
+function HeaderTop({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (v: boolean) => void }) {
+  return (
+    <div className="max-w-[1366px] mx-auto relative shrink-0 w-full" data-name="Header top">
+      <div className="flex flex-row items-center max-w-[inherit] size-full">
+        {/* Điều chỉnh padding lề biên px từ 24px sang 16px trên mobile */}
+        <div className="content-stretch flex items-center justify-between max-w-[inherit] px-[16px] md:px-[24px] pt-[8px] pb-[12px] relative size-full">
+          <Nav />
+          <div className="flex items-center">
+            <Support />
+            <BurgerButton isOpen={isOpen} setIsOpen={setIsOpen} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Menu() {
+  return (
+    <div className="content-stretch flex flex-[1_0_0] items-center justify-center min-w-px relative overflow-x-auto" data-name="MENU">
+      <div className="content-stretch flex gap-[8px] items-center justify-center min-w-[96px] px-[12px] py-[10px] relative rounded-[8px] shrink-0" data-name="Button">
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[24px] not-italic relative shrink-0 text-[#091e42] text-[16px] text-center whitespace-nowrap">Di sản</p>
+      </div>
+      <div className="content-stretch flex gap-[8px] items-center justify-center min-w-[96px] px-[12px] py-[10px] relative rounded-[8px] shrink-0" data-name="Button">
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[24px] not-italic relative shrink-0 text-[#091e42] text-[16px] text-center whitespace-nowrap">Lan tỏa</p>
+      </div>
+      <div className="content-stretch flex gap-[8px] items-center justify-center min-w-[96px] px-[12px] py-[10px] relative rounded-[8px] shrink-0" data-name="Button">
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[24px] not-italic relative shrink-0 text-[#091e42] text-[16px] text-center whitespace-nowrap">Hòa nhịp vươn tầm</p>
+      </div>
+      <div className="content-stretch flex gap-[8px] items-center justify-center min-w-[96px] px-[12px] py-[10px] relative rounded-[8px] shrink-0" data-name="Button">
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[24px] not-italic relative shrink-0 text-[#091e42] text-[16px] text-center whitespace-nowrap">Tin tức</p>
+      </div>
+      <div className="content-stretch flex gap-[8px] items-center justify-center min-w-[96px] px-[12px] py-[10px] relative rounded-[8px] shrink-0" data-name="Button">
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[24px] not-italic relative shrink-0 text-[#091e42] text-[16px] text-center whitespace-nowrap">Nội bộ MSB</p>
+      </div>
+      <div className="content-stretch flex gap-[8px] items-center justify-center min-w-[96px] px-[12px] py-[10px] relative rounded-[8px] shrink-0" data-name="Button">
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[24px] not-italic relative shrink-0 text-[#091e42] text-[16px] text-center whitespace-nowrap">Ai Music game</p>
+      </div>
+      <div className="content-stretch flex gap-[8px] items-center justify-center min-w-[96px] px-[12px] py-[10px] relative rounded-[8px] shrink-0" data-name="Button">
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[24px] not-italic relative shrink-0 text-[#091e42] text-[16px] text-center whitespace-nowrap">Ai Music game</p>
+      </div>
+    </div>
+  );
+}
+
+function MenuCta() {
+  return (
+    <div className="max-w-[1366px] mx-auto relative shrink-0 w-full" data-name="Menu & CTA">
+      <div className="flex flex-row items-center max-w-[inherit] size-full">
+        <div className="content-stretch flex gap-[24px] items-center max-w-[inherit] pl-[12px] pr-[24px] py-[12px] relative size-full">
+          <Menu />
+          <div 
+            onClick={() => window.dispatchEvent(new CustomEvent("open-command-palette"))}
+            className="content-stretch flex items-center overflow-clip relative rounded-[12px] shrink-0 size-[44px] cursor-pointer hover:scale-110 active:scale-95 transition-all duration-300" 
+            data-name="TINY sEARCH"
+            title="Tìm kiếm phím tắt (Ctrl + Q)"
+          >
+            <div className="content-stretch flex items-center p-[10px] relative rounded-[8px] shrink-0" data-name="Support">
+              <div className="relative shrink-0 size-[24px]" data-name="search">
+                <div className="absolute inset-[5.08%_5.09%_5.1%_5.09%]" data-name="Union">
+                  <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 21.5576 21.5568">
+                    <path clipRule="evenodd" d={svgPaths.p18669200} fill="var(--fill-0, #ff671f)" fillRule="evenodd" id="Union" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[8px] items-center justify-center min-w-[96px] px-[12px] py-[10px] relative rounded-[8px] shrink-0 cursor-pointer hover:scale-105 hover:brightness-110 active:scale-95 hover:shadow-lg transition-all duration-300 ease-in-out" style={{ backgroundImage: "linear-gradient(-12.5431deg, rgb(228, 95, 53) 20.897%, rgb(255, 169, 90) 110.29%)" }} data-name="Primary CTA">
+            <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[24px] not-italic relative shrink-0 text-[16px] text-center text-white whitespace-nowrap">Săn vé Concert</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Header1({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (v: boolean) => void }) {
+  return (
+    <div className="content-stretch drop-shadow-[0px_1px_2px_rgba(29,41,57,0.15)] flex flex-col items-center rounded-bl-[12px] rounded-br-[12px] overflow-hidden shrink-0 w-full z-[9999]" data-name="Header">
+      {/* Phần trên: Logo và Về chúng tôi nằm ở phần trắng tinh */}
+      <div className="bg-white w-full flex flex-col items-center shrink-0">
+        <div className="h-[5px] w-full shrink-0" />
+        <HeaderTop isOpen={isOpen} setIsOpen={setIsOpen} />
+      </div>
+
+      {/* Phần dưới: Giữ nền cũ (trắng đục trong suốt + backdrop-blur) */}
+      <div className="hidden md:block w-full backdrop-blur-[12px] bg-[rgba(255,255,255,0.9)] shrink-0">
+        <MenuCta />
+      </div>
+    </div>
+  );
+}
+
+export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <div className="content-stretch flex flex-col items-center pointer-events-auto w-full z-[9999]" data-name="Header">
+      <Header1 isOpen={isOpen} setIsOpen={setIsOpen} />
+      {/* Drawer Menu cho mobile/tablet */}
+      {isOpen && (
+        <div className="md:hidden w-full bg-white/95 backdrop-blur-[16px] border-t border-gray-100 flex flex-col px-[20px] py-[16px] gap-[16px] shadow-lg animate-in slide-in-from-top duration-300 ease-in-out z-[9999] pointer-events-auto">
+          <div className="flex flex-col gap-[12px]">
+            <div className="px-[12px] py-[8px] hover:bg-gray-50 rounded-lg cursor-pointer transition-colors">
+              <p className="font-['Inter:Medium',sans-serif] font-medium text-[#091e42] text-[16px]">Di sản</p>
+            </div>
+            <div className="px-[12px] py-[8px] hover:bg-gray-50 rounded-lg cursor-pointer transition-colors">
+              <p className="font-['Inter:Medium',sans-serif] font-medium text-[#091e42] text-[16px]">Lan tỏa</p>
+            </div>
+            <div className="px-[12px] py-[8px] hover:bg-gray-50 rounded-lg cursor-pointer transition-colors">
+              <p className="font-['Inter:Medium',sans-serif] font-medium text-[#091e42] text-[16px]">Hòa nhịp vươn tầm</p>
+            </div>
+            <div className="px-[12px] py-[8px] hover:bg-gray-50 rounded-lg cursor-pointer transition-colors">
+              <p className="font-['Inter:Medium',sans-serif] font-medium text-[#091e42] text-[16px]">Tin tức</p>
+            </div>
+            <div className="px-[12px] py-[8px] hover:bg-gray-50 rounded-lg cursor-pointer transition-colors">
+              <p className="font-['Inter:Medium',sans-serif] font-medium text-[#091e42] text-[16px]">Nội bộ MSB</p>
+            </div>
+            <div className="px-[12px] py-[8px] hover:bg-gray-50 rounded-lg cursor-pointer transition-colors">
+              <p className="font-['Inter:Medium',sans-serif] font-medium text-[#091e42] text-[16px]">Ai Music game</p>
+            </div>
+          </div>
+          
+          <div className="h-[1px] bg-gray-100 w-full" />
+          
+          <div className="flex flex-col gap-[12px]">
+            <div className="flex items-center justify-between">
+              <GotoPage />
+            </div>
+            <div className="content-stretch flex gap-[8px] items-center justify-center py-[12px] px-[24px] rounded-[8px] cursor-pointer hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 ease-in-out" style={{ backgroundImage: "linear-gradient(-12.5431deg, rgb(228, 95, 53) 20.897%, rgb(255, 169, 90) 110.29%)" }}>
+              <p className="font-['Inter:Medium',sans-serif] font-medium text-[16px] text-center text-white whitespace-nowrap">Săn vé Concert</p>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}

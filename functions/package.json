@@ -1,0 +1,16 @@
+{
+  "name": "tclife-functions",
+  "description": "TCLIFE 2026 Firebase Cloud Functions",
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@google-cloud/vision": "^5.3.7",
+    "@google/genai": "latest",
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^5.0.0",
+    "jimp": "^1.6.1"
+  },
+  "private": true
+}

@@ -1,0 +1,3028 @@
+﻿import Footer from "../../app/components/layout/Footer";
+import Header from "../../app/components/layout/Header";
+import { useState, useEffect, useRef } from "react";
+import { useNavigate, Link } from "react-router";
+import svgPaths from "./svg-nwaxdrv3d1";
+import imgLogoMsbCvtWhite1 from "./c6ec0d24b8a4207a7e6fca70124b4af014d9f188.png";
+import imgImage1 from "./052320d7e442c0a8ab663013255c4a75f4a5b825.png";
+import imgSoTietKiem from "./3ff0eb18d50c7620c046bd7872c7f9bccf5e5bbe.png";
+import imgTicket3 from "./279f59eb71806267de374f7b7f8dc50e0e13586a.png";
+import imgRectangle708 from "./09e7462e68b1fd6f2bd291a2b890e512834a2930.png";
+import imgImage4 from "./ffe57b84a9bfaa6d97d3ff077f472520c4e033a8.png";
+import imgRectangle709 from "./a06ef5051a03b91a3a47dd7895ebb421ee7806cc.png";
+import imgRectangle710 from "./76bb36864bbc873789a11556ecdc6cfa559de4ec.png";
+import imgRectangle711 from "./725e91853f3b91d71ec1dce59e2dfdfbc8b42919.png";
+import imgSubtract from "./bba79604ca3f15c3214a8c37f94cf8810343567a.png";
+import imgSubtract1 from "./74367f59eec7c13fc4b0474cab80e1ea05cee564.png";
+import imgSubtract2 from "./1bc40dd6d32da63a075dd5b41228f950f68dc108.png";
+import imgSubtract3 from "./309439bcb923d205dfabe465f0a23697de12659c.png";
+import imgSubtract4 from "./406a83efd7365ceca0c602f3d91d06e7703a0f34.png";
+import imgSubtract5 from "./e374f1c5600240e533a589b2edd069e1eb6bd665.png";
+import imgSubtract6 from "./b4912785f64829ba583b70e3802602984e2aedd6.png";
+import imgGetItOnGooglePlayBadgeWebColorVietnamese1 from "./3ac909401012fd5310e51918c106ba79f3444bb5.png";
+import imgSocialIcon from "./e3306c8635541fed0f99b5892dbacb4ffb3c2d3d.png";
+import imgImage5 from "./d6c3f320cb8d9fc41bb2a31b1a330fc20fcbfe3d.png";
+import imgFrame31 from "./4e98e8ab2b018af76bbbdd2524c947e7e844ecd4.png";
+import imgFlagsViet from "./98f98befd43bf9d5547ecb4ec1ade495c7e9bc11.png";
+import imgButtonTiepNoiDiSan from "./a574968dba19bef4dfbb30b807972e4eabe89cd2.png";
+import imgButtonTiepNoiDiSan1 from "./110ccd213c03f95479a0137a39acbe80ab0fa7da.png";
+
+// Import cÃ¡c tÃ i nguyÃªn card cÅ© phá»¥c vá»¥ Carousel 3D
+import imgRectangle705 from "./0159253f8171510d54c0366bd3b7b8c6223bc66f.png";
+import imgRectangle707 from "./c6c3ab6ddf1ea2b03c3168e4b82af68d418114c6.png";
+import imgRectangle709Old from "./13649ec346971d23baf5633ba4a60c544fb20d03.png";
+import imgRectangle710Old from "./6264845ee02a13381df73a5e5066da304dd36809.png";
+import imgRectangle712 from "./bb6b1d4a2989230c0cda2e883b1c44ae77420192.png";
+import imgRectangle713 from "./ad97e1ec1866555509e7a0bdd8e90c6057c43ff2.png";
+import svgPathsOld from "./svg-53isf9exbd";
+import { imgGroup } from "./svg-99w1x";
+
+// Import cÃ¡c áº£nh má»›i tá»« MSB 0522
+import imgFemaleBanhMy from "./female bÃ¡n bÃ¡nh má»³.jpg";
+import imgMaleBanhMy from "./male bÃ¡n bÃ¡nh má»³.jpg";
+import imgFemaleQuanNuong from "./female quÃ¡n nÆ°á»›ng.jpg";
+import imgMaleQuanNuong from "./male quÃ¡n nÆ°á»›ng.jpg";
+import imgFemaleThoMay from "./female thá»£ may.jpg";
+import imgMaleThoMay from "./male thá»£ may.jpg";
+import imgFemaleDauBep from "./female Ä‘áº§u báº¿p.jpg";
+import imgMaleDauBep from "./male Ä‘áº§u báº¿p.jpg";
+
+import imgCgvTicksNew from "./CGV Ticks.png";
+import imgFrameRewards from "./Frame 2087327370.png";
+import imgFrameTimeWeeks from "./Frame 2117130444.png";
+
+
+
+
+
+function Group1() {
+  return (
+    <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-84.601px_-10.383px] mask-size-[99.986px_23.99px] relative size-full" style={{ maskImage: `url('${imgGroup}')` }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 16.487 7.25586">
+        <g id="Group">
+          <path d={svgPaths.p2f9b3e80} fill="var(--fill-0, white)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group2() {
+  return (
+    <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-92.965px_2.728px] mask-size-[99.986px_23.99px] relative size-full" style={{ maskImage: `url('${imgGroup}')` }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 6.01474 5.19705">
+        <g id="Group">
+          <path d={svgPaths.p1a47e500} fill="var(--fill-0, white)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group3() {
+  return (
+    <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-79.64px_-3.456px] mask-size-[99.986px_23.99px] relative size-full" style={{ maskImage: `url('${imgGroup}')` }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 14.7615 14.8146">
+        <g id="Group">
+          <path d={svgPaths.p8b9ac00} fill="var(--fill-0, white)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group4() {
+  return (
+    <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-86.453px_1.884px] mask-size-[99.986px_23.99px] relative size-full" style={{ maskImage: `url('${imgGroup}')` }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 9.62235 3.59399">
+        <g id="Group">
+          <path d={svgPaths.p36a803f0} fill="var(--fill-0, white)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group5() {
+  return (
+    <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-77.37px_-1.668px] mask-size-[99.986px_23.99px] relative size-full" style={{ maskImage: `url('${imgGroup}')` }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 14.6954 1.71861">
+        <g id="Group">
+          <path d={svgPaths.p2a027580} fill="var(--fill-0, white)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group6() {
+  return (
+    <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-73.631px_-2.805px] mask-size-[99.986px_23.99px] relative size-full" style={{ maskImage: `url('${imgGroup}')` }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1.72129 8.98124">
+        <g id="Group">
+          <path d={svgPaths.p376c4300} fill="var(--fill-0, white)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group7() {
+  return (
+    <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-68.596px_-6.314px] mask-size-[99.986px_23.99px] relative size-full" style={{ maskImage: `url('${imgGroup}')` }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 15.2537 16.5257">
+        <g id="Group">
+          <path d={svgPaths.p388f2840} fill="var(--fill-0, white)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group8() {
+  return (
+    <div className="mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-76.856px_-2.805px] mask-size-[99.986px_23.99px] relative size-full" style={{ maskImage: `url('${imgGroup}')` }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 8.07074 6.35407">
+        <g id="Group">
+          <path d={svgPaths.p15e10100} fill="var(--fill-0, white)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group9() {
+  return (
+    <div className="absolute inset-[23.24%_32.97%_23.23%_56.55%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-56.545px_-5.574px] mask-size-[99.986px_23.99px]" style={{ maskImage: `url('${imgGroup}')` }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 10.4797 12.8417">
+        <g id="Group">
+          <path d={svgPaths.p2f6c5c80} fill="var(--fill-0, white)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group10() {
+  return (
+    <div className="absolute inset-[22.08%_44.88%_22.08%_45.32%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-45.313px_-5.297px] mask-size-[99.986px_23.99px]" style={{ maskImage: `url('${imgGroup}')` }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 9.80396 13.3951">
+        <g id="Group">
+          <path d={svgPaths.pd6f400} fill="var(--fill-0, white)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group11() {
+  return (
+    <div className="absolute inset-[23.25%_56.11%_22.75%_31.08%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-31.075px_-5.578px] mask-size-[99.986px_23.99px]" style={{ maskImage: `url('${imgGroup}')` }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 12.8099 12.9549">
+        <g id="Group">
+          <path d={svgPaths.p1d770200} fill="var(--fill-0, white)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Layer() {
+  return (
+    <div className="absolute contents inset-[-11.37%_-0.86%_-15.56%_0]" data-name="Layer-1">
+      <div className="absolute flex inset-[43.28%_-0.72%_-15.56%_84.61%] items-center justify-center" style={{ containerType: "size" }}>
+        <div className="-scale-x-100 flex-none h-[hypot(34.5343cqw,26.8854cqh)] rotate-[-50.26deg] skew-x-[0.24deg] w-[hypot(-65.4657cqw,73.1146cqh)]">
+          <Group1 />
+        </div>
+      </div>
+      <div className="absolute flex inset-[-11.37%_-0.86%_78.18%_92.98%] items-center justify-center" style={{ containerType: "size" }}>
+        <div className="-scale-x-100 flex-none h-[hypot(48.627cqw,44.1135cqh)] rotate-[-47.72deg] skew-x-[0.24deg] w-[hypot(-51.373cqw,55.8865cqh)]">
+          <Group2 />
+        </div>
+      </div>
+      <div className="absolute flex inset-[14.4%_0.64%_3.28%_79.65%] items-center justify-center" style={{ containerType: "size" }}>
+        <div className="-scale-x-100 flex-none h-[hypot(67.7339cqw,-32.5387cqh)] rotate-[-115.52deg] skew-x-[-0.19deg] w-[hypot(32.2661cqw,67.4613cqh)]">
+          <Group3 />
+        </div>
+      </div>
+      <div className="absolute flex inset-[-7.86%_5.46%_65.77%_86.46%] items-center justify-center" style={{ containerType: "size" }}>
+        <div className="-scale-x-100 flex-none h-[hypot(-37.8781cqw,-18.6773cqh)] rotate-[121.43deg] skew-x-[0.21deg] w-[hypot(62.1219cqw,-81.3227cqh)]">
+          <Group4 />
+        </div>
+      </div>
+      <div className="absolute flex inset-[6.95%_11.63%_42.29%_77.38%] items-center justify-center" style={{ containerType: "size" }}>
+        <div className="-scale-x-100 flex-none h-[hypot(11.6993cqw,9.36544cqh)] rotate-[-48.67deg] skew-x-[0.24deg] w-[hypot(-88.3007cqw,90.6346cqh)]">
+          <Group5 />
+        </div>
+      </div>
+      <div className="absolute flex inset-[11.69%_17.38%_81.13%_73.64%] items-center justify-center" style={{ containerType: "size" }}>
+        <div className="-rotate-90 -scale-x-100 flex-none h-[100cqw] w-[100cqh]">
+          <Group6 />
+        </div>
+      </div>
+      <div className="absolute flex inset-[26.32%_10.66%_-9.83%_68.61%] items-center justify-center" style={{ containerType: "size" }}>
+        <div className="-scale-x-100 flex-none h-[hypot(74.7984cqw,-28.4698cqh)] rotate-[-110.03deg] skew-x-[-0.16deg] w-[hypot(25.2016cqw,71.5302cqh)]">
+          <Group7 />
+        </div>
+      </div>
+      <div className="absolute flex inset-[11.69%_15.06%_61.82%_76.87%] items-center justify-center" style={{ containerType: "size" }}>
+        <div className="-rotate-180 -scale-x-100 flex-none h-[100cqh] w-[100cqw]">
+          <Group8 />
+        </div>
+      </div>
+      <Group9 />
+      <Group10 />
+      <Group11 />
+      <div className="-translate-y-1/2 absolute aspect-[19/11] left-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_-4px] mask-size-[99.986px_23.99px] right-[72%] top-[calc(50%+0.01px)]" style={{ maskImage: `url('${imgGroup}')` }} data-name="Logo MSB_CVT White 1">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[303.41%] left-[-43.64%] max-w-none top-[-93.77%] w-[323.64%]" src={imgLogoMsbCvtWhite1} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Group() {
+  return (
+    <div className="absolute contents inset-[-11.37%_-0.86%_-15.56%_0]" data-name="Group">
+      <Layer />
+    </div>
+  );
+}
+
+function ClipPathGroup() {
+  return (
+    <div className="absolute contents inset-0" data-name="Clip path group">
+      <Group />
+    </div>
+  );
+}
+
+function Page() {
+  return (
+    <div className="absolute contents inset-0" data-name="Page-2">
+              <img src="/logo-msb-white.svg" className="absolute block inset-0 size-full object-contain" alt="Logo MSB" />
+      <ClipPathGroup />
+    </div>
+  );
+}
+
+function Frame61() {
+  return (
+    <div className="content-stretch flex items-center relative shrink-0 w-full mt-[40px]">
+      <p className="[word-break:break-word] flex-[1_0_0] font-['SVN-Gotham_Rounded:Bold',sans-serif] leading-[28px] min-w-px not-italic relative text-[28px] text-center text-shadow-[0px_0px_80px_rgba(0,0,0,0.4)] text-white tracking-[2.8px] uppercase">Táº¡p chÃ­ di sáº£n</p>
+    </div>
+  );
+}
+
+function Group12() {
+  return (
+    <div className="absolute inset-[12.36%_15.52%_1.9%_0.15%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 432.619 68.5914">
+        <g id="Group">
+          <g id="Group_2">
+            <path d={svgPaths.p26906400} fill="var(--fill-0, white)" id="Vector" />
+            <path d={svgPaths.p2029e100} fill="var(--fill-0, white)" id="Vector_2" />
+            <path d={svgPaths.p2971b3c0} fill="var(--fill-0, white)" id="Vector_3" />
+            <path d={svgPaths.p3d4ae400} fill="var(--fill-0, white)" id="Vector_4" />
+            <path d={svgPaths.p1a0ed220} fill="var(--fill-0, white)" id="Vector_5" />
+            <path d={svgPaths.p2ca8600} fill="var(--fill-0, white)" id="Vector_6" />
+          </g>
+          <path d={svgPaths.p25d2d1c0} fill="var(--fill-0, white)" id="Vector_7" />
+          <path d={svgPaths.p30172ec0} fill="var(--fill-0, white)" id="Vector_8" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group13() {
+  return (
+    <div className="absolute inset-[1.92%_0.18%_2.63%_82.35%]">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 89.6127 76.3661">
+        <g filter="url(#filter0_i_5_3811)" id="Group 4">
+          <g id="Group 4_2">
+            <path d={svgPaths.p4997000} fill="url(#paint0_linear_5_3811)" id="Vector" />
+            <path d={svgPaths.pbf407c0} fill="url(#paint1_linear_5_3811)" id="Vector_2" />
+          </g>
+          <path d={svgPaths.p3af03800} fill="var(--fill-0, #ED1C24)" id="Vector_3" />
+          <path d={svgPaths.p320a6e80} fill="var(--fill-0, #FFB81C)" id="Vector_4" />
+          <path d={svgPaths.p3c6ccb80} fill="url(#paint2_linear_5_3811)" id="Vector_5" />
+        </g>
+        <defs>
+          <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="78.3661" id="filter0_i_5_3811" width="89.6127" x="0" y="0">
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
+            <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
+            <feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+            <feOffset dy="2" />
+            <feGaussianBlur stdDeviation="1" />
+            <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.826883 0 0 0 0 0.446514 0 0 0 0.8 0" />
+            <feBlend in2="shape" mode="normal" result="effect1_innerShadow_5_3811" />
+          </filter>
+          <linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_5_3811" x1="17.4222" x2="20.3107" y1="8.41681" y2="76.263">
+            <stop stopColor="#ED1C24" />
+            <stop offset="1" stopColor="#FFB81C" />
+          </linearGradient>
+          <linearGradient gradientUnits="userSpaceOnUse" id="paint1_linear_5_3811" x1="42.7822" x2="45.6706" y1="8.41681" y2="76.263">
+            <stop stopColor="#ED1C24" />
+            <stop offset="1" stopColor="#FFB81C" />
+          </linearGradient>
+          <linearGradient gradientUnits="userSpaceOnUse" id="paint2_linear_5_3811" x1="79.0512" x2="83.8122" y1="23.0734" y2="75.7412">
+            <stop stopColor="#ED1C24" />
+            <stop offset="1" stopColor="#FFB81C" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Layer1() {
+  return (
+    <div className="w-full max-w-[513px] aspect-[513/80] h-auto overflow-clip relative shrink-0" data-name="Layer_1">
+      <Group12 />
+      <Group13 />
+    </div>
+  );
+}
+
+function TpChiDiSnTngLai() {
+  return (
+    <div className="content-stretch flex flex-col gap-[12px] items-center relative shrink-0 w-full" data-name="Táº P CHÃ DI Sáº¢N TÆ¯Æ NG LAI">
+      <Frame61 />
+      <Layer1 />
+    </div>
+  );
+}
+
+function Frame40() {
+  return (
+    <div className="content-stretch flex flex-[1_0_0] gap-[8px] items-center min-w-px relative">
+      <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex-[1_0_0] font-['Inter:Medium',sans-serif] font-medium leading-[0] min-w-px not-italic relative text-[0px] text-center text-white">
+        <p className="font-['Inter:Bold',sans-serif] font-bold leading-[24px] mb-0 text-[16px]">1 Cáº·p vÃ©</p>
+        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[24px] text-[16px]">xem phim</p>
+      </div>
+    </div>
+  );
+}
+
+function Frame39() {
+  return (
+    <div className="content-stretch flex items-start justify-center relative shrink-0 w-full">
+      <Frame40 />
+    </div>
+  );
+}
+
+function CgvTicks() {
+  return (
+    <div className="bg-[rgba(237,28,36,0.2)] content-stretch flex flex-col gap-[12px] h-[240px] items-center p-[20px] relative rounded-[20px] shadow-[0px_12px_20px_0px_rgba(207,110,59,0.5)] shrink-0 w-[220px]" data-name="CGV Ticks">
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular',sans-serif] font-normal h-[14px] leading-[24px] not-italic relative shrink-0 text-[16px] text-center text-white w-[99px]">hoáº·c</p>
+      <div className="h-[110px] relative shrink-0 w-[121px]" data-name="image 1">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage1} />
+      </div>
+      <Frame39 />
+    </div>
+  );
+}
+
+function Frame42() {
+  return (
+    <div className="content-stretch flex flex-[1_0_0] gap-[8px] items-center min-w-px relative">
+      <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Medium',sans-serif] font-medium h-[30px] leading-[0] not-italic relative shrink-0 text-[0px] text-center text-shadow-[0px_0px_11.4px_white] text-white w-[191px] whitespace-pre-wrap">
+        <p className="font-['Inter:Bold',sans-serif] font-bold leading-[24px] mb-0 text-[19px]">{`1 sá»• tiáº¿t kiá»‡m `}</p>
+        <p className="text-[19px]">
+          <span className="font-['Inter:Regular',sans-serif] font-normal leading-[24px]">{`trá»‹ giÃ¡ `}</span>
+          <span className="font-['Inter:Bold',sans-serif] font-bold leading-[24px]">1 TRIá»†U Äá»’NG</span>
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function Frame41() {
+  return (
+    <div className="absolute content-stretch flex h-[36px] items-start justify-center left-[20px] right-[20px] top-[166px]">
+      <Frame42 />
+    </div>
+  );
+}
+
+function SoTietKiem() {
+  return (
+    <div className="h-[240px] relative rounded-[20px] shrink-0 w-[220px] overflow-hidden shadow-[0px_12px_20px_0px_rgba(207,110,59,0.5)]" data-name="SO TIET KIEM">
+      <img alt="Sá»• tiáº¿t kiá»‡m" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgCgvTicksNew} />
+    </div>
+  );
+}
+
+function Group14() {
+  return (
+    <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0">
+      <div className="col-1 flex h-[102.248px] items-center justify-center ml-0 mt-0 relative row-1 w-[146.944px]">
+        <div className="flex-none rotate-[-9.46deg]">
+          <div className="h-[81.078px] relative w-[135.456px]" data-name="Ticket 3">
+            <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
+              <div className="absolute inset-0 overflow-hidden">
+                <img alt="" className="absolute h-full left-[1%] max-w-none top-0 w-[98.01%]" src={imgTicket3} />
+              </div>
+              <div className="absolute inset-0 overflow-hidden">
+                <img alt="" className="absolute h-full left-[1%] max-w-none top-0 w-[98.01%]" src={imgTicket3} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="col-1 flex h-[104.991px] items-center justify-center ml-[27.36px] mt-[15.01px] relative row-1 w-[159.022px]">
+        <div className="flex-none rotate-[5.82deg]">
+          <div className="h-[90.174px] relative w-[150.652px]" data-name="Ticket 2">
+            <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
+              <div className="absolute inset-0 overflow-hidden">
+                <img alt="" className="absolute h-full left-[1%] max-w-none top-0 w-[98.01%]" src={imgTicket3} />
+              </div>
+              <div className="absolute inset-0 overflow-hidden">
+                <img alt="" className="absolute h-full left-[1%] max-w-none top-0 w-[98.01%]" src={imgTicket3} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame44() {
+  return (
+    <div className="content-stretch flex flex-[1_0_0] gap-[8px] items-center min-w-px relative">
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[0] min-w-px not-italic relative text-[0px] text-center text-white">
+        <span className="leading-[24px] text-[16px]">{`1 `}</span>
+        <span className="leading-[24px] text-[16px]">vÃ©</span>
+        <span className="leading-[24px] text-[16px]">{` `}</span>
+        <span className="leading-[24px] text-[16px]">M-Fest</span>
+        <span className="leading-[24px] text-[16px]">{` `}</span>
+        <span className="leading-[24px] text-[16px]">{`cá»§a MSB `}</span>
+        <span className="leading-[24px] text-[16px]">vÃ  cÆ¡ há»™i vinh danh trÃªn OOH</span>
+      </p>
+    </div>
+  );
+}
+
+function Frame43() {
+  return (
+    <div className="content-stretch flex items-start justify-center relative shrink-0 w-full">
+      <Frame44 />
+    </div>
+  );
+}
+
+function MConcert() {
+  return (
+    <div className="bg-[rgba(237,28,36,0.2)] content-stretch flex flex-col gap-[12px] h-[240px] items-center p-[20px] relative rounded-[20px] shadow-[0px_12px_20px_0px_rgba(207,110,59,0.5)] shrink-0 w-[220px]" data-name="M.CONCERT">
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular',sans-serif] font-normal h-[14px] leading-[24px] not-italic relative shrink-0 text-[16px] text-center text-white w-[99px]">hoáº·c</p>
+      <Group14 />
+      <Frame43 />
+    </div>
+  );
+}
+
+function Frame45() {
+  return (
+    <div className="relative shrink-0 max-w-full" data-name="Frame 2087327370">
+      <img alt="Pháº§n thÆ°á»Ÿng" className="max-h-[364px] w-auto object-contain pointer-events-none" src={imgFrameRewards} />
+    </div>
+  );
+}
+
+function PhnThng() {
+  const navigate = useNavigate();
+  return (
+    <div className="content-stretch flex flex-col gap-[40px] items-center relative shrink-0 w-full px-[16px] md:px-0" data-name="PHáº¦N THÆ¯á»žNG">
+      <TpChiDiSnTngLai />
+      <div className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-normal not-italic relative shrink-0 text-black text-center w-full max-w-[526px] whitespace-pre-wrap">
+        <p className="leading-[26px] mb-0 text-[14px] sm:text-[16px] md:text-[18px] text-white">Theo báº¡n, di sáº£n lÃ  gÃ¬?</p>
+        <p className="leading-[26px] mb-0 text-[14px] sm:text-[16px] md:text-[18px] text-white">{`ÄÃ³ khÃ´ng nháº¥t thiáº¿t pháº£i lÃ  má»™t lÃ ng nghá» trÄƒm nÄƒm hay má»™t cÆ¡ nghiá»‡p Ä‘á»“ sá»™. `}</p>
+        <p className="leading-[26px] mb-0 text-[14px] sm:text-[16px] md:text-[18px] text-white">MSB tin ráº±ng nhá»¯ng giÃ¡ trá»‹ á»Ÿ hiá»‡n táº¡i cÃ³ thá»ƒ lÃ  di sáº£n quÃ½ giÃ¡ Ä‘á»ƒ ná»‘i truyá»n cho mai sau.</p>
+        <p className="leading-[26px] mb-0 text-[14px] sm:text-[16px] md:text-[18px]">â€‹</p>
+        <p className="mb-0 text-[14px] sm:text-[16px] md:text-[18px] text-white">
+          <span className="leading-[26px]">{`CÃ¹ng MSB khÃ¡m phÃ¡ xem `}</span>
+          <span className="leading-[26px]">nhá»¯ng Ä‘iá»u Ä‘Ã¡ng tá»± hÃ o Ä‘Ã³ sáº½ vÆ°Æ¡n táº§m á»Ÿ tÆ°Æ¡ng lai nhÆ° tháº¿ nÃ o?</span>
+        </p>
+        <p className="leading-[26px] mb-0 text-[14px] sm:text-[16px] md:text-[18px]">â€‹</p>
+        <p className="leading-[26px] mb-0 text-[14px] sm:text-[16px] md:text-[18px]">â€‹</p>
+        <p className="font-['Inter:Bold',sans-serif] font-bold leading-[26px] text-[20px] sm:text-[22px] md:text-[24px] text-white">VÃ  cÃ³ cÆ¡ há»™i nháº­n Ä‘Æ°á»£c:</p>
+      </div>
+      <Frame45 />
+      <div 
+        className="content-stretch flex h-[60px] isolate items-center overflow-clip px-[30px] py-[16px] relative rounded-[30px] shrink-0 cursor-pointer hover:scale-105 active:scale-95 hover:brightness-110 hover:shadow-lg transition-all duration-300 ease-in-out" 
+        style={{ backgroundImage: "linear-gradient(269.949deg, rgb(237, 28, 36) 0%, rgb(239, 64, 41) 19.152%, rgb(255, 103, 31) 99.992%)" }} 
+        data-name="Button"
+        onClick={() => navigate("/di-san-step-1")}
+      >
+        <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[22px] not-italic relative shrink-0 text-[18px] sm:text-[22px] md:text-[24px] text-white whitespace-nowrap z-[1]">Tham gia ngay</p>
+      </div>
+    </div>
+  );
+}
+
+function Frame23() {
+  return (
+    <div className="content-stretch flex flex-[1_0_0] items-center min-w-px relative">
+      <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['SVN-Gotham_Rounded:Regular',sans-serif] justify-center leading-[0] min-w-px not-italic relative text-[6.3px] text-white">
+        <p>
+          <span className="font-['SVN-Gotham_Rounded:Bold',sans-serif] leading-[8.1px]">{`SHOP360 - `}</span>
+          <span className="font-['SVN-Gotham_Rounded:Medium',sans-serif] leading-[8.1px]">Giáº£i phÃ¡p tÃ i chÃ­nh toÃ n diá»‡n cho Há»™ kinh doanh</span>
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function Frame19() {
+  return (
+    <div className="content-stretch flex flex-[1_0_0] items-center justify-between min-w-px relative">
+      <Frame23 />
+    </div>
+  );
+}
+
+function Frame73() {
+  return (
+    <div className="content-stretch flex gap-[3.6px] items-start relative shrink-0 w-full">
+      <div className="relative rounded-[4px] shrink-0 size-[27px]" data-name="image 4">
+        <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[4px]">
+          <div className="absolute bg-white inset-0 rounded-[4px]" />
+          <img alt="" className="absolute max-w-none object-cover rounded-[4px] size-full" src={imgImage4} />
+        </div>
+      </div>
+      <Frame19 />
+    </div>
+  );
+}
+
+function CardPopup() {
+  return (
+    <div className="content-stretch flex flex-col gap-[5.4px] items-start min-h-[30.59999918937683px] pb-[9px] pt-[3.6px] px-[9px] relative shrink-0 w-[126px]" data-name="Card/Popup">
+      <Frame73 />
+    </div>
+  );
+}
+
+function Group16() {
+  return (
+    <div className="absolute inset-[43.5%_6.74%_34.64%_75.63%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 12.1381 9.83186">
+        <g id="Group">
+          <path d={svgPaths.pbe21540} fill="var(--fill-0, white)" id="Vector" />
+          <path d={svgPaths.p6ad6b70} fill="url(#paint0_radial_2_3847)" id="Vector_2" />
+          <path d={svgPaths.pa7d0700} fill="url(#paint1_radial_2_3847)" id="Vector_3" />
+          <path d={svgPaths.p395c3840} fill="var(--fill-0, white)" id="Vector_4" />
+          <path d={svgPaths.p1fe9f400} fill="var(--fill-0, white)" id="Vector_5" />
+          <path d={svgPaths.p8321400} fill="url(#paint2_radial_2_3847)" id="Vector_6" />
+          <path d={svgPaths.p1a899f00} fill="url(#paint3_radial_2_3847)" id="Vector_7" />
+          <path d={svgPaths.p10b27000} fill="var(--fill-0, white)" id="Vector_8" />
+        </g>
+        <defs>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(7.73428 -0.152397) scale(3.15278 3.15278)" gradientUnits="userSpaceOnUse" id="paint0_radial_2_3847" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="1" stopColor="white" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(6.29597 0.742944) scale(3.98781 3.98781)" gradientUnits="userSpaceOnUse" id="paint1_radial_2_3847" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="1" stopColor="white" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(6.73096 0.82233) scale(3.55918 3.55918)" gradientUnits="userSpaceOnUse" id="paint2_radial_2_3847" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="1" stopColor="white" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(1.97803 0.498473) scale(5.51181 5.51181)" gradientUnits="userSpaceOnUse" id="paint3_radial_2_3847" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="1" stopColor="white" />
+          </radialGradient>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Group18() {
+  return (
+    <div className="absolute inset-[48.33%_26.44%_39.47%_52.07%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 14.7955 5.48642">
+        <g id="Group">
+          <path d={svgPaths.p37606780} fill="var(--fill-0, white)" id="Vector" />
+          <path d={svgPaths.p380d0d00} fill="var(--fill-0, white)" id="Vector_2" />
+          <path d={svgPaths.p52d7400} fill="var(--fill-0, white)" id="Vector_3" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group19() {
+  return (
+    <div className="absolute inset-[45.74%_49.19%_36.89%_33.5%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 11.9207 7.80786">
+        <g id="Group">
+          <path d={svgPaths.p21cac970} fill="url(#paint0_radial_2_3989)" id="Vector" />
+          <path d={svgPaths.p2053fb00} fill="url(#paint1_radial_2_3989)" id="Vector_2" />
+          <path d={svgPaths.p284bfa00} fill="url(#paint2_radial_2_3989)" id="Vector_3" />
+          <path d={svgPaths.p3a0af6c0} fill="url(#paint3_radial_2_3989)" id="Vector_4" />
+        </g>
+        <defs>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(5.5905 2.96338) scale(2.92418)" gradientUnits="userSpaceOnUse" id="paint0_radial_2_3989" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="0.3" stopColor="#CFD1D2" />
+            <stop offset="0.51" stopColor="#DFE0E0" />
+            <stop offset="0.77" stopColor="#ECECEC" />
+            <stop offset="1" stopColor="#F1F1F1" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(7.82267 4.22902) rotate(0.8) scale(2.93371)" gradientUnits="userSpaceOnUse" id="paint1_radial_2_3989" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="0.3" stopColor="#CFD1D2" />
+            <stop offset="0.51" stopColor="#DFE0E0" />
+            <stop offset="0.77" stopColor="#ECECEC" />
+            <stop offset="1" stopColor="#F1F1F1" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(5.80416 0.952771) scale(6.25794)" gradientUnits="userSpaceOnUse" id="paint2_radial_2_3989" r="1">
+            <stop offset="0.35" stopColor="#F1F1F1" />
+            <stop offset="1" stopColor="white" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(0.935008 6.25344) scale(2.1971 2.1971)" gradientUnits="userSpaceOnUse" id="paint3_radial_2_3989" r="1">
+            <stop offset="0.3" stopColor="white" />
+            <stop offset="1" stopColor="#CFD1D2" />
+          </radialGradient>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Group17() {
+  return (
+    <div className="absolute contents inset-[45.74%_26.44%_36.9%_33.5%]" data-name="Group">
+      <Group18 />
+      <Group19 />
+    </div>
+  );
+}
+
+function Group15() {
+  return (
+    <div className="absolute contents inset-[43.5%_6.74%_34.64%_33.5%]" data-name="Group">
+      <Group16 />
+      <Group17 />
+    </div>
+  );
+}
+
+function Layer2() {
+  return (
+    <div className="absolute bottom-[1.02px] h-[44.971px] overflow-clip right-[0.9px] w-[68.85px]" data-name="Layer_1">
+      <div className="absolute inset-[0_0_-0.01%_0]" data-name="Vector">
+        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 68.8496 44.9736">
+          <path d={svgPaths.pabc4700} fill="url(#paint0_radial_2_3949)" id="Vector" />
+          <defs>
+            <radialGradient cx="0" cy="0" gradientTransform="translate(52.6185 25.9906) rotate(65.0977) scale(39.3965 39.3965)" gradientUnits="userSpaceOnUse" id="paint0_radial_2_3949" r="1">
+              <stop stopColor="#F26F21" />
+              <stop offset="0.65" stopColor="#EC1C24" />
+              <stop offset="1" stopColor="#EC1C24" />
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
+      <Group15 />
+    </div>
+  );
+}
+
+function Frame72() {
+  return (
+    <div className="absolute bottom-0 content-stretch flex items-end right-0 rounded-bl-[22.5px] rounded-br-[22.5px] w-[180px]">
+      <CardPopup />
+      <Layer2 />
+    </div>
+  );
+}
+
+function Frame71() {
+  return (
+    <div className="content-stretch flex items-center justify-center p-[3.6px] relative rounded-[4px] shrink-0" style={{ backgroundImage: "linear-gradient(269.94deg, rgb(237, 28, 36) 0%, rgb(239, 64, 41) 19.152%, rgb(255, 103, 31) 99.992%)" }}>
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['SVN-Gotham_Rounded:Medium',sans-serif] leading-[11.039px] not-italic relative shrink-0 text-[14.4px] text-shadow-[0px_0px_3.6px_rgba(0,0,0,0.2)] text-white whitespace-nowrap">ChÃº Long</p>
+    </div>
+  );
+}
+
+function Frame60() {
+  return (
+    <div className="absolute content-stretch flex flex-col gap-[1.8px] items-start left-[9px] max-w-[80.99999785423279px] top-[62.1px]">
+      <Frame71 />
+      <p className="[word-break:break-word] font-['SVN-Gotham_Rounded:Medium',sans-serif] leading-[9.9px] not-italic relative shrink-0 text-[8.1px] text-shadow-[0px_0px_3.6px_rgba(0,0,0,0.8)] text-white w-[78.75px]">Chá»§ chuá»—i cÃ  phÃª kem muá»‘i nhÆ°á»£ng quyá»n ná»•i tiáº¿ng</p>
+    </div>
+  );
+}
+
+function Opt() {
+  return (
+    <div className="absolute bg-white h-[254.7px] left-0 overflow-clip top-0 w-[180px]" data-name="opt2">
+      <div className="absolute h-[254.7px] left-0 pointer-events-none rounded-bl-[10.8px] rounded-br-[23.4px] rounded-tl-[10.8px] rounded-tr-[10.8px] top-0 w-[180px]">
+        <div aria-hidden="true" className="absolute inset-0 rounded-bl-[10.8px] rounded-br-[23.4px] rounded-tl-[10.8px] rounded-tr-[10.8px]">
+          <img alt="" className="absolute max-w-none object-cover rounded-bl-[10.8px] rounded-br-[23.4px] rounded-tl-[10.8px] rounded-tr-[10.8px] size-full" src={imgRectangle708} />
+          <div className="absolute bg-gradient-to-t from-[16.054%] from-[rgba(0,0,0,0.5)] inset-0 rounded-bl-[10.8px] rounded-br-[23.4px] rounded-tl-[10.8px] rounded-tr-[10.8px] to-[32.42%] to-[rgba(0,0,0,0)]" />
+        </div>
+        <div aria-hidden="true" className="absolute border-[0.9px] border-solid border-white inset-0 rounded-bl-[10.8px] rounded-br-[23.4px] rounded-tl-[10.8px] rounded-tr-[10.8px]" />
+      </div>
+      <Frame72 />
+      <Frame60 />
+    </div>
+  );
+}
+
+function Frame62() {
+  return <div className="absolute h-[42.75px] left-[9px] top-[133.2px] w-[72px]" />;
+}
+
+function Frame24() {
+  return (
+    <div className="content-stretch flex flex-[1_0_0] items-center min-w-px relative">
+      <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['SVN-Gotham_Rounded:Regular',sans-serif] justify-center leading-[0] min-w-px not-italic relative text-[9.8px] text-white">
+        <p>
+          <span className="font-['SVN-Gotham_Rounded:Bold',sans-serif] leading-[12.6px]">{`SHOP360 - `}</span>
+          <span className="font-['SVN-Gotham_Rounded:Medium',sans-serif] leading-[12.6px]">Giáº£i phÃ¡p tÃ i chÃ­nh toÃ n diá»‡n cho Há»™ kinh doanh</span>
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function Frame20() {
+  return (
+    <div className="content-stretch flex flex-[1_0_0] items-center justify-between min-w-px relative">
+      <Frame24 />
+    </div>
+  );
+}
+
+function Frame75() {
+  return (
+    <div className="content-stretch flex gap-[5.6px] items-start relative shrink-0 w-full">
+      <div className="relative rounded-[4px] shrink-0 size-[42px]" data-name="image 4">
+        <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[4px]">
+          <div className="absolute bg-white inset-0 rounded-[4px]" />
+          <img alt="" className="absolute max-w-none object-cover rounded-[4px] size-full" src={imgImage4} />
+        </div>
+      </div>
+      <Frame20 />
+    </div>
+  );
+}
+
+function CardPopup1() {
+  return (
+    <div className="content-stretch flex flex-col gap-[8.4px] items-start min-h-[47.59999918937683px] pb-[14px] pt-[5.6px] px-[14px] relative shrink-0 w-[196px]" data-name="Card/Popup">
+      <Frame75 />
+    </div>
+  );
+}
+
+function Group21() {
+  return (
+    <div className="absolute inset-[43.5%_6.74%_34.64%_75.63%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 18.8815 15.294">
+        <g id="Group">
+          <path d={svgPaths.p1b766200} fill="var(--fill-0, white)" id="Vector" />
+          <path d={svgPaths.pb059f80} fill="url(#paint0_radial_2_4139)" id="Vector_2" />
+          <path d={svgPaths.p302fb940} fill="url(#paint1_radial_2_4139)" id="Vector_3" />
+          <path d={svgPaths.pe16e700} fill="var(--fill-0, white)" id="Vector_4" />
+          <path d={svgPaths.p12b414d0} fill="var(--fill-0, white)" id="Vector_5" />
+          <path d={svgPaths.p34925800} fill="url(#paint2_radial_2_4139)" id="Vector_6" />
+          <path d={svgPaths.p341af100} fill="url(#paint3_radial_2_4139)" id="Vector_7" />
+          <path d={svgPaths.p3c86fb00} fill="var(--fill-0, white)" id="Vector_8" />
+        </g>
+        <defs>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(12.0311 -0.237062) scale(4.90433 4.90432)" gradientUnits="userSpaceOnUse" id="paint0_radial_2_4139" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="1" stopColor="white" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(9.79374 1.15569) scale(6.20326 6.20325)" gradientUnits="userSpaceOnUse" id="paint1_radial_2_4139" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="1" stopColor="white" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(10.4704 1.27918) scale(5.5365 5.5365)" gradientUnits="userSpaceOnUse" id="paint2_radial_2_4139" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="1" stopColor="white" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(3.07694 0.775403) scale(8.57393 8.57393)" gradientUnits="userSpaceOnUse" id="paint3_radial_2_4139" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="1" stopColor="white" />
+          </radialGradient>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Group23() {
+  return (
+    <div className="absolute inset-[48.33%_26.44%_39.47%_52.07%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 23.0152 8.53443">
+        <g id="Group">
+          <path d={svgPaths.p37427e00} fill="var(--fill-0, white)" id="Vector" />
+          <path d={svgPaths.p2b113b00} fill="var(--fill-0, white)" id="Vector_2" />
+          <path d={svgPaths.p2671b600} fill="var(--fill-0, white)" id="Vector_3" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group24() {
+  return (
+    <div className="absolute inset-[45.74%_49.19%_36.89%_33.5%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 18.5433 12.1456">
+        <g id="Group">
+          <path d={svgPaths.p1bf52b00} fill="url(#paint0_radial_2_4058)" id="Vector" />
+          <path d={svgPaths.p564c500} fill="url(#paint1_radial_2_4058)" id="Vector_2" />
+          <path d={svgPaths.p3cf51100} fill="url(#paint2_radial_2_4058)" id="Vector_3" />
+          <path d={svgPaths.p31aadf80} fill="url(#paint3_radial_2_4058)" id="Vector_4" />
+        </g>
+        <defs>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(8.69633 4.6097) scale(4.54873)" gradientUnits="userSpaceOnUse" id="paint0_radial_2_4058" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="0.3" stopColor="#CFD1D2" />
+            <stop offset="0.51" stopColor="#DFE0E0" />
+            <stop offset="0.77" stopColor="#ECECEC" />
+            <stop offset="1" stopColor="#F1F1F1" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(12.1686 6.57848) rotate(0.800001) scale(4.56354)" gradientUnits="userSpaceOnUse" id="paint1_radial_2_4058" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="0.3" stopColor="#CFD1D2" />
+            <stop offset="0.51" stopColor="#DFE0E0" />
+            <stop offset="0.77" stopColor="#ECECEC" />
+            <stop offset="1" stopColor="#F1F1F1" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(9.0287 1.48209) scale(9.73457)" gradientUnits="userSpaceOnUse" id="paint2_radial_2_4058" r="1">
+            <stop offset="0.35" stopColor="#F1F1F1" />
+            <stop offset="1" stopColor="white" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(1.45446 9.72758) scale(3.41772 3.41772)" gradientUnits="userSpaceOnUse" id="paint3_radial_2_4058" r="1">
+            <stop offset="0.3" stopColor="white" />
+            <stop offset="1" stopColor="#CFD1D2" />
+          </radialGradient>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Group22() {
+  return (
+    <div className="absolute contents inset-[45.74%_26.44%_36.9%_33.5%]" data-name="Group">
+      <Group23 />
+      <Group24 />
+    </div>
+  );
+}
+
+function Group20() {
+  return (
+    <div className="absolute contents inset-[43.5%_6.74%_34.64%_33.5%]" data-name="Group">
+      <Group21 />
+      <Group22 />
+    </div>
+  );
+}
+
+function Layer3() {
+  return (
+    <div className="absolute bottom-[1.58px] h-[69.955px] overflow-clip right-[1.4px] w-[107.1px]" data-name="Layer_1">
+      <div className="absolute inset-[0_0_-0.01%_0]" data-name="Vector">
+        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 107.099 69.9589">
+          <path d={svgPaths.p3cb3d0b0} fill="url(#paint0_radial_2_4064)" id="Vector" />
+          <defs>
+            <radialGradient cx="0" cy="0" gradientTransform="translate(81.851 40.4298) rotate(65.0977) scale(61.2834 61.2834)" gradientUnits="userSpaceOnUse" id="paint0_radial_2_4064" r="1">
+              <stop stopColor="#F26F21" />
+              <stop offset="0.65" stopColor="#EC1C24" />
+              <stop offset="1" stopColor="#EC1C24" />
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
+      <Group20 />
+    </div>
+  );
+}
+
+function Frame74() {
+  return (
+    <div className="absolute bottom-0 content-stretch flex items-end right-0 rounded-bl-[35px] rounded-br-[35px] w-[280px]">
+      <CardPopup1 />
+      <Layer3 />
+    </div>
+  );
+}
+
+function Frame76() {
+  return (
+    <div className="content-stretch flex items-center justify-center p-[5.6px] relative rounded-[4px] shrink-0" style={{ backgroundImage: "linear-gradient(269.948deg, rgb(237, 28, 36) 0%, rgb(239, 64, 41) 19.152%, rgb(255, 103, 31) 99.992%)" }}>
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['SVN-Gotham_Rounded:Medium',sans-serif] leading-[17.171px] not-italic relative shrink-0 text-[22.4px] text-shadow-[0px_0px_5.6px_rgba(0,0,0,0.2)] text-white whitespace-nowrap">Anh LÃ¢n</p>
+    </div>
+  );
+}
+
+function Frame63() {
+  return (
+    <div className="absolute content-stretch flex flex-col gap-[2.8px] items-start left-[14px] top-[96.6px] w-[112px]">
+      <Frame76 />
+      <p className="[word-break:break-word] font-['SVN-Gotham_Rounded:Medium',sans-serif] leading-[15.4px] min-w-full not-italic relative shrink-0 text-[12.6px] text-shadow-[0px_0px_5.6px_rgba(0,0,0,0.2)] text-white w-[min-content]">Chá»§ chuá»—i quÃ¡n nÆ°á»›ng kÃ­n bÃ n má»—i tá»‘i</p>
+    </div>
+  );
+}
+
+function Opt1() {
+  return (
+    <div className="absolute bg-white h-[396.2px] left-0 overflow-clip top-0 w-[280px]" data-name="opt2">
+      <div className="absolute h-[396.2px] left-0 pointer-events-none rounded-bl-[16.8px] rounded-br-[36.4px] rounded-tl-[16.8px] rounded-tr-[16.8px] top-0 w-[280px]">
+        <div aria-hidden="true" className="absolute inset-0 rounded-bl-[16.8px] rounded-br-[36.4px] rounded-tl-[16.8px] rounded-tr-[16.8px]">
+          <img alt="" className="absolute max-w-none object-cover rounded-bl-[16.8px] rounded-br-[36.4px] rounded-tl-[16.8px] rounded-tr-[16.8px] size-full" src={imgRectangle709} />
+          <div className="absolute bg-gradient-to-t from-[16.054%] from-[rgba(0,0,0,0.5)] inset-0 rounded-bl-[16.8px] rounded-br-[36.4px] rounded-tl-[16.8px] rounded-tr-[16.8px] to-[32.42%] to-[rgba(0,0,0,0)]" />
+        </div>
+        <div aria-hidden="true" className="absolute border-[1.4px] border-solid border-white inset-0 rounded-bl-[16.8px] rounded-br-[36.4px] rounded-tl-[16.8px] rounded-tr-[16.8px]" />
+      </div>
+      <Frame74 />
+      <Frame63 />
+    </div>
+  );
+}
+
+function Frame25() {
+  return (
+    <div className="content-stretch flex flex-[1_0_0] items-center min-w-px relative">
+      <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['SVN-Gotham_Rounded:Regular',sans-serif] justify-center leading-[0] min-w-px not-italic relative text-[10.5px] text-white">
+        <p>
+          <span className="font-['SVN-Gotham_Rounded:Bold',sans-serif] leading-[13.5px]">{`SHOP360 - `}</span>
+          <span className="font-['SVN-Gotham_Rounded:Medium',sans-serif] leading-[13.5px]">Giáº£i phÃ¡p tÃ i chÃ­nh toÃ n diá»‡n cho Há»™ kinh doanh</span>
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function Frame21() {
+  return (
+    <div className="content-stretch flex flex-[1_0_0] items-center justify-between min-w-px relative">
+      <Frame25 />
+    </div>
+  );
+}
+
+function Frame78() {
+  return (
+    <div className="content-stretch flex gap-[6px] items-start relative shrink-0 w-full">
+      <div className="relative rounded-[4px] shrink-0 size-[45px]" data-name="image 4">
+        <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[4px]">
+          <div className="absolute bg-white inset-0 rounded-[4px]" />
+          <img alt="" className="absolute max-w-none object-cover rounded-[4px] size-full" src={imgImage4} />
+        </div>
+      </div>
+      <Frame21 />
+    </div>
+  );
+}
+
+function CardPopup2() {
+  return (
+    <div className="content-stretch flex flex-col gap-[9px] items-start min-h-[51px] pb-[15px] pt-[6px] px-[15px] relative shrink-0 w-[210px]" data-name="Card/Popup">
+      <Frame78 />
+    </div>
+  );
+}
+
+function Group26() {
+  return (
+    <div className="absolute inset-[43.5%_6.74%_34.64%_75.63%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20.2302 16.3865">
+        <g id="Group">
+          <path d={svgPaths.p1367a280} fill="var(--fill-0, white)" id="Vector" />
+          <path d={svgPaths.p29b4e800} fill="url(#paint0_radial_2_4026)" id="Vector_2" />
+          <path d={svgPaths.p1ec20be0} fill="url(#paint1_radial_2_4026)" id="Vector_3" />
+          <path d={svgPaths.p30b05300} fill="var(--fill-0, white)" id="Vector_4" />
+          <path d={svgPaths.p16440180} fill="var(--fill-0, white)" id="Vector_5" />
+          <path d={svgPaths.p8c46110} fill="url(#paint2_radial_2_4026)" id="Vector_6" />
+          <path d={svgPaths.p18a72320} fill="url(#paint3_radial_2_4026)" id="Vector_7" />
+          <path d={svgPaths.p663cc00} fill="var(--fill-0, white)" id="Vector_8" />
+        </g>
+        <defs>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(12.8907 -0.254001) scale(5.25464 5.25463)" gradientUnits="userSpaceOnUse" id="paint0_radial_2_4026" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="1" stopColor="white" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(10.4935 1.23823) scale(6.64635 6.64634)" gradientUnits="userSpaceOnUse" id="paint1_radial_2_4026" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="1" stopColor="white" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(11.2185 1.37054) scale(5.93197 5.93197)" gradientUnits="userSpaceOnUse" id="paint2_radial_2_4026" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="1" stopColor="white" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(3.29691 0.830783) scale(9.18636 9.18635)" gradientUnits="userSpaceOnUse" id="paint3_radial_2_4026" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="1" stopColor="white" />
+          </radialGradient>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Group28() {
+  return (
+    <div className="absolute inset-[48.33%_26.44%_39.47%_52.07%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24.6591 9.14404">
+        <g id="Group">
+          <path d={svgPaths.p33270480} fill="var(--fill-0, white)" id="Vector" />
+          <path d={svgPaths.p111b5ff0} fill="var(--fill-0, white)" id="Vector_2" />
+          <path d={svgPaths.p586cd70} fill="var(--fill-0, white)" id="Vector_3" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group29() {
+  return (
+    <div className="absolute inset-[45.74%_49.19%_36.9%_33.5%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 19.8678 13.013">
+        <g id="Group">
+          <path d={svgPaths.p84af800} fill="url(#paint0_radial_2_3951)" id="Vector" />
+          <path d={svgPaths.p3e115500} fill="url(#paint1_radial_2_3951)" id="Vector_2" />
+          <path d={svgPaths.p3c9b8700} fill="url(#paint2_radial_2_3951)" id="Vector_3" />
+          <path d={svgPaths.p2eb67bc0} fill="url(#paint3_radial_2_3951)" id="Vector_4" />
+        </g>
+        <defs>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(9.3175 4.93896) scale(4.87363)" gradientUnits="userSpaceOnUse" id="paint0_radial_2_3951" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="0.3" stopColor="#CFD1D2" />
+            <stop offset="0.51" stopColor="#DFE0E0" />
+            <stop offset="0.77" stopColor="#ECECEC" />
+            <stop offset="1" stopColor="#F1F1F1" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(13.0378 7.04837) rotate(0.8) scale(4.88951)" gradientUnits="userSpaceOnUse" id="paint1_radial_2_3951" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="0.3" stopColor="#CFD1D2" />
+            <stop offset="0.51" stopColor="#DFE0E0" />
+            <stop offset="0.77" stopColor="#ECECEC" />
+            <stop offset="1" stopColor="#F1F1F1" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(9.6736 1.58795) scale(10.4299)" gradientUnits="userSpaceOnUse" id="paint2_radial_2_3951" r="1">
+            <stop offset="0.35" stopColor="#F1F1F1" />
+            <stop offset="1" stopColor="white" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(1.55835 10.4224) scale(3.66184 3.66184)" gradientUnits="userSpaceOnUse" id="paint3_radial_2_3951" r="1">
+            <stop offset="0.3" stopColor="white" />
+            <stop offset="1" stopColor="#CFD1D2" />
+          </radialGradient>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Group27() {
+  return (
+    <div className="absolute contents inset-[45.74%_26.44%_36.9%_33.5%]" data-name="Group">
+      <Group28 />
+      <Group29 />
+    </div>
+  );
+}
+
+function Group25() {
+  return (
+    <div className="absolute contents inset-[43.5%_6.74%_34.64%_33.5%]" data-name="Group">
+      <Group26 />
+      <Group27 />
+    </div>
+  );
+}
+
+function Layer4() {
+  return (
+    <div className="absolute bottom-[1.69px] h-[74.951px] overflow-clip right-[1.5px] w-[114.75px]" data-name="Layer_1">
+      <div className="absolute inset-[0_0_-0.01%_0]" data-name="Vector">
+        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 114.749 74.9559">
+          <path d={svgPaths.pcb24770} fill="url(#paint0_radial_2_4041)" id="Vector" />
+          <defs>
+            <radialGradient cx="0" cy="0" gradientTransform="translate(87.6975 43.3177) rotate(65.0977) scale(65.6608 65.6608)" gradientUnits="userSpaceOnUse" id="paint0_radial_2_4041" r="1">
+              <stop stopColor="#F26F21" />
+              <stop offset="0.65" stopColor="#EC1C24" />
+              <stop offset="1" stopColor="#EC1C24" />
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
+      <Group25 />
+    </div>
+  );
+}
+
+function Frame77() {
+  return (
+    <div className="absolute bottom-0 content-stretch flex items-end right-0 rounded-bl-[37.5px] rounded-br-[37.5px] w-[300px]">
+      <CardPopup2 />
+      <Layer4 />
+    </div>
+  );
+}
+
+function Frame79() {
+  return (
+    <div className="content-stretch flex items-center justify-center p-[6px] relative rounded-[4px] shrink-0" style={{ backgroundImage: "linear-gradient(269.959deg, rgb(237, 28, 36) 0%, rgb(239, 64, 41) 19.152%, rgb(255, 103, 31) 99.992%)" }}>
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['SVN-Gotham_Rounded:Medium',sans-serif] leading-[18.398px] not-italic relative shrink-0 text-[24px] text-shadow-[0px_0px_6px_rgba(0,0,0,0.2)] text-white whitespace-nowrap">Chá»‹ Ly</p>
+    </div>
+  );
+}
+
+function Frame64() {
+  return (
+    <div className="absolute content-stretch flex flex-col gap-[3px] items-start left-[15px] max-w-[135px] top-[103.5px]">
+      <Frame79 />
+      <div className="[word-break:break-word] font-['SVN-Gotham_Rounded:Medium',sans-serif] leading-[0] not-italic relative shrink-0 text-[13.5px] text-shadow-[0px_0px_6px_rgba(0,0,0,0.2)] text-white w-[131.25px]">
+        <p className="leading-[16.5px] mb-0">TÃ¡c giáº£ Ä‘Ã£</p>
+        <p className="leading-[16.5px] mb-0">xuáº¥t báº£n nhiá»u cuá»‘n sÃ¡ch dáº¡y</p>
+        <p className="leading-[16.5px]">kinh doanh</p>
+      </div>
+    </div>
+  );
+}
+
+function Opt2() {
+  return (
+    <div className="absolute bg-white h-[424.5px] left-0 overflow-clip top-0 w-[300px]" data-name="opt2">
+      <div className="absolute h-[424.5px] left-0 pointer-events-none rounded-bl-[18px] rounded-br-[39px] rounded-tl-[18px] rounded-tr-[18px] top-0 w-[300px]">
+        <div aria-hidden="true" className="absolute inset-0 rounded-bl-[18px] rounded-br-[39px] rounded-tl-[18px] rounded-tr-[18px]">
+          <img alt="" className="absolute max-w-none object-cover rounded-bl-[18px] rounded-br-[39px] rounded-tl-[18px] rounded-tr-[18px] size-full" src={imgRectangle710} />
+          <div className="absolute bg-gradient-to-t from-[16.054%] from-[rgba(0,0,0,0.5)] inset-0 rounded-bl-[18px] rounded-br-[39px] rounded-tl-[18px] rounded-tr-[18px] to-[32.42%] to-[rgba(0,0,0,0)]" />
+        </div>
+        <div aria-hidden="true" className="absolute border-[1.5px] border-solid border-white inset-0 rounded-bl-[18px] rounded-br-[39px] rounded-tl-[18px] rounded-tr-[18px]" />
+      </div>
+      <Frame77 />
+      <Frame64 />
+    </div>
+  );
+}
+
+function Frame80() {
+  return (
+    <div className="content-stretch flex items-center justify-center p-[4px] relative rounded-[4px] shrink-0" style={{ backgroundImage: "linear-gradient(269.939deg, rgb(237, 28, 36) 0%, rgb(239, 64, 41) 19.152%, rgb(255, 103, 31) 99.992%)" }}>
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['SVN-Gotham_Rounded:Medium',sans-serif] leading-[12.265px] not-italic relative shrink-0 text-[16px] text-shadow-[0px_0px_4px_rgba(0,0,0,0.2)] text-white whitespace-nowrap">Anh HÆ°ng</p>
+    </div>
+  );
+}
+
+function Frame65() {
+  return (
+    <div className="absolute content-stretch flex flex-col gap-[2px] items-start left-[10px] max-w-[90px] top-[69px]">
+      <Frame80 />
+      <p className="[word-break:break-word] font-['SVN-Gotham_Rounded:Medium',sans-serif] leading-[11px] not-italic relative shrink-0 text-[#ed1c24] text-[9px] text-shadow-[0px_2px_6px_rgba(255,255,255,0.8)] w-[87.5px]">ChuyÃªn viÃªn Sale cÃ³ tÃ¢m cÃ³ táº§m chá»§ Biá»‡t thá»± Quáº­n 7</p>
+    </div>
+  );
+}
+
+function Frame26() {
+  return (
+    <div className="content-stretch flex flex-[1_0_0] items-center min-w-px relative">
+      <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['SVN-Gotham_Rounded:Regular',sans-serif] justify-center leading-[0] min-w-px not-italic relative text-[7px] text-white">
+        <p>
+          <span className="font-['SVN-Gotham_Rounded:Bold',sans-serif] leading-[9px]">{`SHOP360 - `}</span>
+          <span className="font-['SVN-Gotham_Rounded:Medium',sans-serif] leading-[9px]">Giáº£i phÃ¡p tÃ i chÃ­nh toÃ n diá»‡n cho Há»™ kinh doanh</span>
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function Frame22() {
+  return (
+    <div className="content-stretch flex flex-[1_0_0] items-center justify-between min-w-px relative">
+      <Frame26 />
+    </div>
+  );
+}
+
+function Frame82() {
+  return (
+    <div className="content-stretch flex gap-[4px] items-start relative shrink-0 w-full">
+      <div className="relative rounded-[4px] shrink-0 size-[30px]" data-name="image 4">
+        <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[4px]">
+          <div className="absolute bg-white inset-0 rounded-[4px]" />
+          <img alt="" className="absolute max-w-none object-cover rounded-[4px] size-full" src={imgImage4} />
+        </div>
+      </div>
+      <Frame22 />
+    </div>
+  );
+}
+
+function CardPopup3() {
+  return (
+    <div className="content-stretch flex flex-col gap-[6px] items-start min-h-[34px] pb-[10px] pt-[4px] px-[10px] relative shrink-0 w-[140px]" data-name="Card/Popup">
+      <Frame82 />
+    </div>
+  );
+}
+
+function Group31() {
+  return (
+    <div className="absolute inset-[43.5%_6.74%_34.64%_75.63%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 13.4868 10.9243">
+        <g id="Group">
+          <path d={svgPaths.p32948980} fill="var(--fill-0, white)" id="Vector" />
+          <path d={svgPaths.pe810900} fill="url(#paint0_radial_2_3995)" id="Vector_2" />
+          <path d={svgPaths.p2f9ee300} fill="url(#paint1_radial_2_3995)" id="Vector_3" />
+          <path d={svgPaths.p8858df0} fill="var(--fill-0, white)" id="Vector_4" />
+          <path d={svgPaths.p849fa00} fill="var(--fill-0, white)" id="Vector_5" />
+          <path d={svgPaths.pa198a70} fill="url(#paint2_radial_2_3995)" id="Vector_6" />
+          <path d={svgPaths.p1e573b80} fill="url(#paint3_radial_2_3995)" id="Vector_7" />
+          <path d={svgPaths.p17775880} fill="var(--fill-0, white)" id="Vector_8" />
+        </g>
+        <defs>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(8.59364 -0.16933) scale(3.50309 3.50309)" gradientUnits="userSpaceOnUse" id="paint0_radial_2_3995" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="1" stopColor="white" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(6.99553 0.825493) scale(4.4309 4.4309)" gradientUnits="userSpaceOnUse" id="paint1_radial_2_3995" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="1" stopColor="white" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(7.47884 0.9137) scale(3.95465 3.95464)" gradientUnits="userSpaceOnUse" id="paint2_radial_2_3995" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="1" stopColor="white" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(2.19781 0.553859) scale(6.12424 6.12423)" gradientUnits="userSpaceOnUse" id="paint3_radial_2_3995" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="1" stopColor="white" />
+          </radialGradient>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Group33() {
+  return (
+    <div className="absolute inset-[48.33%_26.44%_39.47%_52.07%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 16.4394 6.09602">
+        <g id="Group">
+          <path d={svgPaths.p3ec10900} fill="var(--fill-0, white)" id="Vector" />
+          <path d={svgPaths.p1654780} fill="var(--fill-0, white)" id="Vector_2" />
+          <path d={svgPaths.p33b37600} fill="var(--fill-0, white)" id="Vector_3" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group34() {
+  return (
+    <div className="absolute inset-[45.74%_49.19%_36.9%_33.5%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 13.2452 8.67536">
+        <g id="Group">
+          <path d={svgPaths.p40be700} fill="url(#paint0_radial_2_4017)" id="Vector" />
+          <path d={svgPaths.p8994180} fill="url(#paint1_radial_2_4017)" id="Vector_2" />
+          <path d={svgPaths.p1ced7500} fill="url(#paint2_radial_2_4017)" id="Vector_3" />
+          <path d={svgPaths.p1c9bea00} fill="url(#paint3_radial_2_4017)" id="Vector_4" />
+        </g>
+        <defs>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(6.21166 3.29264) scale(3.24909)" gradientUnits="userSpaceOnUse" id="paint0_radial_2_4017" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="0.3" stopColor="#CFD1D2" />
+            <stop offset="0.51" stopColor="#DFE0E0" />
+            <stop offset="0.77" stopColor="#ECECEC" />
+            <stop offset="1" stopColor="#F1F1F1" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(8.69185 4.69892) rotate(0.8) scale(3.25967)" gradientUnits="userSpaceOnUse" id="paint1_radial_2_4017" r="1">
+            <stop stopColor="#A6A7AA" />
+            <stop offset="0.3" stopColor="#CFD1D2" />
+            <stop offset="0.51" stopColor="#DFE0E0" />
+            <stop offset="0.77" stopColor="#ECECEC" />
+            <stop offset="1" stopColor="#F1F1F1" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(6.44907 1.05863) scale(6.95326)" gradientUnits="userSpaceOnUse" id="paint2_radial_2_4017" r="1">
+            <stop offset="0.35" stopColor="#F1F1F1" />
+            <stop offset="1" stopColor="white" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(1.0389 6.94827) scale(2.44123 2.44123)" gradientUnits="userSpaceOnUse" id="paint3_radial_2_4017" r="1">
+            <stop offset="0.3" stopColor="white" />
+            <stop offset="1" stopColor="#CFD1D2" />
+          </radialGradient>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Group32() {
+  return (
+    <div className="absolute contents inset-[45.74%_26.44%_36.89%_33.5%]" data-name="Group">
+      <Group33 />
+      <Group34 />
+    </div>
+  );
+}
+
+function Group30() {
+  return (
+    <div className="absolute contents inset-[43.5%_6.74%_34.64%_33.5%]" data-name="Group">
+      <Group31 />
+      <Group32 />
+    </div>
+  );
+}
+
+function Layer5() {
+  return (
+    <div className="absolute bottom-[1.13px] h-[49.968px] overflow-clip right-px w-[76.5px]" data-name="Layer_1">
+      <div className="absolute inset-[0_0_-0.01%_0]" data-name="Vector">
+        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 76.4995 49.9706">
+          <path d={svgPaths.p1a3c3a00} fill="url(#paint0_radial_2_3939)" id="Vector" />
+          <defs>
+            <radialGradient cx="0" cy="0" gradientTransform="translate(58.465 28.8784) rotate(65.0977) scale(43.7739 43.7738)" gradientUnits="userSpaceOnUse" id="paint0_radial_2_3939" r="1">
+              <stop stopColor="#F26F21" />
+              <stop offset="0.65" stopColor="#EC1C24" />
+              <stop offset="1" stopColor="#EC1C24" />
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  );
+}
+
+function Frame81() {
+  return (
+    <div className="absolute bottom-0 content-stretch flex items-end right-0 rounded-bl-[25px] rounded-br-[25px] w-[200px]">
+      <CardPopup3 />
+      <Layer5 />
+    </div>
+  );
+}
+
+function Frame37() {
+  return (
+    <div className="content-stretch flex flex-col gap-[60px] items-center justify-center pb-[100px] md:pb-[260px] pt-[100px] md:pt-[200px] px-[16px] md:px-0 relative shrink-0 w-full z-[2] overflow-hidden" style={{ backgroundImage: "linear-gradient(180deg, rgb(237, 28, 36) 8.9799%, rgb(255, 103, 31) 45.388%, rgba(255, 184, 28, 0.6) 81.796%, rgb(253, 246, 242) 100%)" }}>
+      <div className="w-full max-w-[1440px] h-full relative flex flex-col items-center justify-center shrink-0">
+        <div className="h-[24px] overflow-clip relative shrink-0 w-[100px]" data-name="MSB352">
+          <div className="absolute inset-[0_0.01%_0.04%_0]" data-name="Group">
+            <Page />
+          </div>
+        </div>
+        <PhnThng />
+        <div className="hidden lg:flex absolute h-[293.487px] items-center justify-center left-[100px] top-[147px] w-[241.42px]">
+          <div className="flex-none rotate-[-15.47deg]">
+            <div className="drop-shadow-[0px_5.4px_11.25px_rgba(117,0,3,0.5)] h-[254.7px] overflow-clip relative w-[180px]" data-name="Mag">
+              <Opt />
+              <Frame62 />
+            </div>
+          </div>
+        </div>
+        <div className="hidden lg:flex absolute flex h-[460.634px] items-center justify-center left-[-58px] top-[520px] w-[383.372px]">
+          <div className="flex-none rotate-[16.96deg]">
+            <div className="drop-shadow-[0px_8.4px_17.5px_rgba(117,0,3,0.5)] h-[396.2px] overflow-clip relative w-[280px]" data-name="Mag">
+              <Opt1 />
+            </div>
+          </div>
+        </div>
+        <div className="hidden lg:flex absolute flex h-[518.978px] items-center justify-center left-[1099.37px] top-[92.34px] w-[479.406px]">
+          <div className="flex-none rotate-[-32.01deg]">
+            <div className="drop-shadow-[0px_9px_18.75px_rgba(117,0,3,0.5)] h-[424.5px] overflow-clip relative w-[300px]" data-name="Mag">
+              <Opt2 />
+            </div>
+          </div>
+        </div>
+        <div className="hidden lg:flex absolute flex h-[324.558px] items-center justify-center left-[1225px] top-[648px] w-[265.396px]">
+          <div className="flex-none rotate-[15.73deg]">
+            <div className="bg-white h-[283px] overflow-clip relative shadow-[0px_6px_25px_0px_rgba(117,0,3,0.5)] w-[200px]" data-name="Mag">
+              <div className="absolute h-[283px] left-0 pointer-events-none rounded-bl-[12px] rounded-br-[26px] rounded-tl-[12px] rounded-tr-[12px] top-0 w-[200px]">
+                <div aria-hidden="true" className="absolute inset-0 rounded-bl-[12px] rounded-br-[26px] rounded-tl-[12px] rounded-tr-[12px]">
+                  <img alt="" className="absolute max-w-none object-cover rounded-bl-[12px] rounded-br-[26px] rounded-tl-[12px] rounded-tr-[12px] size-full" src={imgRectangle711} />
+                  <div className="absolute bg-gradient-to-t from-[16.054%] from-[rgba(0,0,0,0.5)] inset-0 rounded-bl-[12px] rounded-br-[26px] rounded-tl-[12px] rounded-tr-[12px] to-[32.42%] to-[rgba(0,0,0,0)]" />
+                </div>
+                <div aria-hidden="true" className="absolute border border-solid border-white inset-0 rounded-bl-[12px] rounded-br-[26px] rounded-tl-[12px] rounded-tr-[12px]" />
+              </div>
+              <Frame65 />
+              <Frame81 />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame15() {
+  return (
+    <div className="[word-break:break-word] content-stretch flex flex-col gap-[20px] items-center not-italic relative shrink-0 w-full max-w-[852px] px-[16px] md:px-0">
+      <p className="bg-clip-text font-['Inter:Bold',sans-serif] font-bold leading-[68px] relative shrink-0 text-[32px] md:text-[48px] text-[transparent] uppercase text-center" style={{ backgroundImage: "linear-gradient(269.933deg, rgb(237, 28, 36) 0%, rgb(239, 64, 41) 19.152%, rgb(255, 103, 31) 99.992%)" }}>
+        Thá»ƒ lá»‡ dá»± thi
+      </p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px] relative shrink-0 text-[16px] md:text-[18px] text-black text-center w-full max-w-[647px]">BÃ i tham gia há»£p lá»‡ khi thá»±c hiá»‡n Ä‘áº§y Ä‘á»§ cÃ¡c bÆ°á»›c trong thá»i gian quy Ä‘á»‹nh nhÆ° sau</p>
+    </div>
+  );
+}
+
+function Icon() {
+  return (
+    <div className="relative shrink-0 size-[32px]" data-name="Icon">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32 32">
+        <g id="Icon">
+          <rect fill="var(--fill-0, #9B857A)" height="32" rx="16" width="32" />
+          <path clipRule="evenodd" d={svgPaths.p370ce280} fill="var(--fill-0, white)" fillRule="evenodd" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Frame66() {
+  return (
+    <div className="content-stretch flex gap-[20px] items-center relative shrink-0 w-full">
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[68px] min-w-px not-italic relative text-[24px] text-black">Thá»i gian diá»…n ra</p>
+      <Icon />
+    </div>
+  );
+}
+
+function Frame16() {
+  return (
+    <div className="bg-[#ff671f] content-stretch flex items-center justify-center px-[12px] py-[4px] relative rounded-[8px] shrink-0 z-[2]">
+      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[28px] not-italic relative shrink-0 text-[18px] text-white whitespace-nowrap">Tuáº§n 1</p>
+    </div>
+  );
+}
+
+function Frame47() {
+  return (
+    <div className="flex-[1_0_0] h-auto lg:h-[322px] min-h-[322px] min-w-px relative rounded-[20px]">
+      <div className="content-stretch flex flex-col gap-[20px] isolate items-start p-[20px] relative size-full">
+        <Frame16 />
+        <div className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-normal lg:leading-[0] min-w-full not-italic relative shrink-0 text-[15px] sm:text-[16px] lg:text-[18px] text-black w-full lg:w-[min-content] whitespace-pre-wrap z-[1]">
+          <p className="mb-0">
+            <span className="[word-break:break-word] font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[28px] not-italic">Thá»i gian tham gia</span>
+            <span className="leading-[28px]">: 27/06 - 04/07/2026</span>
+          </p>
+          <p className="leading-[28px] mb-0">â€‹</p>
+          <p className="mb-0">
+            <span className="[word-break:break-word] font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[28px] not-italic">{`Thá»i gian cÃ´ng bá»‘ káº¿t quáº£: `}</span>
+            <span className="leading-[28px]">09/07/2026</span>
+          </p>
+          <p className="leading-[28px] mb-0">â€‹</p>
+          <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[28px] mb-0">{`Sá»‘ lÆ°á»£ng giáº£i tuáº§n 1: `}</p>
+          <p className="leading-[28px] mb-0">{`5 giáº£i Di sáº£n VÆ°Æ¡n Táº§m `}</p>
+          <p className="leading-[28px] mb-0">5 giáº£i Di sáº£n Bá»n Vá»¯ng</p>
+          <p className="leading-[28px] mb-0">25 giáº£i May Máº¯n</p>
+          <p className="leading-[28px]">â€‹</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame17() {
+  return (
+    <div className="bg-[#ff671f] content-stretch flex items-center justify-center px-[12px] py-[4px] relative rounded-[8px] shrink-0 z-[2]">
+      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[28px] not-italic relative shrink-0 text-[18px] text-white whitespace-nowrap">Tuáº§n 2</p>
+    </div>
+  );
+}
+
+function Frame48() {
+  return (
+    <div className="flex-[1_0_0] h-auto lg:h-[322px] min-h-[322px] min-w-px relative rounded-[20px]">
+      <div className="content-stretch flex flex-col gap-[20px] isolate items-start p-[20px] relative size-full">
+        <Frame17 />
+        <div className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-normal lg:leading-[0] min-w-full not-italic relative shrink-0 text-[15px] sm:text-[16px] lg:text-[18px] text-black w-full lg:w-[min-content] whitespace-pre-wrap z-[1]">
+          <p className="mb-0">
+            <span className="[word-break:break-word] font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[28px] not-italic">Thá»i gian tham gia:</span>
+            <span className="leading-[28px]">{`  04/07 - 11/07/2026`}</span>
+          </p>
+          <p className="leading-[28px] mb-0">â€‹</p>
+          <p className="mb-0">
+            <span className="[word-break:break-word] font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[28px] not-italic">Thá»i gian cÃ´ng bá»‘ káº¿t quáº£:</span>
+            <span className="leading-[28px]">{` 17/07/2026`}</span>
+          </p>
+          <p className="leading-[28px] mb-0">â€‹</p>
+          <p className="font-['Inter:Bold',sans-serif] font-bold leading-[28px] mb-0">Sá»‘ lÆ°á»£ng giáº£i tuáº§n 2:</p>
+          <p className="leading-[28px] mb-0">{`5 giáº£i Di sáº£n VÆ°Æ¡n Táº§m `}</p>
+          <p className="leading-[28px] mb-0">5 giáº£i Di sáº£n Bá»n Vá»¯ng</p>
+          <p className="leading-[28px]">25 giáº£i May Máº¯n</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame56() {
+  return (
+    <div className="content-stretch flex flex-col md:flex-row gap-[20px] items-start relative shrink-0 w-full">
+      <Frame47 />
+      <Frame48 />
+    </div>
+  );
+}
+
+interface Frame59Props {
+  isOpen: boolean;
+  onToggle: () => void;
+}
+
+function Frame59({ isOpen, onToggle }: Frame59Props) {
+  return (
+    <div className="content-stretch flex flex-col gap-[20px] items-center pt-[40px] relative shrink-0 w-full transition-all duration-300">
+      <div aria-hidden="true" className="absolute border-[#e4d2c7] border-solid border-t inset-0 pointer-events-none" />
+      <div className="content-stretch flex gap-[20px] items-center relative shrink-0 w-full cursor-pointer hover:opacity-80 transition-opacity" onClick={onToggle}>
+        <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[68px] min-w-px not-italic relative text-[24px] text-black">Thá»i gian diá»…n ra</p>
+        <div className="relative shrink-0 size-[32px] transition-transform duration-300" style={{ transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)' }} data-name="Icon">
+          <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32 32">
+            <g id="Icon">
+              <rect fill="var(--fill-0, #9B857A)" height="32" rx="16" width="32" />
+              <path clipRule="evenodd" d={svgPaths.p370ce280} fill="var(--fill-0, white)" fillRule="evenodd" id="Vector" />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div className="w-full transition-all duration-300 overflow-hidden" style={{ maxHeight: isOpen ? '1000px' : '0px', opacity: isOpen ? 1 : 0 }}>
+        <Frame56 />
+      </div>
+    </div>
+  );
+}
+
+function Icon1() {
+  return (
+    <div className="relative shrink-0 size-[32px]" data-name="Icon">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32 32">
+        <g id="Icon">
+          <rect fill="var(--fill-0, #9B857A)" height="32" rx="16" width="32" />
+          <path clipRule="evenodd" d={svgPaths.p370ce280} fill="var(--fill-0, white)" fillRule="evenodd" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Frame67() {
+  return (
+    <div className="content-stretch flex gap-[20px] items-center relative shrink-0 w-full">
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[68px] min-w-px not-italic relative text-[24px] text-black">CÃ¡ch thá»©c tham gia</p>
+      <Icon1 />
+    </div>
+  );
+}
+
+function Frame49() {
+  return (
+    <div className="relative rounded-[20px] shrink-0 w-full">
+      <div className="content-stretch flex isolate items-start p-[20px] relative size-full">
+        <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[28px] min-w-px not-italic relative text-[18px] text-black z-[1]">{`NgÆ°á»i tham gia táº¡o áº£nh theo hÆ°á»›ng dáº«n. Sau Ä‘Ã³ chia sáº» hÃ¬nh áº£nh vÃ  gá»­i bÃ i dá»± thi theo cÃ¡c bÆ°á»›c Ä‘Æ¡n giáº£n bÃªn dÆ°á»›i: `}</p>
+      </div>
+    </div>
+  );
+}
+
+function Frame18() {
+  return (
+    <div className="bg-[#ff671f] content-stretch flex items-center justify-center px-[12px] py-[4px] relative rounded-[8px] shrink-0 z-[2]">
+      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[28px] not-italic relative shrink-0 text-[18px] text-white whitespace-nowrap">BÆ°á»›c 1</p>
+    </div>
+  );
+}
+
+function Frame50() {
+  return (
+    <div className="relative rounded-[20px] shrink-0 w-full">
+      <div className="content-stretch flex gap-[20px] isolate items-start p-[20px] relative size-full">
+        <Frame18 />
+        <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-normal lg:leading-[0] min-w-px not-italic relative text-[15px] sm:text-[16px] lg:text-[18px] text-black z-[1]">
+          <span className="leading-[28px]">{`Chia sáº» hÃ¬nh áº£nh Táº¡p ChÃ­ Di Sáº£n TÆ°Æ¡ng Lai lÃªn facebook cÃ¡ nhÃ¢n á»Ÿ cháº¿ Ä‘á»™ cÃ´ng khai cÃ¹ng hashtag: `}</span>
+          <span className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[28px] text-[#ed1c24]">#MSB #Cungvuontam #MSB35 #Vuontamtudisan</span>
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function Frame27() {
+  return (
+    <div className="bg-[#ff671f] content-stretch flex items-center justify-center px-[12px] py-[4px] relative rounded-[8px] shrink-0 z-[2]">
+      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[28px] not-italic relative shrink-0 text-[18px] text-white whitespace-nowrap">BÆ°á»›c 2</p>
+    </div>
+  );
+}
+
+function Frame51() {
+  return (
+    <div className="h-auto lg:h-[180px] min-h-[180px] relative rounded-[20px] shrink-0 w-full">
+      <div className="content-stretch flex gap-[20px] isolate items-start p-[20px] relative size-full">
+        <Frame27 />
+        <div className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-normal lg:leading-[0] min-w-px not-italic relative text-[15px] sm:text-[16px] lg:text-[18px] text-black whitespace-pre-wrap z-[1]">
+          <p className="mb-0">
+            <span className="leading-[28px]">{`BÃ¬nh luáº­n ngay dÆ°á»›i bÃ i Ä‘Äƒng cÃ´ng bá»‘ minigame trÃªn fanpage `}</span>
+            <a className="[text-decoration-skip-ink:none] [text-underline-position:from-font] cursor-pointer decoration-from-font decoration-solid leading-[28px] underline" href="https://www.facebook.com/MSBVietnam?__cft__[0]=AZa2V99bvCZ2CxWbhb4x3mGR1GIbKTNBCPcZOYvNp0OflHpEOWYwOHRG8OsxencUimF3BWsTMlCDS-aHU7tSiQ_95lNE6v6sV_m1jHqsZcOjgr6g-FnNvTJwrcMw54I84ApTi4XfaLraC_lAVNd3IqsP3B0IHHQUUC7ZXdHI7QYUVELyRSnDxNt7y4cLQY3la-w&__tn__=-UC%2CP-R" target="_blank">
+              <span className="[text-decoration-skip-ink:none] [text-underline-position:from-font] decoration-from-font decoration-solid underline" href="https://www.facebook.com/MSBVietnam?__cft__[0]=AZa2V99bvCZ2CxWbhb4x3mGR1GIbKTNBCPcZOYvNp0OflHpEOWYwOHRG8OsxencUimF3BWsTMlCDS-aHU7tSiQ_95lNE6v6sV_m1jHqsZcOjgr6g-FnNvTJwrcMw54I84ApTi4XfaLraC_lAVNd3IqsP3B0IHHQUUC7ZXdHI7QYUVELyRSnDxNt7y4cLQY3la-w&__tn__=-UC%2CP-R" target="_blank">
+                MSB - NgÃ¢n hÃ ng TMCP HÃ ng Háº£i Viá»‡t Nam
+              </span>
+            </a>
+            <span className="leading-[28px]">{` theo cáº¥u trÃºc:`}</span>
+          </p>
+          <p className="leading-[28px] mb-0">{`- áº¢nh Táº¡p chÃ­ Di sáº£n tÆ°Æ¡ng lai `}</p>
+          <p className="leading-[28px] mb-0">{`- ÄÆ°á»ng link bÃ i Ä‘Äƒng vá»«a chia sáº» trÃªn trang cÃ¡ nhÃ¢nÂ `}</p>
+          <p className="leading-[28px] mb-0">{`- Tag thÃªm 2 ngÆ°á»i báº¡nÂ `}</p>
+          <p className="leading-[28px]">â€‹</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame55() {
+  return (
+    <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full">
+      <Frame49 />
+      <Frame50 />
+      <Frame51 />
+    </div>
+  );
+}
+
+interface Frame58Props {
+  isOpen: boolean;
+  onToggle: () => void;
+}
+
+function Frame58({ isOpen, onToggle }: Frame58Props) {
+  return (
+    <div className="content-stretch flex flex-col gap-[20px] items-center pt-[40px] relative shrink-0 w-full transition-all duration-300">
+      <div aria-hidden="true" className="absolute border-[#e4d2c7] border-solid border-t inset-0 pointer-events-none" />
+      <div className="content-stretch flex gap-[20px] items-center relative shrink-0 w-full cursor-pointer hover:opacity-80 transition-opacity" onClick={onToggle}>
+        <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[68px] min-w-px not-italic relative text-[24px] text-black">CÃ¡ch thá»©c tham gia</p>
+        <div className="relative shrink-0 size-[32px] transition-transform duration-300" style={{ transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)' }} data-name="Icon">
+          <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32 32">
+            <g id="Icon">
+              <rect fill="var(--fill-0, #9B857A)" height="32" rx="16" width="32" />
+              <path clipRule="evenodd" d={svgPaths.p370ce280} fill="var(--fill-0, white)" fillRule="evenodd" id="Vector" />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div className="w-full transition-all duration-300 overflow-hidden" style={{ maxHeight: isOpen ? '1000px' : '0px', opacity: isOpen ? 1 : 0 }}>
+        <Frame55 />
+      </div>
+    </div>
+  );
+}
+
+function Icon2() {
+  return (
+    <div className="relative shrink-0 size-[32px]" data-name="Icon">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32 32">
+        <g id="Icon">
+          <rect fill="var(--fill-0, #9B857A)" height="32" rx="16" width="32" />
+          <path clipRule="evenodd" d={svgPaths.p370ce280} fill="var(--fill-0, white)" fillRule="evenodd" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Frame69() {
+  return (
+    <div className="content-stretch flex gap-[20px] items-center relative shrink-0 w-full">
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[68px] min-w-px not-italic relative text-[24px] text-black">Quy cháº¿ cháº¥m giáº£i</p>
+      <Icon2 />
+    </div>
+  );
+}
+
+function Frame28() {
+  return (
+    <div className="bg-[#ff671f] content-stretch flex items-center justify-center px-[12px] py-[4px] relative rounded-[8px] shrink-0 z-[2]">
+      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[28px] not-italic relative shrink-0 text-[18px] text-white whitespace-nowrap">50 giáº£i May Máº¯n</p>
+    </div>
+  );
+}
+
+function Frame52() {
+  return (
+    <div className="relative rounded-[20px] shrink-0 w-full">
+      <div className="content-stretch flex flex-col gap-[20px] isolate items-start px-[20px] pt-[20px] pb-0 relative size-full">
+        <Frame28 />
+        <div className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-normal lg:leading-[0] min-w-full not-italic relative shrink-0 text-[15px] sm:text-[16px] lg:text-[18px] text-black w-full lg:w-[min-content] z-[1]">
+          <p className="mb-0">
+            <span className="font-['Inter:Bold',sans-serif] font-bold leading-[28px]">{`Giáº£i thÆ°á»Ÿng: `}</span>
+            <span className="font-['Inter:Regular',sans-serif] font-normal leading-[28px]">Voucher Urbox trá»‹ giÃ¡ 200.000 Äá»“ng</span>
+          </p>
+          <p className="font-['Inter:Bold',sans-serif] font-bold leading-[28px] mb-0">HÃ¬nh thá»©c xÃ©t giáº£i:</p>
+          <p className="leading-[28px]">Quay ngáº«u nhiÃªn Ä‘á»ƒ chá»n tÃªn ngÆ°á»i may máº¯n trÃºng giáº£i qua há»‡ thá»‘ng Random.org</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame29() {
+  return (
+    <div className="bg-[#ff671f] content-stretch flex items-center justify-center px-[12px] py-[4px] relative rounded-[8px] shrink-0 z-[2]">
+      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[28px] not-italic relative shrink-0 text-[18px] text-white whitespace-nowrap">10 giáº£i Di Sáº£n VÆ°Æ¡n Táº§m</p>
+    </div>
+  );
+}
+
+function Frame53() {
+  return (
+    <div className="flex-[1_0_0] min-w-px relative rounded-[20px] self-stretch">
+      <div className="content-stretch flex flex-col gap-[20px] isolate items-start px-[20px] pb-[20px] pt-0 relative size-full">
+        <Frame29 />
+        <div className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-normal lg:leading-[0] min-w-full not-italic relative shrink-0 text-[15px] sm:text-[16px] lg:text-[18px] text-black w-full lg:w-[min-content] whitespace-pre-wrap z-[1]">
+          <p className="mb-0">
+            <span className="leading-[28px]">{`Giáº£i thÆ°á»Ÿng: `}</span>
+            <span className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic">{`BÃ i dá»± thi Ä‘Æ°á»£c xuáº¥t hiá»‡n trÃªn OOH `}</span>
+          </p>
+          <p className="leading-[28px] mb-0">HÃ¬nh thá»©c xÃ©t giáº£i:</p>
+          <p className="mb-0">
+            <span className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[28px] not-italic">{`DÃ nh cho 10 bÃ¬nh luáº­n dá»± thi cÃ³ lÆ°á»£ng tÆ°Æ¡ng tÃ¡c `}</span>
+            <span className="leading-[28px]">cao nháº¥t</span>
+          </p>
+          <p className="leading-[28px] mb-0">â€‹</p>
+          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[28px]">Tá»•ng tÆ°Æ¡ng tÃ¡c Ä‘Æ°á»£c tÃ­nh báº±ng tá»•ng reaction (like, love,...) vÃ  comment pháº£n há»“i</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame30() {
+  return (
+    <div className="bg-[#ff671f] content-stretch flex items-center justify-center px-[12px] py-[4px] relative rounded-[8px] shrink-0 z-[2]">
+      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[28px] not-italic relative shrink-0 text-[18px] text-white whitespace-nowrap">10 giáº£i Di Sáº£n Bá»n Vá»¯ng</p>
+    </div>
+  );
+}
+
+function Frame54() {
+  return (
+    <div className="flex-[1_0_0] min-w-px relative rounded-[20px] self-stretch">
+      <div className="content-stretch flex flex-col gap-[20px] isolate items-start px-[20px] pb-[20px] pt-0 relative size-full">
+        <Frame30 />
+        <div className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-normal lg:leading-[0] min-w-full not-italic relative shrink-0 text-[15px] sm:text-[16px] lg:text-[18px] text-black w-full lg:w-[min-content] whitespace-pre-wrap z-[1]">
+          <p className="mb-0">
+            <span className="font-['Inter:Bold',sans-serif] font-bold leading-[28px]">Giáº£i thÆ°á»Ÿng:</span>
+            <span className="font-['Inter:Regular',sans-serif] font-normal leading-[28px]">{` `}</span>
+          </p>
+          <p className="leading-[28px] mb-0">1.000.000 Äá»“ng tiá»n máº·t (Giáº£i thÆ°á»Ÿng tiá»n máº·t sáº½ Ä‘Æ°á»£c cá»™ng trá»±c tiáº¿p vÃ o tÃ i khoáº£n MSB cá»§a ngÆ°á»i tháº¯ng; vá»›i user chÆ°a cÃ³ tÃ i khoáº£n, MSB sáº½ há»— trá»£ má»Ÿ má»›i vÃ  náº¡p sáºµn sá»‘ tiá»n tÆ°Æ¡ng á»©ng giÃ¡ trá»‹ giáº£i thÆ°á»Ÿng.)</p>
+          <p className="font-['Inter:Bold',sans-serif] font-bold leading-[28px] mb-0">HÃ¬nh thá»©c xÃ©t giáº£i:</p>
+          <p className="mb-0">
+            <span className="font-['Inter:Regular',sans-serif] font-normal leading-[28px]">{`DÃ nh cho 10 bÃ¬nh luáº­n dá»± thi cÃ³ lÆ°á»£ng tÆ°Æ¡ng tÃ¡c `}</span>
+            <span className="font-['Inter:Bold',sans-serif] font-bold leading-[28px]">cao tiáº¿p theo</span>
+          </p>
+          <p className="leading-[28px] mb-0">â€‹</p>
+          <p className="leading-[28px]">Tá»•ng tÆ°Æ¡ng tÃ¡c Ä‘Æ°á»£c tÃ­nh báº±ng tá»•ng reaction (like, love,...) vÃ  comment pháº£n há»“i</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame83() {
+  return (
+    <div className="content-stretch flex flex-col md:flex-row gap-[20px] h-auto md:h-[320px] items-start relative shrink-0 w-full">
+      <Frame53 />
+      <Frame54 />
+    </div>
+  );
+}
+
+function Frame70() {
+  return (
+    <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full">
+      <Frame52 />
+      <Frame83 />
+    </div>
+  );
+}
+
+interface Frame68Props {
+  isOpen: boolean;
+  onToggle: () => void;
+}
+
+function Frame68({ isOpen, onToggle }: Frame68Props) {
+  return (
+    <div className="content-stretch flex flex-col gap-[20px] items-center pt-[40px] relative shrink-0 w-full transition-all duration-300">
+      <div aria-hidden="true" className="absolute border-[#e4d2c7] border-solid border-t inset-0 pointer-events-none" />
+      <div className="content-stretch flex gap-[20px] items-center relative shrink-0 w-full cursor-pointer hover:opacity-80 transition-opacity" onClick={onToggle}>
+        <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[68px] min-w-px not-italic relative text-[24px] text-black">Quy cháº¿ cháº¥m giáº£i</p>
+        <div className="relative shrink-0 size-[32px] transition-transform duration-300" style={{ transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)' }} data-name="Icon">
+          <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32 32">
+            <g id="Icon">
+              <rect fill="var(--fill-0, #9B857A)" height="32" rx="16" width="32" />
+              <path clipRule="evenodd" d={svgPaths.p370ce280} fill="var(--fill-0, white)" fillRule="evenodd" id="Vector" />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div className="w-full transition-all duration-300 overflow-hidden" style={{ maxHeight: isOpen ? '1000px' : '0px', opacity: isOpen ? 1 : 0 }}>
+        <Frame70 />
+      </div>
+    </div>
+  );
+}
+
+interface Frame57Props {
+  isChecked: boolean;
+  onToggle: () => void;
+}
+
+function Frame57({ isChecked, onToggle }: Frame57Props) {
+  return (
+    <div className="content-stretch flex gap-[24px] items-start justify-center relative shrink-0 w-full">
+      <button 
+        className="bg-white block cursor-pointer relative rounded-[4px] shrink-0 size-[24px] hover:border-orange-500 transition-colors" 
+        data-name="& Checkmarks"
+        onClick={onToggle}
+      >
+        <div aria-hidden="true" className="absolute border border-[#ff671f] border-solid inset-0 pointer-events-none rounded-[4px]" />
+        <div 
+          className="[word-break:break-word] absolute flex flex-col font-['SF_Pro_Text:Regular',sans-serif] inset-0 justify-center leading-[0] not-italic text-[#ff671f] text-[17px] text-center tracking-[-0.408px] transition-opacity duration-200"
+          style={{ opacity: isChecked ? 1 : 0 }}
+        >
+          <p className="leading-[22px] font-bold">âœ“</p>
+        </div>
+      </button>
+      <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex-[1_0_0] font-['Inter:Italic',sans-serif] font-normal italic leading-[0] min-w-px relative text-[#6e6e6e] text-[14px] whitespace-pre-wrap">
+        <p className="leading-[16px]">
+          {`Báº±ng viá»‡c nháº¥n tham gia, tÃ´i Ä‘á»“ng Ã½ cho MSB sá»­ dá»¥ng hÃ¬nh áº£nh Ä‘Æ°á»£c táº¡o tá»« chÆ°Æ¡ng trÃ¬nh cho cÃ¡c hoáº¡t Ä‘á»™ng truyá»n thÃ´ng cá»§a chiáº¿n dá»‹ch nÃ y.\n\nMSB cam káº¿t báº£o máº­t vÃ  khÃ´ng sá»­ dá»¥ng dá»¯ liá»‡u cÃ¡ nhÃ¢n cá»§a báº¡n cho báº¥t ká»³ má»¥c Ä‘Ã­ch nÃ o khÃ¡c.`}
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function Desktop() {
+  const [isChecked, setIsChecked] = useState(false);
+  const [isOpen1, setIsOpen1] = useState(true);
+  const [isOpen2, setIsOpen2] = useState(true);
+  const [isOpen3, setIsOpen3] = useState(true);
+  const navigate = useNavigate();
+
+  return (
+    <div className="relative shrink-0 w-full" data-name="Desktop - 7">
+      <div className="flex flex-col items-center size-full">
+        <div className="content-stretch flex flex-col gap-[40px] items-center pb-[100px] pt-[40px] px-[16px] md:px-[80px] lg:px-[285px] relative size-full">
+          <Frame15 />
+          <Frame59 isOpen={isOpen1} onToggle={() => setIsOpen1(!isOpen1)} />
+          <Frame58 isOpen={isOpen2} onToggle={() => setIsOpen2(!isOpen2)} />
+          <Frame68 isOpen={isOpen3} onToggle={() => setIsOpen3(!isOpen3)} />
+          <Frame57 isChecked={isChecked} onToggle={() => setIsChecked(!isChecked)} />
+          <div 
+            className="content-stretch flex h-[60px] isolate items-center overflow-clip px-[30px] py-[16px] relative rounded-[30px] shrink-0 transition-all duration-300" 
+            style={{ 
+              backgroundImage: "linear-gradient(269.949deg, rgb(237, 28, 36) 0%, rgb(239, 64, 41) 19.152%, rgb(255, 103, 31) 99.992%)",
+              opacity: isChecked ? 1 : 0.5,
+              cursor: isChecked ? 'pointer' : 'not-allowed'
+            }} 
+            data-name="Button"
+            onClick={() => {
+              if (isChecked) {
+                navigate("/di-san-step-1");
+              }
+            }}
+          >
+            <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[22px] not-italic relative shrink-0 text-[24px] text-white whitespace-nowrap z-[1]">Tham gia ngay</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame33() {
+  return (
+    <div className="absolute content-stretch flex gap-[12px] inset-[-0.19%_0_0_0] items-center">
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[256px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[256px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[477.474px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[477.474px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[552.885px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[552.885px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[606.302px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[606.302px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[552.885px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[552.885px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[458.62px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[458.62px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[405.204px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[405.204px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[370.64px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[370.64px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[332.935px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[332.935px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[307.797px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[307.797px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[285.802px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[285.802px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[332.935px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[332.935px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[427.199px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[427.199px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[386.351px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[386.351px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[332.935px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[332.935px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[405.204px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[405.204px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[521.464px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[521.464px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[681.714px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[681.714px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[606.302px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[606.302px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[521.464px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[521.464px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[370.64px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[370.64px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[235.527px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[235.527px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[134.979px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[134.979px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[166.4px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[166.4px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[207.248px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[207.248px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[256px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[256px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[256px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[256px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[477.474px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[477.474px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[552.885px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[552.885px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[606.302px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[606.302px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[552.885px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[552.885px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[458.62px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[458.62px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[405.204px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[405.204px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[370.64px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[370.64px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[332.935px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[332.935px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[307.797px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[307.797px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[285.802px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[285.802px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[285.802px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[285.802px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[332.935px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[332.935px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[332.935px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[332.935px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[427.199px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[427.199px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[427.199px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[427.199px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[386.351px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[386.351px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[386.351px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[386.351px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[332.935px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[332.935px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[332.935px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[332.935px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[405.204px] min-w-px relative rounded-[16px]" />
+      <div className="bg-[#eeae88] flex-[1_0_0] h-[405.204px] min-w-px relative rounded-[16px]" />
+    </div>
+  );
+}
+
+function Frame32() {
+  return (
+    <div className="absolute inset-[14.5%_0_0_0] mix-blend-darken overflow-clip">
+      <Frame33 />
+    </div>
+  );
+}
+
+function Frame2() {
+  return (
+    <div className="[word-break:break-word] content-stretch flex flex-col items-center leading-[normal] not-italic py-[12px] relative shrink-0 w-full whitespace-normal text-center px-[16px] md:px-[80px]">
+      <p className="font-['Inter:Light',sans-serif] font-light relative shrink-0 text-[#f4600c] text-[16px]">Tiáº¿p bÆ°á»›c</p>
+      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold relative shrink-0 text-[#091e42] text-[28px] sm:text-[36px] md:text-[48px]">Táº¡p chÃ­ di sáº£n cá»§a báº¡n</p>
+    </div>
+  );
+}
+
+function Frame14() {
+  return (
+    <div className="content-stretch flex items-center justify-center relative shrink-0 w-auto">
+      <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="People">
+        <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[40px] not-italic relative shrink-0 text-[#f4600c] text-[36px] md:text-[48px] text-center whitespace-nowrap">300</p>
+      </div>
+    </div>
+  );
+}
+
+function Frame35() {
+  return (
+    <div className="content-stretch flex gap-[6px] md:gap-[12px] items-center justify-center relative shrink-0 w-full max-w-[511px] flex-wrap md:flex-nowrap px-[16px]">
+      <p className="[word-break:break-word] font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[24px] not-italic relative shrink-0 text-[#091e42] text-[14px] md:text-[16px] text-center whitespace-normal md:whitespace-nowrap">ÄÃ£ cÃ³</p>
+      <Frame14 />
+      <p className="[word-break:break-word] font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[24px] not-italic relative shrink-0 text-[#091e42] text-[14px] md:text-[16px] text-center whitespace-normal md:whitespace-nowrap">ngÆ°á»i chia sáº» cÃ¢u chuyá»‡n vÆ°Æ¡n táº§m tá»« di sáº£n</p>
+    </div>
+  );
+}
+
+function Frame34() {
+  return (
+    <div className="content-stretch flex items-center justify-center md:justify-between relative shrink-0 w-full px-[16px] md:px-[80px]">
+      <div className="hidden md:flex backdrop-blur-[2px] bg-[rgba(222,229,239,0.4)] content-stretch flex flex-col items-center justify-center overflow-clip relative rounded-[32px] shrink-0 size-[48px] select-none" data-name="scroll">
+        <div className="relative shrink-0 size-[32px]" data-name="left">
+          <div className="absolute inset-[20.83%_33.85%]" data-name="Union">
+            <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 10.3333 18.6667">
+              <path d={svgPaths.p2997ad00} fill="var(--fill-0, #091E42)" id="Union" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <Frame35 />
+      <div className="hidden md:flex backdrop-blur-[2px] bg-[rgba(222,229,239,0.4)] content-stretch flex flex-col items-center justify-center overflow-clip relative rounded-[32px] shrink-0 size-[48px] select-none" data-name="scroll">
+        <div className="relative shrink-0 size-[32px]" data-name="right">
+          <div className="absolute inset-[20.83%_33.85%]" data-name="Union">
+            <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 10.3333 18.6667">
+              <path d={svgPaths.p3b6ee600} fill="var(--fill-0, #091E42)" id="Union" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+
+function Group23Old() {
+  return (
+    <div className="absolute" style={{ top: '2.75%', right: '18.91%', bottom: '-0.01%', left: 0 }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 204.014 35.7821">
+        <g id="Group">
+          <path d={svgPathsOld.p23561f80} fill="var(--fill-0, white)" id="Vector" />
+          <path d={svgPathsOld.p84bcc00} fill="var(--fill-0, white)" id="Vector_2" />
+          <path d={svgPathsOld.p2db67170} fill="var(--fill-0, white)" id="Vector_3" />
+          <path d={svgPathsOld.p29ce9700} fill="var(--fill-0, white)" id="Vector_4" />
+          <path d={svgPathsOld.p3f8efc00} fill="var(--fill-0, white)" id="Vector_5" />
+          <path d={svgPathsOld.p9863df1} fill="var(--fill-0, white)" id="Vector_6" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group24Old() {
+  return (
+    <div className="absolute" style={{ top: 0, right: 0, bottom: '0.7%', left: '82.16%' }} data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 44.878 36.5314">
+        <g id="Group">
+          <path d={svgPathsOld.p258fe880} fill="var(--fill-0, #FFB81C)" id="Vector" />
+          <path d={svgPathsOld.p1ddc2020} fill="var(--fill-0, #FFB81C)" id="Vector_2" />
+          <path d={svgPathsOld.p2ab94e40} fill="var(--fill-0, #FFB81C)" id="Vector_3" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function CardHeaderOld() {
+  return (
+    <div className="absolute content-stretch flex flex-col gap-[3.8px] md:gap-[4.8px] lg:gap-[5.654px] items-start left-1/2 -translate-x-1/2 top-[10px] md:top-[12px] lg:top-[14.13px]">
+      <p className="[word-break:break-word] font-['SVN-Gotham_Rounded:Medium',sans-serif] leading-[normal] not-italic relative shrink-0 text-[11px] md:text-[14px] lg:text-[16.96px] text-white uppercase whitespace-nowrap">Táº¡p chÃ­ di sáº£n</p>
+      <div className="overflow-clip relative shrink-0 w-[169px] h-[24.7px] md:w-[213.6px] md:h-[31.2px] lg:w-[251.59px] lg:h-[36.749px]" data-name="TÆ¯Æ NG LAI">
+        <Group23Old />
+        <Group24Old />
+      </div>
+    </div>
+  );
+}
+
+function LogoMOld() {
+  return (
+    <div className="absolute" style={{ top: '82.33%', right: '57.13%', bottom: 0, left: 0 }} data-name="LOGO M">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 121.185 70.6714">
+        <g id="LOGO M">
+          <path d={svgPathsOld.p32d9ae80} fill="url(#paint0_radial_1_3963_old)" id="Vector" />
+          <path d={svgPathsOld.p3272f200} fill="url(#paint1_radial_1_3963_old)" id="Vector_2" />
+          <path d={svgPathsOld.pb89a800} fill="url(#paint2_radial_1_3963_old)" id="Vector_3" />
+          <path d={svgPathsOld.p3ba22080} fill="url(#paint3_radial_1_3963_old)" id="Vector_4" />
+        </g>
+        <defs>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(55.0658 20.0393) scale(31.1408 31.1197)" gradientUnits="userSpaceOnUse" id="paint0_radial_1_3963_old" r="1">
+            <stop stopColor="#9D0B0F" />
+            <stop offset="0.07" stopColor="#AA0E12" />
+            <stop offset="0.26" stopColor="#C7141A" />
+            <stop offset="0.44" stopColor="#DB1820" />
+            <stop offset="0.62" stopColor="#E81B23" />
+            <stop offset="0.8" stopColor="#EC1C24" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(84 36.8925) scale(31.2441 31.223)" gradientUnits="userSpaceOnUse" id="paint1_radial_1_3963_old" r="1">
+            <stop offset="0.3" stopColor="#9D0B0F" />
+            <stop offset="0.35" stopColor="#AA0E12" />
+            <stop offset="0.48" stopColor="#C7141A" />
+            <stop offset="0.6" stopColor="#DB1820" />
+            <stop offset="0.73" stopColor="#E81B23" />
+            <stop offset="0.85" stopColor="#EC1C24" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(61.5627 3.66015) scale(66.6564 66.6113)" gradientUnits="userSpaceOnUse" id="paint2_radial_1_3963_old" r="1">
+            <stop offset="0.35" stopColor="#EC1C24" />
+            <stop offset="1" stopColor="#F26F21" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(9.70499 60.0474) scale(23.39 23.3742)" gradientUnits="userSpaceOnUse" id="paint3_radial_1_3963_old" r="1">
+            <stop offset="0.3" stopColor="#EC1C24" />
+            <stop offset="1" stopColor="#9D0B0F" />
+          </radialGradient>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+interface CardFooterOldProps {
+  name: string;
+  description: string;
+}
+
+function CardFooterOld({ name, description }: CardFooterOldProps) {
+  return (
+    <div className="absolute content-stretch flex gap-[8.481px] items-start" style={{ left: '15.55px', top: '93.99px', width: '248.763px' }}>
+      <div className="content-stretch flex isolate items-center overflow-clip relative rounded-[30px] shrink-0" style={{ padding: '5.654px 14.134px', backgroundImage: "linear-gradient(269.959deg, rgb(237, 28, 36) 0%, rgb(239, 64, 41) 19.152%, rgb(255, 103, 31) 99.992%)" }} data-name="Button">
+        <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[15.548px] not-italic relative shrink-0 text-[11.31px] text-white whitespace-nowrap z-[1]">{name}</p>
+      </div>
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[14.134px] min-w-px not-italic relative text-[#ed1c24] text-[11.31px] text-shadow-[0px_0px_7.067px_white]">
+        {description}
+      </p>
+    </div>
+  );
+}
+
+interface OldMagazineCardProps {
+  bgImage: string;
+  name?: string;
+  description?: string;
+  bgTop?: string;
+  bgHeight?: string;
+  isCard4?: boolean;
+}
+
+function OldMagazineCard({ bgImage }: OldMagazineCardProps) {
+  return (
+    <div className="h-full w-full overflow-clip relative rounded-[16px]" data-name="Mag">
+      <img 
+        alt="BÃ¬a táº¡p chÃ­" 
+        className="w-full h-full object-cover pointer-events-none rounded-[16px]" 
+        src={bgImage} 
+      />
+    </div>
+  );
+}
+
+function Frame36() {
+  const totalCards = 16;
+  const containerRef = useRef<HTMLDivElement>(null);
+  const dotsRef = useRef<HTMLDivElement>(null);
+
+  // === State refs (dÃ¹ng ref thay Ä‘á»ƒ trÃ¡nh re-render má»—i frame lÃ m giÃ¡n Ä‘oáº¡n chuyá»ƒn Ä‘á»™ng) ===
+  const angleRef = useRef(0);          // GÃ³c xoay hiá»‡n táº¡i (degree)
+  const velocityRef = useRef(0);       // Váº­n tá»‘c quÃ¡n tÃ­nh khi tháº£ drag
+  const isDraggingRef = useRef(false);  // Äang kÃ©o?
+  const dragStartXRef = useRef(0);     // Vá»‹ trÃ­ X lÃºc báº¯t Ä‘áº§u kÃ©o
+  const dragStartAngle = useRef(0);    // GÃ³c lÃºc báº¯t Ä‘áº§u kÃ©o
+  const lastDragXRef = useRef(0);      // Vá»‹ trÃ­ X frame trÆ°á»›c (tÃ­nh velocity)
+  const lastTimeRef = useRef(0);       // Timestamp frame trÆ°á»›c
+  const isAutoRef = useRef(true);      // Auto-rotate Ä‘ang báº­t?
+  const autoTimerRef = useRef(0);      // Timer Ä‘áº¿m idle â†’ báº­t láº¡i auto
+
+  // === Cáº¥u hÃ¬nh carousel ===
+  const ANGLE_STEP = 360 / totalCards;  // GÃ³c giá»¯a 2 card liÃªn tiáº¿p
+  const RADIUS_X = 280;                // BÃ¡n kÃ­nh tráº£i ngang (px) - Ä‘iá»u chá»‰nh Ä‘á»™ rá»™ng phá»‘i cáº£nh
+  const MIN_SCALE = 0.72;              // Scale card xa nháº¥t (á»Ÿ giá»¯a mÃ n hÃ¬nh)
+  const MAX_SCALE = 1.15;              // Scale card gáº§n nháº¥t (á»Ÿ hai bÃªn rÃ¬a mÃ n hÃ¬nh)
+  const AUTO_SPEED = 0.15;             // Tá»‘c Ä‘á»™ tá»± xoay (deg/frame)
+  const DRAG_SENSITIVITY = 0.35;       // Há»‡ sá»‘ nháº¡y khi kÃ©o
+  const SNAP_STIFFNESS = 0.08;         // Äá»™ cá»©ng spring snap (0..1)
+  const FRICTION = 0.92;               // Ma sÃ¡t quÃ¡n tÃ­nh (0..1)
+  const VELOCITY_THRESHOLD = 0.05;     // NgÆ°á»¡ng dá»«ng quÃ¡n tÃ­nh
+  const AUTO_RESUME_DELAY = 3000;      // Thá»i gian idle trÆ°á»›c khi báº­t láº¡i auto (ms)
+  const CARD_W = 282.686;
+  const CARD_H = 400;
+
+  // === HÃ m tÃ­nh gÃ³c snap gáº§n nháº¥t ===
+  const getSnapAngle = (angle: number): number => {
+    const norm = ((angle % 360) + 360) % 360;
+    const snapped = Math.round(norm / ANGLE_STEP) * ANGLE_STEP;
+    return angle - norm + snapped;
+  };
+
+  const cards = [
+    // Card 1 - Chá»‹ Hoa (BÃ¡nh má»³ - Ná»¯)
+    <OldMagazineCard bgImage={imgFemaleBanhMy} name="Chá»‹ Hoa" description="Chá»§ xe bÃ¡nh má»³ káº¹p thá»‹t nÆ°á»›ng ná»©c tiáº¿ng phá»‘ cá»•" isCard4={true} />,
+    // Card 2 - Anh HÃ¹ng (BÃ¡nh má»³ - Nam)
+    <OldMagazineCard bgImage={imgMaleBanhMy} name="Anh HÃ¹ng" description="Chá»§ chuá»—i xe bÃ¡nh má»³ pate cá»™t Ä‘Ã¨n Ä‘áº¯t khÃ¡ch nháº¥t quáº­n" isCard4={true} />,
+    // Card 3 - Chá»‹ Vy (QuÃ¡n nÆ°á»›ng - Ná»¯)
+    <OldMagazineCard bgImage={imgFemaleQuanNuong} name="Chá»‹ Vy" description="Chá»§ quÃ¡n nÆ°á»›ng ngÃ³i thÆ¡m lá»«ng thu hÃºt thá»±c khÃ¡ch" isCard4={true} />,
+    // Card 4 - Anh LÃ¢n (QuÃ¡n nÆ°á»›ng - Nam)
+    <OldMagazineCard bgImage={imgMaleQuanNuong} name="Anh LÃ¢n" description="Chá»§ chuá»—i quÃ¡n nÆ°á»›ng kÃ­n bÃ n má»—i tá»‘i" isCard4={true} />,
+    // Card 5 - Chá»‹ Ly (Thá»£ may - Ná»¯)
+    <OldMagazineCard bgImage={imgFemaleThoMay} name="Chá»‹ Ly" description="NhÃ  thiáº¿t káº¿ Ã¡o dÃ i truyá»n thá»‘ng vÆ°Æ¡n táº§m tháº¿ giá»›i" isCard4={true} />,
+    // Card 6 - ChÃº Long (Thá»£ may - Nam)
+    <OldMagazineCard bgImage={imgMaleThoMay} name="ChÃº Long" description="Nghá»‡ nhÃ¢n may Ä‘o comple cao cáº¥p cho cÃ¡c doanh nhÃ¢n" isCard4={true} />,
+    // Card 7 - CÃ´ Hiá»n (Äáº§u báº¿p - Ná»¯)
+    <OldMagazineCard bgImage={imgFemaleDauBep} name="CÃ´ Hiá»n" description="Chá»§ quÃ¡n phá»Ÿ gia truyá»n 3 Ä‘á»i vá»›i cÃ´ lÃ  Ä‘á»i Ä‘áº§u tiÃªn" isCard4={true} />,
+    // Card 8 - Anh HÆ°ng (Äáº§u báº¿p - Nam)
+    <OldMagazineCard bgImage={imgMaleDauBep} name="Anh HÆ°ng" description="Äáº§u báº¿p Ä‘áº¡t sao Michelin mang áº©m thá»±c Viá»‡t ra tháº¿ giá»›i" isCard4={true} />,
+    
+    // Card 9 - Chá»‹ Hoa (BÃ¡nh má»³ - Ná»¯)
+    <OldMagazineCard bgImage={imgFemaleBanhMy} name="Chá»‹ Hoa" description="Chá»§ xe bÃ¡nh má»³ káº¹p thá»‹t nÆ°á»›ng ná»©c tiáº¿ng phá»‘ cá»•" isCard4={true} />,
+    // Card 10 - Anh HÃ¹ng (BÃ¡nh má»³ - Nam)
+    <OldMagazineCard bgImage={imgMaleBanhMy} name="Anh HÃ¹ng" description="Chá»§ chuá»—i xe bÃ¡nh má»³ pate cá»™t Ä‘Ã¨n Ä‘áº¯t khÃ¡ch nháº¥t quáº­n" isCard4={true} />,
+    // Card 11 - Chá»‹ Vy (QuÃ¡n nÆ°á»›ng - Ná»¯)
+    <OldMagazineCard bgImage={imgFemaleQuanNuong} name="Chá»‹ Vy" description="Chá»§ quÃ¡n nÆ°á»›ng ngÃ³i thÆ¡m lá»«ng thu hÃºt thá»±c khÃ¡ch" isCard4={true} />,
+    // Card 12 - Anh LÃ¢n (QuÃ¡n nÆ°á»›ng - Nam)
+    <OldMagazineCard bgImage={imgMaleQuanNuong} name="Anh LÃ¢n" description="Chá»§ chuá»—i quÃ¡n nÆ°á»›ng kÃ­n bÃ n má»—i tá»‘i" isCard4={true} />,
+    // Card 13 - Chá»‹ Ly (Thá»£ may - Ná»¯)
+    <OldMagazineCard bgImage={imgFemaleThoMay} name="Chá»‹ Ly" description="NhÃ  thiáº¿t káº¿ Ã¡o dÃ i truyá»n thá»‘ng vÆ°Æ¡n táº§m tháº¿ giá»›i" isCard4={true} />,
+    // Card 14 - ChÃº Long (Thá»£ may - Nam)
+    <OldMagazineCard bgImage={imgMaleThoMay} name="ChÃº Long" description="Nghá»‡ nhÃ¢n may Ä‘o comple cao cáº¥p cho cÃ¡c doanh nhÃ¢n" isCard4={true} />,
+    // Card 15 - CÃ´ Hiá»n (Äáº§u báº¿p - Ná»¯)
+    <OldMagazineCard bgImage={imgFemaleDauBep} name="CÃ´ Hiá»n" description="Chá»§ quÃ¡n phá»Ÿ gia truyá»n 3 Ä‘á»i vá»›i cÃ´ lÃ  Ä‘á»i Ä‘áº§u tiÃªn" isCard4={true} />,
+    // Card 16 - Anh HÆ°ng (Äáº§u báº¿p - Nam)
+    <OldMagazineCard bgImage={imgMaleDauBep} name="Anh HÆ°ng" description="Äáº§u báº¿p Ä‘áº¡t sao Michelin mang áº©m thá»±c Viá»‡t ra tháº¿ giá»›i" isCard4={true} />
+  ];
+
+  useEffect(() => {
+    let animId: number;
+
+    const animate = (timestamp: number) => {
+      lastTimeRef.current = timestamp;
+
+      if (isDraggingRef.current) {
+        // Äang kÃ©o thÃ¬ khÃ´ng tá»± cháº¡y
+      } else if (Math.abs(velocityRef.current) > VELOCITY_THRESHOLD) {
+        angleRef.current += velocityRef.current;
+        velocityRef.current *= FRICTION;
+      } else if (!isAutoRef.current) {
+        const target = getSnapAngle(angleRef.current);
+        const diff = target - angleRef.current;
+        if (Math.abs(diff) > 0.01) {
+          angleRef.current += diff * SNAP_STIFFNESS;
+        } else {
+          angleRef.current = target;
+        }
+      } else {
+        angleRef.current += AUTO_SPEED;
+      }
+
+      // --- Render: tÃ­nh toÃ¡n phá»‘i cáº£nh 3D ---
+      const container = containerRef.current;
+      if (!container) {
+        animId = requestAnimationFrame(animate);
+        return;
+      }
+
+      const items = container.querySelectorAll<HTMLElement>('[data-carousel-item]');
+      let activeIdx = 0;
+      let minNorm = Infinity;
+
+      const containerWidth = container.clientWidth || 1200;
+      const isMobile = containerWidth < 768;
+      const isTablet = containerWidth >= 768 && containerWidth < 1024;
+
+      let dynamicRadiusX = containerWidth * 0.72;
+      if (isMobile) {
+        dynamicRadiusX = containerWidth * 0.35;
+      } else if (isTablet) {
+        dynamicRadiusX = containerWidth * 0.55;
+      }
+      dynamicRadiusX = Math.min(isMobile ? 180 : (isTablet ? 450 : 1300), Math.max(isMobile ? 110 : (isTablet ? 240 : 380), dynamicRadiusX));
+
+      const currentMinScale = isMobile ? 0.50 : 0.72;
+      const currentMaxScale = isMobile ? 0.85 : 1.15;
+
+      items.forEach((item, i) => {
+        const theta = ((i * ANGLE_STEP + angleRef.current) % 360 + 360) % 360;
+        const rad = (theta * Math.PI) / 180;
+        const cosVal = Math.cos(rad);
+        const sinVal = Math.sin(rad);
+        const perspectiveFactor = 1.6 / (1.6 + cosVal);
+        const x = sinVal * dynamicRadiusX * perspectiveFactor;
+
+        // norm: 0 (xa nháº¥t, á»Ÿ giá»¯a mÃ n hÃ¬nh) -> 1 (gáº§n nháº¥t)
+        const norm = (1.0 - cosVal) / 2;
+
+        // Scale: áº£nh xa nháº¥t nhá», áº£nh gáº§n to ra
+        const scale = currentMinScale + (currentMaxScale - currentMinScale) * norm;
+
+        // Hiá»‡u á»©ng cong chá»¯ U nháº¹
+        const yOffset = norm * -10;
+
+        let angleDiff = theta;
+        if (angleDiff > 180) angleDiff -= 360;
+        const rotateY = -angleDiff * 0.65;
+
+        // zIndex: card gáº§n Ä‘Ã¨ card xa
+        const zIndex = Math.round(norm * 1000);
+
+        if (norm < minNorm) {
+          minNorm = norm;
+          activeIdx = i;
+        }
+
+        let opacity = 1.0;
+        if (norm > 0.42) {
+          opacity = Math.max(0, 1.0 - (norm - 0.42) / 0.15);
+        }
+
+        // Tá»± Ä‘á»™ng má» vÃ  áº©n card khi Ä‘i sÃ¡t rÃ¬a trÃ¡i/pháº£i mÃ n hÃ¬nh (vÃ¹ng sá»c cam)
+        const absX = Math.abs(x);
+        const limitVisibleX = isMobile ? containerWidth * 0.45 : (isTablet ? containerWidth * 0.46 : containerWidth * 0.48);
+        const limitHiddenX = isMobile ? containerWidth * 0.55 : (isTablet ? containerWidth * 0.54 : containerWidth * 0.56);
+        if (absX > limitVisibleX) {
+          const fadeFactor = Math.max(0, 1.0 - (absX - limitVisibleX) / (limitHiddenX - limitVisibleX));
+          opacity = opacity * fadeFactor;
+        }
+
+        // Ãp dá»¥ng CSS transform vÃ  zIndex
+        item.style.transform = `translateX(${x}px) translateY(${yOffset}px) scale(${scale}) rotateY(${rotateY}deg)`;
+        item.style.opacity = `${opacity}`;
+        item.style.zIndex = `${zIndex}`;
+        item.style.pointerEvents = norm < 0.65 ? 'auto' : 'none';
+      });
+
+      // --- Cáº­p nháº­t dot chá»‰ sá»‘ ---
+      const dotsContainer = dotsRef.current;
+      if (dotsContainer) {
+        const dots = dotsContainer.querySelectorAll<HTMLElement>('[data-dot]');
+        dots.forEach((dot, i) => {
+          const isActive = i === activeIdx;
+          dot.style.width = isActive ? '24px' : '8px';
+          dot.style.background = isActive
+            ? 'linear-gradient(90deg, #ed1c24, #ff671f)'
+            : 'rgba(0,0,0,0.25)';
+        });
+      }
+
+      animId = requestAnimationFrame(animate);
+    };
+
+    animId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(animId);
+  }, []);
+
+  // KÃ©o tháº£ báº±ng chuá»™t
+  const handleDragStart = (clientX: number) => {
+    isDraggingRef.current = true;
+    isAutoRef.current = false;
+    velocityRef.current = 0;
+    dragStartXRef.current = clientX;
+    dragStartAngle.current = angleRef.current;
+    lastDragXRef.current = clientX;
+    if (autoTimerRef.current) clearTimeout(autoTimerRef.current);
+  };
+
+  const handleDragMove = (clientX: number) => {
+    if (!isDraggingRef.current) return;
+    const deltaX = clientX - dragStartXRef.current;
+    angleRef.current = dragStartAngle.current + deltaX * DRAG_SENSITIVITY;
+    velocityRef.current = (clientX - lastDragXRef.current) * DRAG_SENSITIVITY;
+    lastDragXRef.current = clientX;
+  };
+
+  const handleDragEnd = () => {
+    isDraggingRef.current = false;
+    autoTimerRef.current = window.setTimeout(() => {
+      isAutoRef.current = true;
+    }, AUTO_RESUME_DELAY);
+  };
+
+  const onMouseDown = (e: React.MouseEvent) => {
+    e.preventDefault();
+    handleDragStart(e.clientX);
+  };
+  const onMouseMove = (e: React.MouseEvent) => handleDragMove(e.clientX);
+  const onMouseUp = () => handleDragEnd();
+  const onMouseLeave = () => { if (isDraggingRef.current) handleDragEnd(); };
+
+  // KÃ©o tháº£ báº±ng cáº£m á»©ng
+  const onTouchStart = (e: React.TouchEvent) => handleDragStart(e.touches[0].clientX);
+  const onTouchMove = (e: React.TouchEvent) => handleDragMove(e.touches[0].clientX);
+  const onTouchEnd = () => handleDragEnd();
+
+  const handleDotClick = (index: number) => {
+    isAutoRef.current = false;
+    velocityRef.current = 0;
+    const targetAngle = -index * ANGLE_STEP;
+    const currentNorm = ((angleRef.current % 360) + 360) % 360;
+    const targetNorm = ((targetAngle % 360) + 360) % 360;
+    let diff = targetNorm - currentNorm;
+    if (diff > 180) diff -= 360;
+    if (diff < -180) diff += 360;
+    angleRef.current = angleRef.current + diff;
+    if (autoTimerRef.current) clearTimeout(autoTimerRef.current);
+    autoTimerRef.current = window.setTimeout(() => {
+      isAutoRef.current = true;
+    }, AUTO_RESUME_DELAY);
+  };
+
+  return (
+    <div
+      className="relative shrink-0 w-full select-none h-[380px] md:h-[500px]"
+      style={{
+        overflow: 'hidden',
+        cursor: isDraggingRef.current ? 'grabbing' : 'grab',
+        perspective: '1200px',
+      }}
+      onMouseDown={onMouseDown}
+      onMouseMove={onMouseMove}
+      onMouseUp={onMouseUp}
+      onMouseLeave={onMouseLeave}
+      onTouchStart={onTouchStart}
+      onTouchMove={onTouchMove}
+      onTouchEnd={onTouchEnd}
+    >
+      <div
+        ref={containerRef}
+        className="w-full relative flex justify-center items-center h-[320px] md:h-[440px]"
+        style={{
+          transformStyle: 'preserve-3d',
+        }}
+      >
+        {cards.map((card, i) => (
+          <div
+            key={i}
+            data-carousel-item
+            className="absolute w-[190px] h-[270px] md:w-[240px] md:h-[340px] lg:w-[282.686px] lg:h-[400px]"
+            style={{
+              willChange: 'transform, opacity',
+              boxShadow: 'none',
+              borderRadius: '16px',
+              transformStyle: 'preserve-3d',
+              backfaceVisibility: 'hidden',
+            }}
+          >
+            {card}
+          </div>
+        ))}
+      </div>
+
+      <div ref={dotsRef} className="absolute bottom-[12px] left-1/2 -translate-x-1/2 flex gap-[8px] z-[2000]">
+        {Array.from({ length: totalCards }).map((_, i) => (
+          <div
+            key={i}
+            data-dot
+            onClick={() => handleDotClick(i)}
+            style={{
+              width: '8px',
+              height: '8px',
+              background: 'rgba(0,0,0,0.25)',
+              borderRadius: '4px',
+              transition: 'width 0.3s ease, background 0.3s ease',
+              cursor: 'pointer',
+            }}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function Frame13() {
+  return (
+    <div className="relative rounded-[40px] shrink-0 w-full">
+      <div className="flex flex-row items-center justify-center overflow-x-auto overflow-y-clip size-full">
+        <div className="content-stretch flex items-center justify-center px-[16px] md:px-[80px] relative size-full">
+          <Frame36 />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame3() {
+  return (
+    <div className="content-stretch flex items-center justify-center relative shrink-0 w-full px-[16px] md:px-[80px]">
+      <div className="content-stretch flex gap-[8px] items-center justify-center min-w-[96px] px-[12px] py-[10px] relative rounded-[8px] shrink-0" data-name="Button">
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[24px] not-italic relative shrink-0 text-[16px] text-center text-white whitespace-nowrap">LÃªn bÃ¬a Táº¡p chÃ­ di sáº£n</p>
+        <div className="relative shrink-0 size-[24px]" data-name="right">
+          <div className="absolute inset-[20.83%_33.85%]" data-name="Union">
+            <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7.75 14">
+              <path d={svgPaths.p5c5d580} fill="var(--fill-0, white)" id="Union" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Desktop1() {
+  return (
+    <div className="w-full flex flex-col gap-[24px] items-center pb-[64px] pt-[24px] relative shrink-0" data-name="Desktop - 9">
+      <Frame32 />
+      <div className="absolute inset-0" style={{ backgroundImage: "linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 22.596%, rgba(255, 111, 15, 0.54) 72.118%, rgb(87, 38, 21) 100%)" }} />
+      <Frame2 />
+      <Frame34 />
+      <Frame13 />
+      <Frame3 />
+    </div>
+  );
+}
+
+function Frame() {
+  return (
+    <div className="absolute inset-[0_0_0.28%_0]" data-name="Frame">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 97 22.9361">
+        <g clipPath="url(#clip0_2_3911)" id="Frame">
+          <path d={svgPaths.p39119a40} fill="var(--fill-0, black)" id="Vector" />
+          <path d={svgPaths.p2b53f630} fill="var(--fill-0, black)" id="Vector_2" />
+          <path d={svgPaths.pab5400} fill="var(--fill-0, black)" id="Vector_3" />
+          <path d={svgPaths.p5af1000} fill="url(#paint0_radial_2_3911)" id="Vector_4" />
+          <path d={svgPaths.p2027100} fill="url(#paint1_radial_2_3911)" id="Vector_5" />
+          <path d={svgPaths.p2945dc00} fill="url(#paint2_radial_2_3911)" id="Vector_6" />
+          <path d={svgPaths.p202a4980} fill="url(#paint3_radial_2_3911)" id="Vector_7" />
+        </g>
+        <defs>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(18.0814 6.50804) scale(10.2303 10.1072)" gradientUnits="userSpaceOnUse" id="paint0_radial_2_3911" r="1">
+            <stop stopColor="#9D0B0F" />
+            <stop offset="0.07" stopColor="#AA0E12" />
+            <stop offset="0.26" stopColor="#C7141A" />
+            <stop offset="0.44" stopColor="#DB1820" />
+            <stop offset="0.62" stopColor="#E81B23" />
+            <stop offset="0.8" stopColor="#EC1C24" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(27.5868 11.9817) scale(10.2642 10.1408)" gradientUnits="userSpaceOnUse" id="paint1_radial_2_3911" r="1">
+            <stop offset="0.3" stopColor="#9D0B0F" />
+            <stop offset="0.35" stopColor="#AA0E12" />
+            <stop offset="0.48" stopColor="#C7141A" />
+            <stop offset="0.6" stopColor="#DB1820" />
+            <stop offset="0.73" stopColor="#E81B23" />
+            <stop offset="0.85" stopColor="#EC1C24" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(20.2158 1.18833) scale(21.8977 21.6344)" gradientUnits="userSpaceOnUse" id="paint2_radial_2_3911" r="1">
+            <stop offset="0.35" stopColor="#EC1C24" />
+            <stop offset="1" stopColor="#F26F21" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(3.17965 19.5021) scale(7.68402 7.5916)" gradientUnits="userSpaceOnUse" id="paint3_radial_2_3911" r="1">
+            <stop offset="0.3" stopColor="#EC1C24" />
+            <stop offset="1" stopColor="#9D0B0F" />
+          </radialGradient>
+          <clipPath id="clip0_2_3911">
+            <rect fill="white" height="22.9361" width="97" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Frame10() {
+  return (
+    <div className="content-stretch flex gap-[24px] h-[32px] items-center relative shrink-0 w-[423.333px]">
+      <div className="content-stretch flex gap-[24px] h-[32px] items-center justify-center min-w-[96px] py-[6px] relative rounded-[8px] shrink-0" data-name="Button">
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[20px] not-italic relative shrink-0 text-[#091e42] text-[14px] text-center whitespace-nowrap">SÆ¡ Ä‘á»“ website</p>
+      </div>
+    </div>
+  );
+}
+
+function Frame8() {
+  return (
+    <div className="col-1 content-stretch flex flex-col gap-[12px] items-start justify-self-start relative row-1 self-start shrink-0 w-[423.333px]">
+      <div className="h-[23px] overflow-clip relative shrink-0 w-[97px]" data-name="Logo MSB">
+        <div className="-translate-x-1/2 absolute aspect-[150/36] bottom-0 left-1/2 overflow-clip top-0" data-name="_logo black_Msb">
+          <Frame />
+        </div>
+      </div>
+      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[24px] min-w-full not-italic relative shrink-0 text-[#091e42] text-[18px] w-[min-content]">NgÃ¢n hÃ ng TMCP HÃ ng Háº£i Viá»‡t Nam</p>
+      <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[20px] min-w-full not-italic relative shrink-0 text-[#091e42] text-[14px] w-[min-content]">Sá»‘ 54A Nguyá»…n ChÃ­ Thanh, PhÆ°á»ng LÃ¡ng, ThÃ nh phá»‘ HÃ  Ná»™i, Viá»‡t Nam</p>
+      <Frame10 />
+    </div>
+  );
+}
+
+function Group39() {
+  return (
+    <div className="absolute inset-[21.8%_76.86%_23.76%_8.33%]" data-name="<Group>">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 18.9507 23.2929">
+        <g id="<Group>">
+          <path d={svgPaths.p349c0e80} fill="var(--fill-0, white)" id="<Path>" />
+          <path d={svgPaths.p35e9c00} fill="var(--fill-0, white)" id="<Path>_2" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group38() {
+  return (
+    <div className="absolute contents inset-[21.8%_76.86%_23.76%_8.33%]" data-name="<Group>">
+      <Group39 />
+    </div>
+  );
+}
+
+function Group40() {
+  return (
+    <div className="absolute inset-[44.68%_8.5%_16.27%_28.77%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 80.2895 16.7083">
+        <g id="Group">
+          <path d={svgPaths.paab5680} fill="var(--fill-0, white)" id="Vector" />
+          <path d={svgPaths.pce0c900} fill="var(--fill-0, white)" id="Vector_2" />
+          <path d={svgPaths.p2468be00} fill="var(--fill-0, white)" id="Vector_3" />
+          <path d={svgPaths.p1cf88e00} fill="var(--fill-0, white)" id="Vector_4" />
+          <path d={svgPaths.pd3675c0} fill="var(--fill-0, white)" id="Vector_5" />
+          <path d={svgPaths.p25b11d00} fill="var(--fill-0, white)" id="Vector_6" />
+          <path d={svgPaths.p2205a200} fill="var(--fill-0, white)" id="Vector_7" />
+          <path d={svgPaths.p1fc49f20} fill="var(--fill-0, white)" id="Vector_8" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group37() {
+  return (
+    <div className="absolute contents inset-[21.8%_8.5%_16.27%_8.33%]" data-name="<Group>">
+      <Group38 />
+      <Group40 />
+    </div>
+  );
+}
+
+function Group36() {
+  return (
+    <div className="absolute contents inset-0" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 128 42.7866">
+        <g id="Group">
+          <path d={svgPaths.p27f1a500} fill="var(--fill-0, #A6A6A6)" id="Vector" />
+          <path d={svgPaths.p2c572e00} fill="var(--fill-0, black)" id="Vector_2" />
+        </g>
+      </svg>
+      <Group37 />
+    </div>
+  );
+}
+
+function Group42() {
+  return (
+    <div className="absolute inset-[17%_34.79%_63.01%_29.51%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 45.6985 8.55251">
+        <g id="Group">
+          <path d={svgPaths.p1221800} fill="var(--fill-0, white)" id="Vector" />
+          <path d={svgPaths.p201d1540} fill="var(--fill-0, white)" id="Vector_2" />
+          <path d={svgPaths.p161eab00} fill="var(--fill-0, white)" id="Vector_3" />
+          <path d={svgPaths.p19d41200} fill="var(--fill-0, white)" id="Vector_4" />
+          <path d={svgPaths.p1db7f280} fill="var(--fill-0, white)" id="Vector_5" />
+          <path d={svgPaths.p2a71e900} fill="var(--fill-0, white)" id="Vector_6" />
+          <path d={svgPaths.p35b5b700} fill="var(--fill-0, white)" id="Vector_7" />
+          <path d={svgPaths.p1da7a600} fill="var(--fill-0, white)" id="Vector_8" />
+          <path d={svgPaths.p2ec65f00} fill="var(--fill-0, white)" id="Vector_9" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group41() {
+  return (
+    <div className="absolute contents inset-[17%_34.79%_63.01%_29.51%]" data-name="<Group>">
+      <Group42 />
+    </div>
+  );
+}
+
+function Group35() {
+  return (
+    <div className="absolute contents inset-0" data-name="Group">
+      <Group36 />
+      <Group41 />
+    </div>
+  );
+}
+
+function DownloadOnTheAppStoreBadgeVnRgbBlk() {
+  return (
+    <div className="h-[42.786px] overflow-clip relative shrink-0 w-[128px]" data-name="Download_on_the_App_Store_Badge_VN_RGB_blk_100217 1">
+      <Group35 />
+    </div>
+  );
+}
+
+function Frame11() {
+  return (
+    <div className="content-stretch flex gap-[12px] items-start relative shrink-0">
+      <a className="block cursor-pointer h-[41.853px] relative shrink-0 w-[141.252px]" href="https://play.google.com/store/apps/details?id=vn.com.msb.smartBanking&pcampaignid=fdl_short&url=https://msbmobile.page.link/2005596&pli=1" target="_blank" data-name="GetItOnGooglePlay_Badge_Web_color_Vietnamese 1">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgGetItOnGooglePlayBadgeWebColorVietnamese1} />
+      </a>
+      <DownloadOnTheAppStoreBadgeVnRgbBlk />
+    </div>
+  );
+}
+
+function Group43() {
+  return (
+    <div className="absolute inset-[8.33%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
+        <g id="Group">
+          <path d={svgPaths.p1aab0240} fill="var(--fill-0, #2573C8)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group44() {
+  return (
+    <div className="absolute inset-[8.33%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
+        <g id="Group">
+          <path d={svgPaths.p2737aa00} fill="var(--fill-0, #2E90FA)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Group45() {
+  return (
+    <div className="absolute inset-[20.83%_8.33%]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 14">
+        <g id="Group">
+          <path d={svgPaths.p28df2a00} fill="var(--fill-0, #F04438)" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function Frame5() {
+  return (
+    <div className="content-stretch flex gap-[12px] items-center relative shrink-0">
+      <div className="overflow-clip relative shrink-0 size-[24px]" data-name="Social icon">
+        <Group43 />
+      </div>
+      <div className="overflow-clip relative shrink-0 size-[24px]" data-name="Social icon">
+        <Group44 />
+      </div>
+      <div className="overflow-clip relative shrink-0 size-[24px]" data-name="Social icon">
+        <Group45 />
+      </div>
+      <div className="relative shrink-0 size-[24px]" data-name="Social icon">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgSocialIcon} />
+      </div>
+      <div className="relative rounded-[4px] shrink-0 size-[24px]" data-name="image 5">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[4px] size-full" src={imgImage5} />
+      </div>
+    </div>
+  );
+}
+
+function Frame6() {
+  return (
+    <div className="col-3 content-stretch flex flex-col gap-[12px] items-end justify-self-stretch relative row-1 self-start shrink-0">
+      <p className="[word-break:break-word] font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[24px] not-italic relative shrink-0 text-[#091e42] text-[16px] whitespace-nowrap">MSB Digital Bank</p>
+      <Frame11 />
+      <Frame5 />
+    </div>
+  );
+}
+
+function Frame9() {
+  return (
+    <div className="gap-x-[24px] gap-y-[12px] grid grid-cols-[repeat(3,minmax(0,1fr))] grid-rows-[repeat(1,minmax(0,1fr))] h-[157px] relative shrink-0 w-full">
+      <Frame8 />
+      <Frame6 />
+    </div>
+  );
+}
+
+function Frame4() {
+  return (
+    <div className="max-w-[1366px] relative rounded-tl-[12px] rounded-tr-[12px] shrink-0 w-full">
+      <div className="flex flex-col items-center max-w-[inherit] overflow-clip rounded-[inherit] size-full">
+        <div className="content-stretch flex flex-col items-center max-w-[inherit] pb-[12px] pt-[24px] px-[24px] relative size-full">
+          <Frame9 />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame7() {
+  return (
+    <div className="relative shrink-0 w-full">
+      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgFrame31} />
+      <div className="flex flex-row items-center size-full">
+        <div className="content-stretch flex items-center px-[24px] py-[8px] relative size-full">
+          <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[16px] not-italic relative shrink-0 text-[12px] text-white whitespace-nowrap">Báº£n quyá»n Â© 2026 thuá»™c vá» NgÃ¢n hÃ ng TMCP HÃ ng Háº£i Viá»‡t Nam MSB</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Frame38() {
+  return (
+    <div className="w-full flex flex-col items-center relative shrink-0">
+      <Frame37 />
+      <Desktop />
+      <Desktop1 />
+      <Footer />
+    </div>
+  );
+}
+
+
+
+function Frame1() {
+  return (
+    <div className="absolute inset-[0_0.17%_0.44%_0]" data-name="Frame">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 99.8336 23.8935">
+        <g clipPath="url(#clip0_2_4005)" id="Frame">
+          <path d={svgPaths.p3c830c90} fill="var(--fill-0, black)" id="Vector" />
+          <path d={svgPaths.p34a4ff00} fill="var(--fill-0, black)" id="Vector_2" />
+          <path d={svgPaths.p57c100} fill="var(--fill-0, black)" id="Vector_3" />
+          <path d={svgPaths.p38765a00} fill="url(#paint0_radial_2_4005)" id="Vector_4" />
+          <path d={svgPaths.p36a92270} fill="url(#paint1_radial_2_4005)" id="Vector_5" />
+          <path d={svgPaths.p3db39980} fill="url(#paint2_radial_2_4005)" id="Vector_6" />
+          <path d={svgPaths.p21fc9300} fill="url(#paint3_radial_2_4005)" id="Vector_7" />
+        </g>
+        <defs>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(18.6097 6.77974) scale(10.5291 10.5291)" gradientUnits="userSpaceOnUse" id="paint0_radial_2_4005" r="1">
+            <stop stopColor="#9D0B0F" />
+            <stop offset="0.07" stopColor="#AA0E12" />
+            <stop offset="0.26" stopColor="#C7141A" />
+            <stop offset="0.44" stopColor="#DB1820" />
+            <stop offset="0.62" stopColor="#E81B23" />
+            <stop offset="0.8" stopColor="#EC1C24" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(28.3927 12.4819) scale(10.5641 10.5641)" gradientUnits="userSpaceOnUse" id="paint1_radial_2_4005" r="1">
+            <stop offset="0.3" stopColor="#9D0B0F" />
+            <stop offset="0.35" stopColor="#AA0E12" />
+            <stop offset="0.48" stopColor="#C7141A" />
+            <stop offset="0.6" stopColor="#DB1820" />
+            <stop offset="0.73" stopColor="#E81B23" />
+            <stop offset="0.85" stopColor="#EC1C24" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(20.8064 1.23798) scale(22.5374)" gradientUnits="userSpaceOnUse" id="paint2_radial_2_4005" r="1">
+            <stop offset="0.35" stopColor="#EC1C24" />
+            <stop offset="1" stopColor="#F26F21" />
+          </radialGradient>
+          <radialGradient cx="0" cy="0" gradientTransform="translate(3.27253 20.3161) scale(7.90849 7.90848)" gradientUnits="userSpaceOnUse" id="paint3_radial_2_4005" r="1">
+            <stop offset="0.3" stopColor="#EC1C24" />
+            <stop offset="1" stopColor="#9D0B0F" />
+          </radialGradient>
+          <clipPath id="clip0_2_4005">
+            <rect fill="white" height="23.8935" width="99.8336" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Group46() {
+  return (
+    <div className="absolute inset-[0.18%_0_0.04%_0]" data-name="Group">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 29.9165 23.948">
+        <g id="Group">
+          <path d={svgPaths.p1c567100} fill="url(#paint0_linear_5_3782)" id="Union" />
+        </g>
+        <defs>
+          <linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_5_3782" x1="29.9165" x2="-9.54047e-05" y1="14.7965" y2="14.8051">
+            <stop stopColor="#ED1C24" />
+            <stop offset="0.191421" stopColor="#EF4029" />
+            <stop offset="1" stopColor="#FF671F" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Component() {
+  return (
+    <div className="h-[24px] overflow-clip relative shrink-0 w-[29.918px]" data-name="35 1">
+      <Group46 />
+    </div>
+  );
+}
+
+function Frame12() {
+  return (
+    <Link to="/" className="content-stretch flex gap-[10px] items-center pl-[12px] relative shrink-0 cursor-pointer hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out" style={{ textDecoration: 'none' }}>
+      <div className="h-[24px] overflow-clip relative shrink-0 w-[100px]" data-name="Logo MSB">
+        <Frame1 />
+      </div>
+      <Component />
+    </Link>
+  );
+}
+
+function GotoPage() {
+  return (
+    <div className="bg-white content-stretch flex items-center relative rounded-[24px] shrink-0" data-name="Goto Page">
+      <div aria-hidden="true" className="absolute border border-[#dee5ef] border-solid inset-0 pointer-events-none rounded-[24px]" />
+      <div className="content-stretch flex gap-[8px] h-[32px] items-center justify-center min-w-[96px] px-[12px] py-[6px] relative rounded-[8px] shrink-0" data-name="icon 2">
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[20px] not-italic relative shrink-0 text-[#f4600c] text-[14px] text-center whitespace-nowrap">Vá» chÃºng tÃ´i</p>
+        <div className="relative shrink-0 size-[20px]" data-name="down">
+          <div className="absolute flex inset-[33.86%_20.83%_33.85%_20.83%] items-center justify-center" style={{ containerType: "size" }}>
+            <div className="flex-none h-[100cqw] rotate-90 w-[100cqh]">
+              <div className="relative size-full" data-name="Union">
+                <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 6.45833 11.6667">
+                  <path d={svgPaths.p3387d500} fill="var(--fill-0, #091E42)" id="Union" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function QuickActionWeb() {
+  return (
+    <div className="bg-[#f7f8f9] content-stretch flex gap-[8px] items-center relative rounded-[24px] shrink-0" data-name="Quick action_web">
+      <GotoPage />
+    </div>
+  );
+}
+
+
+
+function Icon3() {
+  return (
+    <div className="relative shrink-0 size-[24px]" data-name="Icon">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
+        <g id="Icon">
+          <rect fill="var(--fill-0, black)" fillOpacity="0.6" height="24" rx="12" width="24" />
+          <path clipRule="evenodd" d={svgPaths.p3dbcb800} fill="var(--fill-0, white)" fillRule="evenodd" id="Vector" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function ButtonTiepNoiDiSan() {
+  const navigate = useNavigate();
+  return (
+    <div onClick={() => navigate('/')} className="content-stretch flex gap-[12px] items-center opacity-0 pl-[8px] pr-[20px] py-[8px] relative rounded-[26px] shrink-0 cursor-pointer hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out" data-name="Button_Tiep noi di san">
+      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[26px] size-full" src={imgButtonTiepNoiDiSan} />
+      <Icon3 />
+      <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[16px] text-center text-white whitespace-nowrap">Trá»Ÿ vá»</p>
+    </div>
+  );
+}
+
+function Frame46() {
+  return (
+    <div className="absolute content-stretch flex items-center justify-between left-1/2 -translate-x-1/2 px-[16px] md:px-[120px] top-[70px] md:top-[128px] w-full max-w-[1440px] z-20 pointer-events-auto">
+      <ButtonTiepNoiDiSan />
+      <div className="content-stretch flex gap-[6px] lg:gap-[12px] items-center pl-[6px] pr-[12px] py-[6px] lg:pl-[8px] lg:pr-[20px] lg:py-[8px] relative rounded-[20px] lg:rounded-[26px] shrink-0 cursor-pointer hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out" data-name="Button_Tiep noi di san">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[20px] lg:rounded-[26px] size-full" src={imgButtonTiepNoiDiSan1} />
+        <div className="overflow-clip relative shrink-0 size-[18px] lg:size-[24px]" data-name="Icon/info">
+          <div className="absolute inset-[0_-0.05%_0_0]" data-name="Vector">
+            <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24.0127 24">
+              <path d={svgPaths.p64c6d60} fill="var(--fill-0, white)" id="Vector" />
+            </svg>
+          </div>
+        </div>
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] lg:text-[16px] text-center text-white whitespace-nowrap">Thá»ƒ lá»‡ chi tiáº¿t</p>
+      </div>
+    </div>
+  );
+}
+
+export default function Component2DiSnHome() {
+  return (
+    <div className="bg-[#fdf6f2] content-stretch flex flex-col items-center relative w-full min-h-screen" data-name="2. Di sáº£n/Home 2">
+      <div className="w-full relative flex flex-col items-center shrink-0">
+        <Frame38 />
+        <Frame46 />
+        <div className="absolute inset-x-0 top-0 pointer-events-none z-[10] w-full">
+          <Header />
+        </div>
+      </div>
+      <div className="absolute bg-white h-[40.035px] left-0 right-0 top-0" />
+    </div>
+  );
+}
