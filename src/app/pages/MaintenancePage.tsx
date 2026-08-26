@@ -177,7 +177,7 @@ export default function MaintenancePage() {
           </div>
         </div>
         <p className="text-[11px] text-gray-500">
-          Bản quyền © 2026 Vinpearl Theatre Ocean City × MSB. Trân trọng cảm ơn sự thông cảm của Quý khách.
+          Bản quyền © 2026 Vinpearl Theatre Ocean City. Trân trọng cảm ơn sự thông cảm của Quý khách.
         </p>
       </footer>
     </div>

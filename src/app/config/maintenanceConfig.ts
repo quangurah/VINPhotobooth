@@ -6,9 +6,9 @@ export const MAINTENANCE_CONFIG = {
   // Tiêu đề & Thông điệp hiển thị
   badgeText: "HỆ THỐNG ĐANG BẢO TRÌ NÂNG CẤP",
   title: "THÔNG BÁO BẢO TRÌ HỆ THỐNG",
-  highlightSubtitle: "Vinpearl Theatre Ocean City × MSB Di Sản",
+  highlightSubtitle: "Vinpearl Theatre Ocean City",
   description:
-    "Hệ thống tạo ảnh AI Di Sản đang được tạm dừng để nâng cấp hạ tầng máy chủ, tối ưu thuật toán AI và tăng cường chất lượng trải nghiệm cho Quý khách.",
+    "Hệ thống tạo ảnh AI đang được tạm dừng để nâng cấp hạ tầng máy chủ, tối ưu thuật toán AI và tăng cường chất lượng trải nghiệm cho Quý khách.",
   additionalNotice:
     "Quá trình bảo trì đang được đội ngũ kỹ thuật khẩn trương hoàn thiện. Xin Quý khách vui lòng quay lại sau ít phút.",
 

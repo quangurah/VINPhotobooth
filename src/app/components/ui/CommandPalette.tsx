@@ -58,7 +58,7 @@ export default function CommandPalette({ isOpen, onClose }: CommandPaletteProps)
   useEffect(() => {
     if (isOpen) {
       setTimeout(() => inputRef.current?.focus(), 100);
-      triggerTypingAnimation("Chào bạn! Tôi là AI Assistant của MSB. Bạn cần tôi hỗ trợ điều gì hôm nay?");
+      triggerTypingAnimation("Chào bạn! Tôi là Trợ lý AI của Vinpearl Theatre. Bạn cần tôi hỗ trợ điều gì hôm nay?");
     }
     
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -170,7 +170,7 @@ export default function CommandPalette({ isOpen, onClose }: CommandPaletteProps)
               AI
             </div>
             <div className="flex-1 flex flex-col gap-1">
-              <span className="text-xs text-gray-500 font-medium">MSB AI Assistant</span>
+              <span className="text-xs text-gray-500 font-medium">Vinpearl Theatre AI Assistant</span>
               <p className="text-[14px] text-gray-200 leading-[22px] font-['Inter',sans-serif] whitespace-pre-wrap">
                 {aiResponse}
                 {isTyping && (
