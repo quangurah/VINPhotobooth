@@ -112,7 +112,8 @@ firebase emulators:start --only functions
 ```
 
 > [!NOTE]
-> Khi chạy chế độ phát triển thông thường, Frontend có thể gọi trực tiếp tới Cloud Functions live trên Firebase hoặc chạy thông qua Emulator port `5005`.
+> - Khi chạy chế độ phát triển thông thường (Localhost), Functions Emulator được cấu hình chạy ở cổng **`6000`** (tránh xung đột với cổng `5000` / `5005` của các ứng dụng khác).
+> - Khi triển khai (Deploy Production), ứng dụng **tự động** chuyển sang endpoint Cloud chính thức (`https://api-phn3coaacq-as.a.run.app`), hoàn toàn không phụ thuộc vào cổng localhost.
 
 ---
 

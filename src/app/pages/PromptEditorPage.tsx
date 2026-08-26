@@ -7,7 +7,7 @@ import {
 
 // Cấu hình Base URL trỏ tới API của project
 const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
-const BASE_URL = isLocal ? "http://127.0.0.1:5001/vinpalace-df621/asia-southeast1/api" : "https://api-phn3coaacq-as.a.run.app";
+const BASE_URL = isLocal ? "http://127.0.0.1:6000/vinpalace-df621/asia-southeast1/api" : "https://api-phn3coaacq-as.a.run.app";
 
 // Danh sách các concept của Vin Palace
 const CONCEPTS = [
