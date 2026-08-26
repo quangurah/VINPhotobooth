@@ -1,7 +1,7 @@
 // Cấu hình chế độ bảo trì hệ thống (Maintenance Mode)
 export const MAINTENANCE_CONFIG = {
   // Trạng thái bảo trì: đặt true để kích hoạt màn hình bảo trì cho người dùng, false để mở lại hệ thống
-  isUnderMaintenance: true,
+  isUnderMaintenance: false,
 
   // Tiêu đề & Thông điệp hiển thị
   badgeText: "HỆ THỐNG ĐANG BẢO TRÌ NÂNG CẤP",
