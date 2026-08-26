@@ -1,0 +1,11 @@
+{
+  "current_index": 0,
+  "keys": [
+    {
+      "key": "YOUR_GEMINI_API_KEY_HERE",
+      "label": "Production_Key_1",
+      "group": "Production",
+      "active": true
+    }
+  ]
+}
